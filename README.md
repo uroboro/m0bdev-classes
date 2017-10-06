@@ -14,4 +14,4 @@ Openjailbreak's 2013 class slides and logs
 | 09 | 16 NOV 2013 |
 | 10 | 23 NOV 2013 |
 | 11 | 30 NOV 2013 |
-⁣| 12 | 07 DEC 2013 |
+| 12 | 07 DEC 2013 |
