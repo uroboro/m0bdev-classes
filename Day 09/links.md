@@ -23,3 +23,5 @@ https://developer.apple.com/library/ios/documentation/Xcode/Conceptual/iPhoneOSA
 https://developer.apple.com/library/mac/technotes/tn2004/tn2123.html#//apple_ref/doc/uid/DTS10003386
 
 https://developer.apple.com/library/ios/technotes/tn2151/_index.html
+
+Skype Audio log: https://www.dropbox.com/s/zl4ksvfvmxhoe7q/16-11-13-OpenJailbreak-Skype%20Audio.mp3.zip
