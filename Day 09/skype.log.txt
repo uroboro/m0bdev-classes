@@ -1,0 +1,127 @@
+[11:10:55] tihmstar-yt: do we have slides for this week?
+[11:11:04] 3x7R00Tripper: Ok
+[11:11:08] tihmstar-yt: talking about responibilities what about the port? :P
+[11:13:59] 3x7R00Tripper: ok. A android hackers andbook wil comming 2014
+[11:14:06] 3x7R00Tripper: handbook
+[11:14:31] 3x7R00Tripper: WHat?
+[11:14:38] *** crakun - added orel.lll ***
+[11:15:32] 3x7R00Tripper: I have a mov file that make a kernel panic but my iPhone doesn't respring or restart. I find the panic log file after a reboot only. secure boot=no. What is it?
+[11:15:46] (Orel Yamin™) iOS Hacker: Crakun you need to share your screen
+[11:16:03] 3x7R00Tripper: From my mac?
+[11:16:13] 3x7R00Tripper: ah ok. crakun
+[11:17:19] 3x7R00Tripper: http://samdmarshall.com/re.html
+[11:17:45] 3x7R00Tripper: Crakun: I have a mov file that make a kernel panic but my iPhone doesn't respring or restart. I find the panic log file after a reboot only. secure boot=no. What is it?
+[11:20:32] (Orel Yamin™) iOS Hacker: Hi?
+[11:20:38] 3x7R00Tripper: Don't we talk?
+[11:20:44] crakun -: presentation is now on IRC
+[11:20:49] 3x7R00Tripper: ok why
+[11:21:01] Anton Titkov: <+dirkg> i have no setup where you all aren't going to be deafened by my horrible mic
+[11:21:29] crakun -: please download his materials
+[11:21:43] 3x7R00Tripper: I have all for 1 day
+[11:21:49] 3x7R00Tripper: and longer
+[11:22:03] 3x7R00Tripper: Crakun: I have a mov file that make a kernel panic but my iPhone doesn't respring or restart. I find the panic log file after a reboot only. secure boot=no. What is it?
+[11:22:23] crakun -: talk to me later about that
+[11:22:31] 3x7R00Tripper: ok
+[11:23:38] crakun -: I will speak at the end of the class, to tell u what's happening next
+[11:24:13] 3x7R00Tripper: ah ok
+[11:25:00] (Orel Yamin™) iOS Hacker: Oh ok
+[11:26:26] 3x7R00Tripper: must we read the slides only
+[11:26:45] crakun -: ?
+[11:27:02] 3x7R00Tripper: What we do now exactly?
+[11:27:17] Pr0 crast1nate: be patient and follow along :)
+[11:32:37] (Orel Yamin™) iOS Hacker: Helloooooo
+[11:32:43] 3x7R00Tripper: Hi
+[11:32:50] Anton Titkov: hi again
+[11:32:57] (Orel Yamin™) iOS Hacker: ???????????????????????????????
+[11:32:59] 3x7R00Tripper: What are you doing now
+[11:33:11] M. Syarifudin: helllow
+[11:33:27] 3x7R00Tripper: I don't know what must I do because I know the most from internals and other exploitation books and more.
+[11:33:47] crakun -: yes
+[11:34:01] 3x7R00Tripper: What must I do
+[11:34:36] crakun -: pay attention
+[11:34:40] Pr0 crast1nate: you MUST do nothing, such is the nature of free will lol
+[11:34:41] crakun -: :P
+[11:35:08] 3x7R00Tripper: I will do this but I know it
+[11:39:48] *** crakun - added ghhoh123, sssuuu09 ***
+[11:40:17] *** crakun - added Jeremy ***
+[11:40:53] tihmstar-yt: pls mute
+[11:40:59] 3x7R00Tripper: yes
+[11:41:20] crakun -: yes
+[11:41:27] 3x7R00Tripper: mute!!!
+[11:41:40] crakun -: we are moving to javascript and safari crashing in about 2 weeks
+[11:42:20] crakun -: I am going to do some KASLR PoC next week
+[11:42:35] 3x7R00Tripper: 2 weeks. (yawn)
+[11:43:05] *** crakun - added swordslash135 ***
+[11:45:02] crakun -: please someone save IRC log for posting later to the site
+[11:45:17] Anton Titkov: kk
+[11:45:18] Fede S: I will
+[11:45:25] 3x7R00Tripper: how can I do it
+[11:45:33] Fede S: doing so since class 4/5
+[11:45:40] 3x7R00Tripper: I record (Skype) now and later and
+[11:45:41] crakun -: gr8!
+[11:46:17] Fede S: the only slides are from dirkg, right?
+[11:46:27] crakun -: yes
+[11:46:36] crakun -: I don't have slides next week
+[11:46:48] 3x7R00Tripper: ok.
+[11:46:56] Fede S: oh, ok
+[11:47:03] 3x7R00Tripper: Do you will make for this class
+[11:47:42] crakun -: I mean I will have slides for the next 2 weeks
+[11:47:50] 3x7R00Tripper: ok
+[11:48:06] crakun -: but I need root ripper to do info research to help me
+[11:49:00] 3x7R00Tripper: ok.
+[11:49:13] 3x7R00Tripper: Say me if you need me. (3x7R00Tripper muhahahaha)
+[11:51:16] 3x7R00Tripper: crakun: I think it is very good for javascript... mobile safari... (Look for you pm)
+[11:51:59] (Orel Yamin™) iOS Hacker: Why you shut up we are on 1 hour call
+[11:52:11] (Orel Yamin™) iOS Hacker: Just talk
+[11:52:23] 3x7R00Tripper: Do you will talk?
+[11:52:38] (Orel Yamin™) iOS Hacker: No
+[11:53:17] crakun -: ?
+[11:53:41] 3x7R00Tripper: Ok Good.
+[11:54:43] 3x7R00Tripper: I will talk with crakun about my kernel panic with secure boot=no and without restart or respring later. I told with winocm (Skype) yesterday and he didn't know what is ut
+[11:54:44] 3x7R00Tripper: it
+[11:55:50] crakun -: yes, it is bizarre, and I want to test it
+[11:56:03] crakun -: what does winocm think about the m0bdev
+[11:56:05] crakun -: ?
+[11:56:15] 3x7R00Tripper: ok. But I must look for the mov because I have 20 and one from it is the mov
+[11:56:56] 3x7R00Tripper: I don't know. He add me on Skype and we told but he doesn't told about m0bdev
+[11:58:22] 3x7R00Tripper: I told with him with a other guy too. The name is neko2k
+[12:14:06] Anton Titkov: yeah
+[12:14:08] Pr0 crast1nate: yeah
+[12:14:09] Fede S: yes
+[12:14:11] 3x7R00Tripper: yeess
+[12:15:15] sulphur27: yes
+[12:16:50] 3x7R00Tripper: Crakun: Do we need mediaserverd crashes(mov)?
+[12:17:41] 3x7R00Tripper: Need we: OTAUpdate crashed and ResetCounter crahses from mov files
+[12:19:28] 3x7R00Tripper: crakun: We can upload our experiments about javascript and more on my website(subdomain) http://m0bdev.3x7R00Tripper.com . All can download and code with sources and more
+[12:19:37] 3x7R00Tripper: ok?
+[12:20:01] tihmstar-yt: brb
+[12:20:12] 3x7R00Tripper: brb?
+[12:20:19] Pr0 crast1nate: hmmm cool stuff
+[12:20:38] 3x7R00Tripper: [16.11.13 16:17:01] 3x7R00Tripper: Crakun: Do we need mediaserverd crashes(mov)?
+[16.11.13] 16:17:52] 3x7R00Tripper: Need we: OTAUpdate crashed and ResetCounter crahses from mov files
+[12:20:39] (Orel Yamin™) iOS Hacker: Audio problems
+[12:20:57] John Thompson: sounds good here
+[12:20:57] Anton Titkov: nope
+[12:21:00] Pr0 crast1nate: no problems here
+[12:21:02] 3x7R00Tripper: yes good
+[12:21:13] (Orel Yamin™) iOS Hacker: Oh sorry now it's good
+[12:21:14] 3x7R00Tripper: crakun: We can upload our experiments about javascript and more on my website(subdomain) http://m0bdev.3x7R00Tripper.com . All can download and code with sources and more
+[12:21:41] 3x7R00Tripper: ?
+[12:22:23] 3x7R00Tripper: Do wee need OTAUpdate crashed, ResetCounter crahses and mediaserverd crahses from mov files?
+[12:22:24] Pr0 crast1nate: I think the BIFS could be valuable
+[12:22:50] 3x7R00Tripper: crakun?
+[12:23:03] tihmstar-yt: back
+[12:23:07] 3x7R00Tripper: ok
+[12:23:19] 3x7R00Tripper: Crakun I have a question
+[12:23:33] 3x7R00Tripper: Do wee need OTAUpdate crashed, ResetCounter crahses and mediaserverd crahses from mov files?
+[12:24:17] 3x7R00Tripper: Crakun I have a question.
+[12:24:35] 3x7R00Tripper: Do wee need OTAUpdate crashed, ResetCounter crahses and mediaserverd crahses from mov files?
+[12:26:14] 3x7R00Tripper: it is half past four in germany
+[12:26:18] *** Call ended, duration 1:20:21 ***
+[12:26:29] tihmstar-yt: 3x7R00Tripper please remove fuzzyparrot from you homepage http://m0bdev.3x7r00tripper.com/ since you violating copyright!
+[12:26:50] 3x7R00Tripper: I was removing it or? wait I must look
+[12:27:08] *** swordslash135 has left ***
+[12:27:17] 3x7R00Tripper: Ah sorry I removed the  folder only
+[12:27:20] 3x7R00Tripper: crkaun?
+[12:27:28] tihmstar-yt: thx
+[12:27:32] 3x7R00Tripper: End from this class?

@@ -1,0 +1,119 @@
+[11:31:14] Pr0 crast1nate: anyone else getting static in the audio?
+[11:31:21] Fede S: yep
+[11:31:55] Fede S: I'd love to do that
+[11:31:58] Pr0 crast1nate: everybody mute please
+[11:32:22] Pr0 crast1nate: much better
+[11:33:16] iJackalope777: :)
+[11:36:34] *** crakun - added www.isa56k.com ***
+[11:37:46] crakun -: hello?
+[11:37:49] 3x7R00Tripper: Hello
+[11:37:51] 3x7R00Tripper: What do you mean
+[11:37:55] Anton Titkov: yeah, repeat the question plz
+[11:38:09] 3x7R00Tripper: I wasn't on my mac
+[11:38:12] *** crakun - added laimetal1 ***
+[11:39:42] 3x7R00Tripper: I think we should  have to learn everything about kernel logs. Or not?
+[11:41:32] 3x7R00Tripper: Can't we do effective stuff these is not so easy stuff
+[11:41:34] 3x7R00Tripper: ?
+[11:41:42] *** crakun - added Jwoyal ***
+[11:42:06] Pr0 crast1nate: nothing worthwhile is easy :)
+[11:42:11] 3x7R00Tripper: ok
+[11:42:50] *** crakun - added junayet.khan94950843, Joe Bloggs, (Orel Yamin™) iOS Hacker ***
+[11:42:50] *** Jwoyal has left ***
+[11:43:19] 3x7R00Tripper: crakun: What want we do in the next time? I mean what do you will do with us?
+[11:43:23] (Orel Yamin™) iOS Hacker: It sneed to begin on 2pm utc???
+[11:44:22] Anton Titkov: well, i can make daemon for jb devices
+[11:46:22] 3x7R00Tripper: Oh nice
+[11:47:04] 3x7R00Tripper: What is WDT timeout?
+[11:47:52] Pr0 crast1nate: mute mics!!!
+[11:47:55] 3x7R00Tripper: yes
+[11:48:01] Pr0 crast1nate: can't hear crakun clearly
+[11:48:04] 3x7R00Tripper: I too
+[11:48:18] 3x7R00Tripper: please mute
+[11:48:24] tihmstar-yt: salai hute pls mute
+[11:48:32] tihmstar-yt: and everyone else
+[11:48:50 | Edited 11:48:59] Anton Titkov: mute
+[11:48:55] 3x7R00Tripper: I don't can hear you
+[11:49:13] salai hute: ok i did
+[11:49:19] Pr0 crast1nate: whoever is sniffling mute your mic!
+[11:49:25] Fede S: junayet
+[11:49:51] Junayet Hossain: Hello
+[11:49:53] Anton Titkov: crakun,can't hear you
+[11:49:56] Fede S: mute mic
+[11:49:57] 3x7R00Tripper: yes
+[11:50:21] crakun -: html5 fuzzer
+[11:50:23] 3x7R00Tripper: ok
+[11:50:24] crakun -: mozilla
+[11:50:27] crakun -: minion
+[11:50:32] 3x7R00Tripper: yes
+[11:50:36] Junayet Hossain: Ok
+[11:50:40] 3x7R00Tripper: I read about it
+[11:51:00] www.isa56k.com: Spider Pig pdf JS fuzzier? Not sure if it is any good.
+[11:51:15] Pr0 crast1nate: saelo and I are working on a JS fuzzer and I have a ton of research to share
+[11:51:16] Junayet Hossain: Me, new in the class.
+[11:51:22] 3x7R00Tripper: What do you think about it: http://www.exploit-db.com/wp-content/themes/exploit/docs/17914.pdf
+[11:51:39] www.isa56k.com: https://code.google.com/p/spiderpig-pdffuzzer/
+[11:51:54] 3x7R00Tripper: You found more on my site
+[11:51:55] 3x7R00Tripper: http://3x7r00tripper.com/jsandhtml5-m0bdev.php
+[11:51:56] Fede S: irc, logs? me
+[11:53:25] 3x7R00Tripper: I will make a post about all what we do on my website. I will look for slides and more.
+You find all on http://3x7R00Tripper.com but the last post have slides only. http://3x7r00tripper.com/jsandhtml5-m0bdev.php
+[11:54:07] Pr0 crast1nate: don't be posting everything in a million places
+[11:54:23] Pr0 crast1nate: or they'll be on to us before we put a jailbreak together
+[11:54:38] Junayet Hossain: I've missed a lot.
+[11:54:52] crakun -: hello junayet
+[11:54:58] crakun -: how are u
+[11:54:59] Junayet Hossain: Hi
+[11:56:37] tihmstar-yt: forum.m0bdev.com
+[11:56:41] tihmstar-yt: ^
+[11:57:16] 3x7R00Tripper: Yes
+[11:57:30] crakun -: roottripper
+[11:57:38] crakun -: can u speak
+[11:57:43] 3x7R00Tripper: Ok the problem is I don't can speak good english but I can try it
+[11:58:06] 3x7R00Tripper: ok
+[11:58:21] tihmstar-yt: come on don't be shy
+[11:58:29] Junayet Hossain: Yes sir
+[11:58:33] Pr0 crast1nate: i love all these backgrounds coming together to be a team :D
+[11:58:41] Anton Titkov: ^_^
+[11:58:45] crakun -: is root ripper an apple spy?
+[11:58:52] 3x7R00Tripper: my internet is very bad I don't know wait I will go to the alan router.  oK?
+[11:58:53] Pr0 crast1nate: spiez!!
+[11:58:59] Junayet Hossain: No, sir
+[11:59:01] tihmstar-yt: XDD
+[11:59:06] Pr0 crast1nate: this is what Tim Cook does in his spare time lol
+[11:59:11] 3x7R00Tripper: Please speak I will see if it is better
+[11:59:14] www.isa56k.com: lmao
+[11:59:22] crakun -: speak rootripper
+[11:59:58] tihmstar-yt: thats not rootripper
+[12:00:09] 3x7R00Tripper: Shit. Nono my router. Mybe I am not going to be online because it is bad
+[12:00:15] Anton Titkov: lol
+[12:00:16] www.isa56k.com: lmao
+[12:00:19] crakun -: hmmm
+[12:00:25] Anton Titkov: cmon Tim
+[12:00:39] salai hute: lol
+[12:00:44] 3x7R00Tripper: ??? I don't hear you
+[12:00:49] crakun -: procrastinate?
+[12:00:49] Pr0 crast1nate: can you hear me?
+[12:00:56] 3x7R00Tripper: bad
+[12:01:07] 3x7R00Tripper: stutters
+[12:01:24] salai hute: Cant you mute his mic from your end?
+[12:01:24] tihmstar-yt: junket we want other people to talk too
+[12:01:27] tihmstar-yt: XDDDD
+[12:01:36] tihmstar-yt: junayet
+[12:01:45] Fede S: we all do
+[12:02:05] tihmstar-yt: come root ripper talk german
+[12:02:08] tihmstar-yt: :P
+[12:02:36] Fede S: wow
+[12:02:38] tihmstar-yt: wtf
+[12:02:39] tihmstar-yt: XD
+[12:02:40] www.isa56k.com: chipmunk?
+[12:02:44] 3x7R00Tripper: Internet !!! I DON'T UNDERSTAND YOU. I DON'T HEAR YOU
+[12:02:44] www.isa56k.com: dafuq
+[12:02:47] www.isa56k.com: lol
+[12:02:53] Anton Titkov: lol
+[12:03:02] www.isa56k.com: seal on helium
+[12:03:16] Pr0 crast1nate: WTF? I sound like a chipmunk?
+[12:03:20] Pr0 crast1nate: lol
+[12:03:50] Yinglu: i thought that was the bird from class 2 or 3 lol
+[12:04:07] 3x7R00Tripper: I can write only. I hear you partially. What about you will talk with me crakun?
+[12:04:22] www.isa56k.com: thx... laters... tripper too many excuses dude!
+[12:04:28] *** Call ended, duration 35:45 ***

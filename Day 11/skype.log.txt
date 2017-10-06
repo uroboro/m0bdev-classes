@@ -1,0 +1,143 @@
+[11:49:31] http: Is there no protection for first page in iOS?
+[11:51:49] orel.lll: Lets find the fucking exploit
+[11:53:46] (Orel Yamin™) iOS Hacker: My iPhone blow up
+[11:54:19] (Orel Yamin™) iOS Hacker: Where is crakun
+[11:54:39] crakun -: I'm here. listen
+[11:54:52] (Orel Yamin™) iOS Hacker: Ok
+[11:55:08] imegacier: references are nice thanks
+[11:56:51] http: Static disassembling?
+[11:56:55] (Orel Yamin™) iOS Hacker: Lets begin work
+[11:57:08] (Orel Yamin™) iOS Hacker: I need the slide 9
+[11:57:41] sulphur27: no
+[11:57:46] http: No
+[11:57:56] saelo7: ah ok
+[11:58:00] saelo7: I think i know :)
+[11:58:01] http: Ah, that one
+[11:58:03] crakun -: commpage
+[11:58:19] crakun -: memory -looks shared between kernel and userland
+[11:58:31] saelo7: vdso, vsyscall on linux
+[11:58:33] crakun -: see mark dowd presentation at HITB last year
+[11:58:46] (Orel Yamin™) iOS Hacker: Kernel panic
+[11:59:18] saelo7: should be mapped read only in userland
+[11:59:59] saelo7: sure
+[12:00:56] louiskremer: Have you bought ida pro?
+[12:00:59] saelo7: no
+[12:01:09] saelo7: I'm using free version right now
+[12:01:17] louiskremer: Ok I also.
+[12:01:25] louiskremer: And Hopper
+[12:03:31] John Thompson: Crakun I can help there
+[12:03:34] imegacier: he's right
+[12:03:41] imegacier: You have to pay
+[12:04:03] compiling Entropy: xsplit
+[12:04:03] iMegacier L0uis: Google chat
+[12:04:12] iMegacier L0uis: very useful
+[12:04:19] compiling Entropy: teamviewer
+[12:04:21] Pr0 crast1nate: Google Hangouts?
+[12:04:24] John Thompson: Crakun, I have a setup you can use that's commercial.
+[12:04:30] (Orel Yamin™) iOS Hacker: On skype
+[12:04:42] http: Mark Dowd's presentation at HITB 2012: bitly Pn4pe5
+[12:04:43] isa56k .: Handbrake?
+[12:04:43] sulphur27: eyes
+[12:04:44] sulphur27: yes
+[12:07:05] compiling Entropy: isa56k's bug works only on the 4S
+[12:07:24] tihmstar-yt: how do you actually use gdb?
+[12:07:41] tihmstar-yt: i tried to attach but safari freezed
+[12:08:01] tihmstar-yt: yea
+[12:08:13] tihmstar-yt: i mean when i attach it frozen
+[12:08:30] tihmstar-yt: and when i deattach it works fine
+[12:08:36] http: Anyone attached kernel debugger?
+[12:11:24] tihmstar-yt: do we need a podbreakout for kernel debugging?
+[12:12:16] (Orel Yamin™) iOS Hacker: Think yourself "do we need a podbreakout for kernel debugging?"
+[12:12:28] tihmstar-yt: -__-
+[12:12:36] louiskremer: I use it also but I don't use it in the last time
+[12:13:13] iMegacier L0uis: Where are they?
+[12:14:31 | Edited 12:14:42] tihmstar-yt: what can we actually do with the magic byte? i mean we know if it is xx it crashes but if it is xy id doesn ?
+[12:14:56] iMegacier L0uis: Thanks
+[12:15:18] Fede S: tihmstar, the question would be what is the magic byte?
+[12:15:18] compiling Entropy: that's not even the directory
+[12:15:24] iMegacier L0uis: We can find logs on iTunes after sync?
+[12:15:29] iMegacier L0uis: I found some
+[12:15:32] compiling Entropy: /private/var/mobile/Library/Logs/Panics/
+[12:15:41] compiling Entropy: and the directory creates itself
+[12:15:48] compiling Entropy: when you have your first panic
+[12:16:01] compiling Entropy: they're also stored in another place
+[12:16:28] tihmstar-yt: -sh-4.0# pwd
+/var/mobile/Library/Logs
+-sh-4.0# ls
+AppleSupport              DuetLST.log         PLArchive
+CrashReporter             FaceTime            Ubiquity
+CurrentPowerlog.powerlog  MobileDelete        com.apple.itunesstored
+DataMigration             MobileInstallation
+[12:16:40] compiling Entropy: until you go to settings > general > about > diagnostics & usage, then they get moved in to /var/mobile/Library/Logs/
+[12:16:52] compiling Entropy: CrashReporter
+[12:16:53] louiskremer: This should all know :)
+[12:16:56] http: Everyone should disable "submit crashes to Apple".
+[12:17:07] louiskremer: Yea don't send to apple
+[12:17:32] tihmstar-yt: yea it was you to pull that from ih8sn0w -_-
+[12:17:35] compiling Entropy: /private/var/mobile/Library/Logs/CrashReporter/Panics
+[12:17:35] louiskremer: If we send it to apple, we help apple :D
+[12:18:17] compiling Entropy: crakun: I know how they do it
+[12:18:18] saelo7: taskforpid(o) patch
+[12:18:23] intram0rph: Ih8snow said he wrote a dumper
+[12:18:24] saelo7: -_-
+[12:18:44] intram0rph: Not sure who hell give it to..
+[12:18:48] tihmstar-yt: i don't think he wants to publish that
+[12:19:56] louiskremer: Can I downgrade from mavericks to mountain lion without buy mountain lion?
+[12:20:44] tihmstar-yt: http://tihmstar.blogspot.de/2013/10/my-jailbreaktool-for-ios-7.html
+[12:20:59] saelo7: you can get kernelcaches on iphone 4 by just taking them from ipsw and decrypting them
+[12:21:20] compiling Entropy: ^
+[12:21:38] D-link: How?
+[12:21:48] Pr0 crast1nate: I'm recording the Skype call (hopefully) didn't test it beforehand
+[12:22:04] compiling Entropy: getting kernelcaches for iPhone4 does not even require the device
+[12:22:14] intram0rph: Mine says recording too
+[12:22:50] http: Pr0: please share afterwards
+[12:22:58] iMegacier L0uis: Good point
+[12:23:04] Pr0 crast1nate: of course, will do!
+[12:23:05] D-link: Good, keep it core
+[12:24:47] saelo: or make m0bdev repo!
+[12:24:58] isa56k .: What about using the OpenJailbreak.org site?
+[12:25:09] (Orel Yamin™) iOS Hacker: Good idea
+[12:25:22] isa56k .: for storing the source code of tools etc?
+[12:25:33] (Orel Yamin™) iOS Hacker: Itiaprepo.com/m0bdev
+[12:26:20] 3x7R00Tripper: yea good idea
+[12:26:38] tihmstar-yt: what page?
+[12:26:57] saelo: we should set up own repo on m0bdev server
+[12:27:00] 3x7R00Tripper: Why don't buy a com domain
+[12:27:05] saelo: also git repo for code
+[12:27:16] (Orel Yamin™) iOS Hacker: You want this repo:Itiaprepo.com/m0bdev
+[12:27:18] 3x7R00Tripper: yea
+[12:27:26] 3x7R00Tripper: it's good
+[12:27:27] tihmstar-yt: saelo: my repo is actually used for m0bdev and you can get all code on github
+[12:27:46] (Orel Yamin™) iOS Hacker: If yes give me V or X
+[12:27:51] saelo: I mean for code that we don't want to be public
+[12:27:56] tihmstar-yt: oh
+[12:28:09] iMegacier L0uis: How can people who don't code help jailbreak community?
+[12:28:16] 3x7R00Tripper: Don't publish but we can buy a premium account(or no)
+[12:28:28] D-link: Okay, so what resources are there for total n00bs?
+[12:28:36] Pr0 crast1nate: ciao
+[12:28:36] D-link: What books first?
+[12:28:37] sulphur27: thanks
+[12:28:38] saelo: thx
+[12:28:39] John Thompson: Thanks!
+[12:28:39] (Orel Yamin™) iOS Hacker: Thanks bye
+[12:28:42] http: Thanks
+[12:28:44] D-link: Just poi y and I'll read.
+[12:28:47] *** Call ended, duration 1:24:34 ***
+[12:29:10] 3x7R00Tripper: by
+[12:29:11] intram0rph: So where does one start ?
+[12:29:17] snakeninny: thanks
+[12:29:21] isa56k .: thx
+[12:29:23] intram0rph: I mean the very beginning..?
+[12:29:40] saelo: intram0rph check out The Art Of Exploitation
+[12:29:42] saelo: geat book!
+[12:29:46] (Orel Yamin™) iOS Hacker: Exploit found
+[12:29:54] 3x7R00Tripper: What type
+[12:30:20] (Orel Yamin™) iOS Hacker: Winocm have a Skype?
+[12:30:28] intram0rph: Thank you. Cause i been trying to read the ARM manuals and I don't understand hardly anything
+[12:31:05] intram0rph: ^ Not a programmer
+[12:31:16] 3x7R00Tripper: Read pdf documents first ;)
+[12:32:04] 3x7R00Tripper: I learned the basics with this steps
+[12:32:04] 3x7R00Tripper: http://3x7r00tripper.com/startwithioshacking.php
+[12:33:31] 3x7R00Tripper: But this is very good for beginning also
+[12:33:32] 3x7R00Tripper: theiphonewiki.com/wiki/Up_to_Speed
+[12:34:04] intram0rph: Thank you 3x7Root
