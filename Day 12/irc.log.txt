@@ -1,0 +1,165 @@
+11:41 <crakun>i think i got everyone now
+11:42 <HENLEYbls>Is this on skype ?
+11:42 <pr0crast1nate>tihmstar you gonna type? or I will
+11:42 <tihmstar>pr0crast1nate i will
+11:42 * tihmstar logging
+11:42 <pr0crast1nate>cool
+11:42 <tihmstar>today we will start userland stuff
+11:42 <tihmstar>javascript html5
+11:42 <pr0crast1nate>weeee userland is fun!
+11:42 <crakun>slide 5 thank u
+11:43 <tihmstar>pr0crast1nate type in slide numbers crakun says ;)
+11:43 <tihmstar>webkit intro
+11:43 <tihmstar>slide 14
+11:43 <tihmstar>safari is based on webkit
+11:43 <crakun>3x7R00Tripper,Selekton99andc0xei for the help
+11:43 <crakun>for info
+11:44 <tihmstar>apple's opensource has things missing
+11:44 <tihmstar>there is an implementation by other trying to make javascript core for ios target
+11:44 <tihmstar>this is different to mov
+11:44 <tihmstar>now we have source code
+11:45 <crakun>slide 14
+11:45 <crakun>interesting project that people put together
+11:45 <tihmstar>when we do find bus we can look back at source code
+11:45 <tihmstar>we will make JS fuzzers
+11:45 <iMegacier>Can anyone call me again :'(
+11:45 <tihmstar>slide 15
+11:45 <tihmstar>JavascriptCore Framework
+11:45 <pr0crast1nate>http://www.opensource.apple.com/source/JavaScriptCore/JavaScriptCore-7537.65/
+11:45 <iMegacier>Can anyone call me again ? please
+11:45 <tihmstar>Nitro has JIT support
+11:46 <pr0crast1nate>(apologies if that's in the slide deck, it hasn't downloaded for me yet)
+11:46 <tihmstar>JIT has dynamic code signing
+11:46 <tihmstar>Safari is the only process which is allowed to use dynamic code signing
+11:46 <iMegacier>THx
+11:46 <tihmstar> // lost crakun :(
+11:46 <pr0crast1nate>tihmstar me too
+11:47 <crakun>slide 17
+11:47 <tihmstar> // oh man, i really hope we can use mumble next time
+11:48 <pr0crast1nate>jeeeze mine keeps dropping in and out
+11:48 <crakun>i think I lost people on Skype
+11:48 <crakun>so let's continue on chat
+11:48 <HENLEYbls>^^
+11:48 <HENLEYbls>i think it's easier for IRC if not all of us are on Skype
+11:48 <tihmstar>dude everyone was on mumble 10 min ago -_-
+11:48 <saelo>fuck Skype/Microsoft  :)
+11:48 <tihmstar>^
+11:49 <sulphur27>^
+11:49 <HENLEYbls>haha! i'm idling on mumble like but i'm now downstairs on laptop
+11:50 <HENLEYbls>Ouch!! ^^
+11:51 <HENLEYbls>^^ Pheeww!!
+11:51 <crakun>wow
+11:51 <pr0crast1nate>he usually has comcast business lol
+11:51 <crakun>my internet is a yoyo today
+11:51 <crakun>I am on travel
+11:51 <pr0crast1nate>ahhh ok
+11:51 <HENLEYbls>see thats the dedication we all need ^^
+11:51 <crakun>so slide 18
+11:52 <iMegacier>You don't skype on SKype?
+11:52 <iMegacier>*speak?
+11:52 <crakun>slide 19 both given you some samples to go thru
+11:53 <tihmstar>slide 18/19 are examples
+11:53 <tihmstar>slide 20 browser fuzzing
+11:54 <crakun>slide 20 is browser
+11:54 <crakun>fuzzing
+11:54 <tihmstar>not only you can fuzz JS but also HTML5 tags css events etc
+11:54 <pr0crast1nate>saelo HENLEYbls and pr0crast1nate have fuzzy goodness in store for everyone :)
+11:54 <tihmstar>so we can combine those
+11:55 <tihmstar>we have quite a few fuzzers (slide 21)
+11:55 <tihmstar>we could use javascript scanners
+11:56 <crakun>slide 21 is where we she focus
+11:57 <tihmstar>html5
+11:58 <tihmstar>slide 22 (page 21)
+11:58 <crakun>please follow slide deck numbers
+11:58 <crakun>they are slightly off set in numbering
+11:58 <crakun>html5 is a beta
+11:58 <tihmstar>html5 is in beta
+11:58 <tihmstar>new pieces are still added
+11:59 <tihmstar>there can be bugs in new stuff
+11:59 <tihmstar>unlike mov
+11:59 <tihmstar>where the format is old
+11:59 <SLIDENUMBER>~22~
+11:59 <tihmstar>you see the lides
+11:59 <tihmstar>track and video
+11:59 <tihmstar>when you use them that forwads you to the mediaserverdaemon
+12:00 <tihmstar>so we can look in them and try to combine with our mov files
+12:00 <iMegacier>crakun is speaking?
+12:00 <crakun>yes
+12:00 <tihmstar>(yep, there will be a voice recording)
+12:00 <crakun>http://www.quackit.com
+12:00 <crakun>for html5 tags
+12:00 <crakun>so we can fuzz these
+12:01 <tihmstar>think of them like xml elements we can fuzz
+12:01 <crakun>video within a video tag,e tc
+12:01 <tihmstar>homework
+12:01 <SLIDENUMBER>fuzzyMacchiato will debuting soon
+12:01 <crakun>modular
+12:02 * HENLEYbls Bows
+12:02 <tihmstar>^ a javascript fuzzer
+12:02 <tihmstar>webserver based on ruby
+12:02 <HENLEYbls>Yeah will do alot of this type of fuzzing for you
+12:02 <tihmstar>construct dom
+12:02 <tihmstar>generates test cases
+12:02 <tihmstar>sends to device
+12:02 <tihmstar>then pings device
+12:03 <tihmstar>if device doesnt respond deice propably crashed
+12:03 <tihmstar>general population use pretty soon
+12:03 <tihmstar>just a few things to do
+12:03 <tihmstar>ready in 1-2 weeks
+12:04 <tihmstar>we still need your crash reports
+12:04 <tihmstar>so please still send the crash reports
+12:04 <HENLEYbls>fingers crossed ... tihmstar> ready in 1-2 weeks
+12:05 <pr0crast1nate>We'll be targeting SVG bugs, UAF, Double Free bugs, Heap Spraying
+12:05 <iMegacier>svg is a good idea
+12:05 <pr0crast1nate>and anything else can be added later really easily
+12:05 <crakun>slide 28 jsut to keep moving
+12:06 <pr0crast1nate>saelo came up with the SVG idea ;)
+12:06 <pr0crast1nate>(I lost skype connection btw)
+12:06 <iMegacier>I've got a code in HTML 5 that makes EVERY browser freeze. Are you intereted in?
+12:07 <crakun>keep in mind that video tag will direct you to mediaserverd
+12:07 <tihmstar>iMegacier pm me
+12:07 <crakun>our old vulnerable friend
+12:07 <iMegacier>It only freeze, no crash, kinda strange
+12:07 <iMegacier>tihmstar what?
+12:07 <pr0crast1nate>http://i.imgur.com/8BuVwE1.jpg
+12:08 <pr0crast1nate>hehe
+12:08 <iMegacier>lol
+12:08 <tihmstar>hahaha XDD
+12:08 <crakun>slide 43
+12:08 <crakun>so
+12:08 <crakun>for for new comers
+12:08 <crakun>u can review where we have been
+12:09 <crakun>do we have a place where all class stuff is at together
+12:09 <crakun>?
+12:09 <tihmstar>crakun forum.m0bdev.com
+12:09 <crakun>ok
+12:09 <tihmstar>podcast.m0bdev.com
+12:09 <crakun>great
+12:09 <crakun>wow
+12:09 <iMegacier>tihmstar  do you want the code?
+12:09 <tihmstar>iMegacier yes, pm me
+12:10 <iMegacier>tihmstar  pm?
+12:10 <crakun>lets move on to part 2
+12:11 <iMegacier>tihmstar  Don't have the source code on this computer, I'll boot the good one
+12:12 <HENLEYbls>Stick to class people and sort that when we are done ....
+12:12 <crakun>so KASLR
+12:12 <HENLEYbls>crakun has come out of his way to do this
+12:12 <crakun>I have go thru other people's studies
+12:12 <crakun>research, etc
+12:13 <pr0crast1nate>crakun your slide decks are awesome!
+12:13 <crakun>it still doesn't hit on the strategy that I want to explore
+12:13 <pr0crast1nate>break all the things!
+12:15 <crakun>slide 55, for people who have jailbroken /nonjailbroken phones can do
+12:15 <crakun>who can't do anything except crash the phone
+12:15 <crakun>for all the rest
+12:15 <crakun>let's focus on javascirpt crashes
+12:15 <pr0crast1nate>~SLIDE 55~
+12:16 <crakun>locate other javascript fuzzer, browser fuzzers
+12:16 <crakun>let me know
+12:16 <crakun>ok
+12:16 <crakun>thru with slide deck
+12:16 <pr0crast1nate>get some sleep crakun :)
+12:16 <saelo>at this point, if someone missed it last week https://github.com/saelo/iCrashalyzer
+12:17 <saelo>you can use that to quickly anayze crash reports and stuff, works for userland + kernel
+12:17 <crakun>so I will refine this slide deck next week
+12:17 <crakun>we will do deeper next week

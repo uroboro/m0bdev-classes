@@ -1,0 +1,216 @@
+10:06 <AdiSai1> morning
+10:08 <AdiSai1> started?
+10:09 <uroboro> Any moment
+10:09 <pr0crast1nate> do we have to ping you on skype for an invite, crackun?
+10:10 <AdiSai1> crakun: can we use SIGSTOP to stop root processes?
+10:10 <crakun> ping me in Skype if u want audio at SKype
+10:12 <AdiSai1> crakun: I can't be on skype right now
+10:15 <AdiSai1> crakun: hello
+10:15 <AdiSai1> anyone here?
+10:16 <+FTO> Yes, we are listening on Skype.
+10:16 <sidewinder96> at what time does the class start?
+10:17 <crakun> slide 12
+10:17 <crakun> now
+10:19 <crakun> another kernel panic with mov
+10:19 <crakun> i am seeing more and more kernel panics
+10:20 <crakun> with mov files from people
+10:20 <cver3> Where are the slides
+10:20 <ENCRYPTED> http://t.co/LtFWjKumD3
+10:20 <+FTO> check crakun's twitter, cver3
+10:20 <crakun> yes
+10:20 <cver3> Ok
+10:21 <crakun> check @crakun for postings
+10:21 <crakun> where presentations is
+10:21 <cver3> Ok
+10:22 <compilingEntropy> iPhone2,1 6.1.3; iPhone3,3 7.0
+10:22 <sulphur27> i have iPhone 5s (it where i have kernel panic .mov)
+10:22 <tihmstar> iphone 4 (ios 7.0.2)
+10:22 <crakun> please list your phones you are using to test
+10:22 <+isa56k> iPhone 4s 6.1.2
+10:22 <sulphur27> and 3gs on 6.1.2
+10:22 <tihmstar> iphone 4s (ios 6.1.2)
+10:22 <besartzeka> Iphone 5 6.1.4
+10:22 <AdiSai1> I think I fond a crash
+10:22 <+FTO> iPhone 5 16gb iOS 7, iPhone 4 iOS 7. iPhone 5s iOS 7.0.2.
+10:22 <+isa56k> iPhone 4 6.0.1
+10:22 <crakun> anybody on ipads?
+10:22 <+FTO> Mostly on the iPhone 5, though.
+10:22 <+FTO> crakun: yep
+10:22 <pr0crast1nate> I have iPad 2 (7.0.2), iPhone 4 (6.1.2)
+10:22 <AdiSai1> on iPod 4 (iOS 7.0.2)
+10:22 <cver3> iPhone 4 6.1.2 / iPhone 5 7.0
+10:22 <+FTO> iPad Mini 16GB 7.0.2.
+10:22 <AdiSai1> iPod 4 sorry
+10:22 <Vaxter> iPhone4 iOS 6.1.2jb iPhone5 iOS7
+10:22 <AdiSai1> iPod 5
+10:22 <iosdowngrader> iPhone 5 with 6.1.4
+10:22 <superuser> im just observing i have JB'd 1st gen touch but am currently waiting the ios JB for iphone 5
+10:22 <AdiSai1> sorry
+10:23 <AdiSai1> anyone on iPod 4 iOS 6.1.2?
+10:23 <besartzeka> I have Iphone 5 6.1.4 ; Iphone 4s 7.0.2 / Iphone 4 6.1.3
+10:23 <compilingEntropy> Sony Vegas Pro 12
+10:24 <crakun> ok, how are u using .mov files
+10:24 <tihmstar> making mov file: recording short video with iphone
+10:24 <+isa56k> Using the iPhone to make the movie and then send to myself to test with
+10:24 <sulphur27> i use iMovie to creake .mov with bunch of effects (text, animations)
+10:24 <crakun> ok, so we are seeing kernels panics from fuzzed .mov files made from iphone?
+10:24 <compilingEntropy> I've noticed that if you render it with different settings you'll get different bugs
+10:24 <compilingEntropy> crakun: my kpanic was from imovie
+10:24 <besartzeka> I'm recording the video using my iphone like 2sec video
+10:24 <+isa56k> I'm seeing kernel panic from this and some mediaserverd crashes too
+10:25 <sulphur27> panic(cpu 1 caller 0xffffff80198218d8): Kernel data abort. (saved state: 0xffffff80a8d427b0)
+10:25 <crakun> so slide 14 is a reminder
+10:27 <crakun> slide 16
+10:28 <tihmstar> vlc ?
+10:28 <crakun> so on slide 18
+10:28 <crakun> anybody know of other tools to view quicktime format?
+10:29 <tihmstar> vlc
+10:29 <pr0crast1nate> I will work more on fuzzing this week, had no time this week. apologies
+10:31 <crakun> please submit bugs according to the format
+10:31 <crakun> we need them this week, so we can pick the best to start with
+10:31 <crakun> get new comers to start fuzzing
+10:32 <crakun> continue fuzzing in case we hit brick walls and we need to find another bug
+10:33 <C0xei> I'm starting fuzzing too
+10:33 <crakun> hotwan/class to see previous classes
+10:33 <crakun> sldie 24
+10:33 <C0xei> Already studied old slides
+10:35 <pr0crast1nate> cool! chemrail!
+10:35 <asd> topic not updated (date) ?
+10:35 <crakun> slide 27
+10:36 <crakun> yes, chemrail
+10:36 <crakun> the have-nots struggling to have the haves
+10:37 <+isa56k> https://github.com/isa56k/fuzzyDuck
+10:38 <asd> where is the current slides ?
+10:38 <+isa56k> https://dl.dropboxusercontent.com/u/19521614/fuzzyDuck.pdf
+10:38 <crakun> let's look at fuzzyDuck now, isa56k is now presenting
+10:39 <crakun> download his pdf, we are going over his slide deck now
+10:39 <asd> k
+10:42 <asd> nice script
+10:42 <pr0crast1nate> very nice
+10:43 <compilingEntropy> isa56k: I've got that working in mine, feel free to use my code
+10:43 <pr0crast1nate> submit them in a similar fashion to the tool from p0sixninja?
+10:44 <crakun> sulphur has some work for fuzzing
+10:44 <+isa56k> pr0crast1nate: Yes.. that was the idea
+10:46 <+isa56k> compilingEntropy: The copying out of the panics?
+10:46 <compilingEntropy> yeah
+10:46 <sulphur27> i have some aphone app and rails server
+10:46 <sulphur27> i can share
+10:46 <+isa56k> kk will look
+10:46 <sulphur27> it is a native app that try to play videos forom my server
+10:46 <crakun> also compiling Entropy now talking about fuzzycactus
+10:46 <asd> btw, isn't it possible to do an image of all the FLASH MEMORY in the iphone, and if I need to restore, I can simpy hard restore back to that version (reflashing all the memory) and that way I won't have to do validation to apple servers ?
+10:46 <sulphur27> and each request it is generatin a new .mov with zzuf
+10:47 <sulphur27> basically thas it i will share it someone whats ;)
+10:47 <asd> hmm... where is the class talk happening ? I guess it's not here....
+10:47 <sulphur27> i have to make it more "friendly"
+10:47 <sulphur27> ;)
+10:47 <crakun> great, thank u sulphur
+10:48 <asd> crakun, any thoughts on my idea backup idea ?
+10:48 <compilingEntropy> http://github.com/compilingEntropy/fuzzycactus
+10:49 <crakun> slide 29, any irc or other websites?
+10:50 <pr0crast1nate> metasploit irc might help in some capacity?
+10:50 <crakun> hmmm
+10:50 <pr0crast1nate> hak5.org irc
+10:50 <crakun> kool
+10:51 <compilingEntropy> http://www.twitter.com/@planetbeing
+10:51 <pr0crast1nate> #iphonedev on freenode
+10:51 <superuser> jailbreakqa.com
+10:51 <compilingEntropy> http://jailbreakqa.com, or #jailbreakqa on freenode
+10:52 <+FTO> www.reddit.com/r/
+10:52 <asd> btw, isn't it possible to do an image of all the FLASH MEMORY in the iphone, and if I need to restore, I can simpy hard restore back to that version (reflashing all the memory) and that way I won't have to do validation to apple servers ? <---- anyone has idea ?
+10:52 <compilingEntropy> started by @chpwn and @comex
+10:52 <+FTO> http://www.reddit.com/r/jailbreak/*
+10:52 <pr0crast1nate> #IOSdev
+10:54 <crakun> slide 32
+10:54 <pr0crast1nate> http://conference.hitb.org/hitbsecconf2013kul/materials/D2T2%20-%20Stefan%20Esser%20-%20Tales%20from%20iOS%206%20Exploitation%20and%20iOS%207%20Security%20Changes.pdf
+10:58 <superuser> https://www.dropbox.com/s/7rim42x3eqtq4yd/Stefan%20Esser%20-%20Tales%20from%20iOS%206%20Exploitation%20and%20iOS%207%20Security%20Changes.pdf
+11:00 <pr0crast1nate> cool, thanks
+11:00 <superuser> that dropbox link i just pasted is from Esser
+11:00 <superuser> its on ios 6 and 7
+11:01 <besartzeka> So kernel panics don't log in not jailbroken devices ?
+11:01 <tihmstar> there was an idea to put a countdown on a website till when the next class is
+11:01 <+FTO> They do.
+11:01 <+isa56k> "/var/mobile/Library/Logs/CrashReporter/Panics/" for ernel panics
+11:01 <+isa56k> *kernel
+11:02 <pr0crast1nate> write these titles in irc?
+11:03 <besartzeka> But I have a iphone 5 on 6.1.4
+11:03 <besartzeka> How can I see kernel panics logs ?
+11:03 <crakun> we will be going into ida pro soon
+11:03 <pr0crast1nate> I like hopper
+11:03 <crakun> how many people
+11:03 <+FTO> me
+11:04 <compilingEntropy> besartzeka: settings > general > about > diagnostics & usage
+11:04 <+FTO> Pretty good at reverse engineering as well ;p
+11:04 <+isa56k> http://www.hopperapp.com/
+11:04 <besartzeka> I know that but when device resprings it doesn't log there
+11:05 <besartzeka> that's what I heard
+11:05 <crakun> how many people use IDA pro?
+11:05 <crakun> in here?
+11:05 <+isa56k> Only have atrial version
+11:05 <crakun> we will be going into this shortly
+11:05 <+isa56k> *trial
+11:05 <sulphur27> have(evaluation copy) t never used it
+11:05 <besartzeka> I found a book called "Reverse Engineering Code with IDA Pro "
+11:08 <crakun> irc , open floor
+11:08 <asd> crakun, i used to
+11:10 <crakun> great book ARM Assembly Language -An introduction
+11:10 <crakun> also great book for where we are at A Bug Hunter's Diary
+11:11 <asd> is the class here or goign in skype or something else ?
+11:12 <crakun> yes
+11:12 <superuser> BYE
+11:12 <besartzeka> Here & SKYPE :D
+11:12 <crakun> class is adjorned
+11:13 <crakun> someone , please capture logs
+11:13 <besartzeka> And I suggest next class we should move a little bit forward
+11:13 <besartzeka> we stuck in same fuzzing like for three weeks
+11:13 <crakun> mumble being set up and wiki to
+11:13 <asd> and update the channel topic... no slide link, no nothing
+11:13 <crakun> we are moving into crash stuff next weel
+11:13 <+FTO> week*
+11:13 <@x56> asd look more carefully :P
+11:13 <crakun> please submit bugs this week
+11:13 <+FTO> Hopefully, one of us can provide basic exploits for beginners
+11:14 <superuser> well lets just fuzz our asses off until next week......then take it from there next saturday??
+11:14 <besartzeka> Great ... So how many more crashes we need so you can determine wether they're juicy ?
+11:14 <superuser> ask crakun
+11:14 <besartzeka> weather*
+11:14 <@ShznakL> these things take time. no telling how many crashes. until the right one happens
+11:14 <crakun> we will be going into crash reports / kernel panics / reverse engineering starting next week
+11:14 <crakun> oct 26
+11:15 <superuser> i know one kid that does nothing but fuzz all day every day
+11:15 <besartzeka> So reverse engeneering is out of my league ... Any good place to start ?
+11:15 <+FTO> None.
+11:15 <besartzeka> FTO, you were answering my question ?
+11:15 <crakun> great time to join "from the beginning as we move into "Chapter 2" of class
+11:16 <+FTO> Just tend to write a basic hello world in c or anything you like, and then reverse it in IDA Pro
+11:16 <+FTO> Reversing is a really hard job, it's not a thing you can learn in 1-2-3
+11:16 <crakun> yes, FTO - we have a long journey
+11:16 <+FTO> Reversing in my opinion is harder than writing exploits/shellcode.
+11:16 <Vaxter> bye people, it was a pleasure
+11:16 <crakun> it's a long chaper  ;)
+11:16 <+FTO> ;)
+11:17 <besartzeka> Well yeah I was a jailbreak freak once, Now I wanna move forward contribute for the jailbreak community
+11:17 <+FTO> crakun: i'd be pleased to help you out with it :P
+11:17 <crakun> FTO, please do
+11:18 <compilingEntropy> I'll be online from 11am pst to 11pm pst today and tomorrow to help people get started fuzzing
+11:18 <crakun> hey, also if you can submit links to reverse engineering on ARM, iOS, crash dumps, kernel panics to me that would help alot
+11:18 <crakun> as I piece together content for class
+11:18 <crakun> there are a ton of examples out there
+11:19 <+FTO> Sure
+11:19 <crakun> thank you sulphur, isa56k, entropy for going over fuzzing tools today
+11:19 <cver3> Ok one last question for now, am I supposed to be fuzzing on my JB iPhone or the un JB iPhone
+11:19 <crakun> you guys rock!
+11:20 <cver3> I think I'm soaking up too much info too fast and it's starting to make me overthink lol
+11:20 <crakun> cver, you want to use both
+11:20 <cver3> Ok
+11:21 <compilingEntropy> crakun: I figured out how to make files that are more likely to crash with that bug I sent you last week. I have one where 1/10 fuzzed files SIGSEGV
+11:21 <crakun> cver, review today's slide deck. I mentioned alot of folks in the slide deck that you can ping on to catch up
+11:21 <+isa56k> crakun anytime, was good :)
+11:21 <crakun> that is interesting entropy
+11:22 <crakun> I'm amazed to see like 4 separate kernel panics today from folks
+11:22 <crakun> or should I be   ;)
+11:22 <crakun> afterall it's .mov
+11:23 <cver3> I've been reading everything since day , reference links, reading the slides, taking notes etc just a bit overwhelming because I want to learn it all. I just have to slow down a little lol
+11:23 <cver3> Since day 1*
+11:24 <cver3> Woah my phone just glitched sorry for the double post
+11:24 <compilingEntropy> I know what part of the fuzzed .mov files is breaking the parser, and I'm really surprised nobody's found this before.

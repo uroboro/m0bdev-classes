@@ -1,0 +1,332 @@
+[08:25:05] <crakun> ok
+[08:25:09] <pwned4ever> nex you in here ??
+[08:25:36] <crakun> please pick up slide deck from twitter
+[08:25:44] <ele146cc> where i can follow the class?
+[08:25:46] <crakun> @crakun
+[08:25:53] <pwned4ever> slide deck ?
+[08:26:11] <crakun> link is posted on twitter for Day 4
+[08:27:05] <tihmstar> what twitter?
+[08:27:07] <jekro> http://www.hotwan.com/class/MHVI-Day4b_Published.pdf
+[08:27:15] <tihmstar> thx
+[08:27:45] <crakun> please download an gaze thru it real quick
+[08:28:00] <crakun> will cicle back in 3 minutes to begin  clazz
+[08:28:30] <pwned4ever> you want us to cicle through the  http://www.hotwan.com/class/MHVI-Day4b_Published.pdf
+[08:28:32] <SwissHttp> Slide 5b is missing
+[08:29:20] <sidewinder96> hahaha probably the most important slide ;P
+[08:29:32] <tihmstar> ^
+[08:29:34] <tihmstar> focus
+[08:29:50] <iosdowngrader> the class will be here right?
+[08:29:56] <SwissHttp> Hi Jonathan
+[08:31:50] <crakun> hello?
+[08:31:53] <DarkMalloc> iosdowngrader: it is starting…
+[08:31:53] <crakun> ok
+[08:32:24] <hackus> just woke up
+[08:32:28] <crakun> did u get today's class presentation?
+[08:32:28] <hackus> nice timing
+[08:32:44] <crakun> anyone? someone?
+[08:32:47] <AdiSai1> Hi SwissHttp
+[08:32:48] <jekro> Yes
+[08:32:51] <sidewinder96> yes
+[08:32:54] <AdiSai1> Hi Crakun
+[08:32:56] <AdiSai1> Yes
+[08:32:57] <pr0crast1nate> i got it, yes
+[08:33:02] <a_titkov> yep
+[08:33:02] <isa56k> This one http://www.hotwan.com/class/MHVI-Day4b_Published.pdf ?
+[08:33:08] <crakun> yes
+[08:33:10] <JustVanBlooM> yes
+[08:33:15] <isa56k> got
+[08:33:15] <crakun> ok
+[08:33:19] <AdiSai1> How are you crakun
+[08:33:25] <AdiSai1> Are we in class
+[08:33:33] <AdiSai1> Or did it end?
+[08:33:44] <sidewinder96> yes AdiSai1 we are
+[08:33:46] <crakun> so this time, I want to try and combine skype with this irc
+[08:33:58] <tihmstar> so will there be a group call?
+[08:33:59] <AdiSai1> How crakun
+[08:34:13] <crakun> for those who want voice, plus side channel communications
+[08:34:19] <ele146cc> nice slides :D
+[08:34:22] <tihmstar> i want
+[08:34:29] <ele146cc> me too
+[08:34:32] <JustVanBlooM> scratches head.. oh noes .. *must turn off my dub step*
+[08:34:40] <AdiSai1> I want voice
+[08:34:58] <crakun> I am at   m0bdev on Skype
+[08:35:06] <pwned4ever> wow your gonna skype with the class?
+[08:35:15] <crakun> ping me on Skype and I'll add you to the conference
+[08:35:57] <iosdowngrader>  i've add you crakun :)
+[08:36:06] <crakun> this will help keep  Apple on their toes
+[08:36:07] <pwned4ever> just messaged you on skype
+[08:36:20] <ele146cc> crakun i've texted you on skype
+[08:36:25] <ele146cc> i'm Bardu
+[08:36:34] <kirb> AdiSai1: and i want a million dollars
+[08:36:34] <crakun> bare with me as I set up Skype
+[08:36:40] <pwned4ever> how do you ping in skype
+[08:37:12] <isa56k> pwned4ever: Just send an IM
+[08:37:23] <pwned4ever> k did that
+[08:37:43] <tihmstar> crakun you should use mumble next time, it hink it's alot better for that
+[08:37:52] <ele146cc> crakun
+[08:37:53] <iosdowngrader> or teamspeak
+[08:37:58] <ele146cc> can yuo add me on skype? thanks
+[08:38:00] <tihmstar> nah, mumble is fine
+[08:39:19] <SwissHttp> So the class is running on Skype or what?
+[08:39:48] <JustVanBlooM> can smwone write it down here? i don't join Skype for this
+[08:40:01] <crakun> adding more people
+[08:40:06] <crakun> on Skype
+[08:40:09] <iosdowngrader> downloading Skype on my macbook takes so long.. dam it :D
+[08:40:16] <besartzeka> crakun ?
+[08:40:23] <besartzeka> What about me on skype ?
+[08:40:35] <crakun> adding people on Skype…..
+[08:40:57] <iosdowngrader> crakun ive addet you
+[08:41:03] <iosdowngrader> im mdrunaway on skype
+[08:41:17] <sidewinder96> is it ok if im using skype on my mobile?
+[08:41:23] <besartzeka> Im besart.zeka on skype
+[08:41:33] <crakun> ok
+[08:41:40] <crakun> I think I got everyone
+[08:41:54] <sidewinder96> not me :/
+[08:42:04] <isa56k> ahh man I got to go out with family... enjoy class... will catch up on slides!
+[08:42:56] <tihmstar> mumble
+[08:43:26] <tihmstar> guys install mumble for next time
+[08:43:59] <iosdowngrader> crakun so you accepted me on Skype and now how do i get into the class?
+[08:43:59] <iosdowngrader> crakun how do i get into class not (you acceptet me on skype)
+[08:44:10] <hackus> this is the class
+[08:44:22] <iosdowngrader> ok thanks crakun
+[08:45:35] <crakun> going thru slide deck
+[08:46:10] <JustVanBlooM> say tme they should mute.. bad voice so for..
+[08:47:06] <crakun> slide 7
+[08:47:10] <crakun> submittals
+[08:47:23] <crakun> so far have been all sorts
+[08:47:45] <crakun> from mobilesafari to some mov files
+[08:47:52] <crakun> privilegs escalation
+[08:48:02] <crakun> kernel panics
+[08:48:48] <crakun> realized that we need a formal process for submittals
+[08:49:22] <pwned4ever> ive fuzzed a mov file and fuzzed a txt file
+[08:49:36] <SwissHttp> fuzzed a txt file?
+[08:49:42] <pwned4ever> cant get a mov file to crash safari however
+[08:49:50] <sidewinder96> crakun, sent you a request in skype :/
+[08:49:53] <pwned4ever> yes fuzzed a txt text file
+[08:49:56] <SwissHttp> me too
+[08:49:58] <JustVanBlooM> how to fuzz a txt file ?
+[08:50:08] <tihmstar> does that need to be a working mov file to be modified with fuzzer?
+[08:50:13] <crakun> ok
+[08:50:19] <crakun> for fuzzing automation
+[08:50:29] <crakun> I need to see where we are at on that
+[08:50:42] <crakun> there were some ideas on that last week
+[08:50:58] <crakun> Cykey came up with a script
+[08:51:01] <compilingEntropy> I've got it set up, my 3gs can do about 300 .mov files per hour
+[08:51:01] <crakun> anyone else?
+[08:51:22] <uroboro> Nexuist seemed to have one
+[08:51:28] <uroboro> ketelek too
+[08:51:32] <pwned4ever> nexiust
+[08:51:34] <compilingEntropy> https://ghostbin.com/paste/3hjau
+[08:51:37] <uroboro> *hetelek
+[08:51:40] <compilingEntropy> ^ my bash script
+[08:51:56] <crakun> so nexuist has something
+[08:51:56] <compilingEntropy> http://nexuist.tumblr.com/ << Nexuist's work
+[08:52:02] <crakun> ok great!
+[08:52:30] <crakun> slide 8
+[08:53:17] <Nick> whats going on all
+[08:53:50] <sjas> will there be mumble next time? if not, is it just the infrastructure that is lacking?
+[08:55:31] <crakun> so I'm getting .mov files  that work on different phones and firmware, but not all
+[08:55:59] <crakun> yes
+[08:56:05] <crakun> skype is a bit noisy
+[08:56:12] <hackus> indeed
+[08:56:13] <crakun> just turn down volume
+[08:56:43] <crakun> so Oct 26, we will start to review some class submitted .mov files
+[08:56:46] <pwned4ever> k so on to step 8
+[08:56:53] <crakun> so we can learn and see if exploitable
+[08:57:02] <tihmstar> i will setup mumble for next time
+[08:57:09] <crakun> so get me some mov files that crash!!!!
+[08:57:12] <sidewinder96> crakun, can u add me on skype? i already sent u a request
+[08:57:12] <crakun> please
+[08:57:33] <Nick> crakun, why not fuzz each .mov file then add them together?
+[08:58:13] <SwissHttp> nick, what if the merged file crashes? Which change caused it?
+[08:58:16] <argp> using the files that already cause crashes as seeds for further fuzzing is a good idea
+[08:58:27] <Nick> ^
+[08:58:37] <crakun> ok
+[08:58:45] <crakun> slide 9
+[08:59:02] <crakun> please submit .mov files and finding in this format
+[08:59:08] <crakun> email in a zip
+[08:59:27] <crakun> we need to move forward in class, and that depends on  your active participation
+[09:00:04] <Nick> I would participate but you jerks only learn when I'm at work :P
+[09:00:07] <crakun> any questions on submittals?
+[09:01:48] <crakun> the sweet gem is a .mov file that will cause a kernel panic
+[09:02:10] <crakun> the person who gets that, get a gold star by their name
+[09:02:11] <LeoTh3o> Is there anyone available/currently logged that can access openjailbreak.org as an admin?
+[09:02:25] <crakun> other bugs slide 10
+[09:03:28] <uroboro> how is the kernel panic noted in the crash log? it just says so?
+[09:03:56] <crakun> kernel panics cause the phone to reboot
+[09:04:20] <uroboro> ah, haha, great
+[09:05:26] <crakun> ok
+[09:05:31] <crakun> so for slide 11
+[09:05:37] <crakun> what are your answers
+[09:05:42] <crakun> please type in chat
+[09:05:53] <tihmstar> .mov
+[09:06:04] <pr0crast1nate> Bueller.....
+[09:06:09] <crakun> Bueller?
+[09:06:16] <crakun> where is he
+[09:06:30] <tylr> It's his day off
+[09:06:35] <crakun> heh
+[09:06:46] <crakun> ok, someone said pdf
+[09:06:54] <crakun> anybody else?
+[09:07:03] <crakun> .gif or image?
+[09:07:08] <compilingEntropy> .tiff
+[09:07:10] <compilingEntropy> way back in the day
+[09:07:13] <tihmstar> yes
+[09:07:14] <crakun> come'on folks
+[09:07:16] <tihmstar> tiff
+[09:07:26] <compilingEntropy> .xls
+[09:07:30] <crakun> ok
+[09:07:35] <tihmstar> .pdf  -.-
+[09:07:42] <compilingEntropy> sms has been used
+[09:07:49] <pr0crast1nate> could iPhoto be crashed with RAW image?
+[09:08:05] <crakun> possibly
+[09:08:25] <tihmstar> imessage this unicode bug
+[09:08:30] <crakun> yes
+[09:08:51] <tihmstar> webkit ?
+[09:08:55] <crakun> how do we know what file type extensions are handled in the iphone
+[09:10:08] <crakun> ok
+[09:10:49] <pr0crast1nate> email
+[09:10:55] <crakun> excellant
+[09:11:22] <tihmstar> push notifications
+[09:11:29] <crakun> keep thinking on this
+[09:11:43] <pwned4ever> how about the new airdrop feature in io7 that uses bluetooth or wifi
+[09:11:43] <pr0crast1nate> that would be cool, but I bet they're highly sanitized before display
+[09:11:52] <crakun> I know we are focused on .mov files, but this is food for thought
+[09:11:53] <uroboro> https://developer.apple.com/library/ios/DOCUMENTATION/AppleApplications/Reference/SafariWebContent/CreatingContentforSafarioniPhone/CreatingContentforSafarioniPhone.html#//apple_ref/doc/uid/TP40006482-SW15 has the limits of resources to be used in safari
+[09:12:13] <crakun> kool, thank u
+[09:12:25] <crakun> slide 12
+[09:12:47] <tihmstar> theiphonewiki.com
+[09:13:23] <SwissHttp> All references should be in the wiki. Let me know if something is missing.
+[09:13:37] <pwned4ever> whats the email for you crakun?
+[09:13:38] <crakun> so research URLs and irc channels, email them to me at   crakun@m0bdev.com  so that I can put them in the class slide deck for reference for everyone
+[09:13:47] <pwned4ever> lol
+[09:13:56] <pwned4ever> got it
+[09:14:22] <crakun> stressing need for .mov files from you
+[09:15:01] <crakun> so, lets move into fuzzing
+[09:15:04] <crakun> part II
+[09:15:27] <crakun> this is a snipit of Mobile Hacking II class I used to teach
+[09:15:38] <crakun> we will speed thru this section
+[09:17:10] <pwned4ever> im using zzuf on my ipad is there a fuzzer for windows youd recommend
+[09:18:29] <tihmstar> what slide ?
+[09:18:32] <crakun> please look at smart phone typical attack surface
+[09:18:50] <tylr> pwned4ever: Windows fuzzer: http://peachfuzzer.com
+[09:19:01] <crakun> unfortunately I did not have a slide number on it
+[09:19:10] <pwned4ever> thnx is it free
+[09:19:14] <tihmstar> slide 20
+[09:19:21] <crakun> cool
+[09:19:22] <pwned4ever> peachfuzzer? freeware?
+[09:19:31] <crakun> yes, peach is free
+[09:19:49] <tihmstar> slide 21
+[09:19:52] <crakun> look at the delivery channels
+[09:20:00] <crakun> following slide
+[09:20:36] <SwissHttp> card reader on the iPhone?
+[09:21:10] <pr0crast1nate> active would be packet injection like deauth packets
+[09:22:03] <pr0crast1nate> passive would be like using Reaver and active would be like a replay attack to crack WEP
+[09:22:21] <compilingEntropy> no, reaver is definitely active
+[09:22:38] <pr0crast1nate> yeah bad example lol
+[09:22:42] <tihmstar> slide 22
+[09:24:11] <AdiSai1> what did I Miss?
+[09:24:14] <AdiSai1> I had to do HW
+[09:25:08] <sidewinder96> you cant even fix it by restoring?
+[09:25:09] <crakun> be careful
+[09:25:19] <crakun> though unlikely
+[09:25:26] <crakun> fuzzing can brick a phone
+[09:25:33] <SwissHttp> probably applies mainly to Android
+[09:25:35] <ele146cc> isn't an wifi packet injection more easly to control and make an exploit?
+[09:25:48] <compilingEntropy> in terms of fuzzing mov files, I'm guessing that's extraordinarily unlikely?
+[09:25:55] <iOS5user> real brick or a restorable one
+[09:26:17] <crakun> where firmware installed by manufacuter is partially overwritten
+[09:27:06] <crakun> this is different firmware than what you see on IPSW
+[09:27:24] <crakun> bluetooth is an example of fuzzing
+[09:27:42] <crakun> i've seen it brick phones
+[09:27:49] <crakun> even sms
+[09:27:55] <ele146cc> crakun
+[09:27:59] <SwissHttp> phones or iPhones?
+[09:28:17] <crakun> there are sms attacks that can screw up your sim card
+[09:28:23] <ele146cc> what if we send a wifi packet that just can crash wifi iphone's service?
+[09:28:31] <jbusr> is the class still on ?
+[09:28:44] <iOS5user> yes
+[09:28:46] <crakun> this is a example
+[09:29:44] <AdiSai1> ok
+[09:29:46] <compilingEntropy> iOS Hacker's Handbook has some sms examples
+[09:29:51] <AdiSai1> ya
+[09:30:13] <SwissHttp> What page?
+[09:30:18] <iOS5user> can i have a link to this, if its downloadable from Amazon
+[09:30:26] <AdiSai1> It's paid
+[09:30:30] <AdiSai1> google it
+[09:30:31] <compilingEntropy> SwissHttp: I think it was somewhere near chapter 3
+[09:30:33] <iOS5user> ok
+[09:30:41] <crakun> it deals with messing up the SIM card via an OTA -over-the-air update
+[09:30:43] <crakun> malformed
+[09:30:57] <SwissHttp> page 162ff
+[09:31:44] <crakun> look at bluetooth fuzzing
+[09:31:54] <besartzeka> Ios Hackers Handbook's link: www.it-docs.net/ddata/781.pdf
+[09:32:09] <crakun> at the protocol stack, L2CAP can be attacked
+[09:32:34] <crakun> on any bluetooth device listening
+[09:32:43] <crakun> you do not have to be paired
+[09:32:51] <crakun> in order for this to work
+[09:33:05] <AdiSai1> besartzeka thanks
+[09:33:10] <besartzeka> ;)
+[09:33:31] <crakun> so those are some examples of other venues of attack,  SMS and bluetooth can be dangerous
+[09:33:56] <crakun> but let's focus on .mov files
+[09:33:58] <crakun> for class
+[09:34:07] <pwned4ever> k
+[09:34:10] <crakun> ok
+[09:34:33] <crakun> so let's move to slide 29 as a refresher
+[09:34:50] <jbusr> is there a Wiki for this project ?
+[09:34:56] <crakun> types of bugs, vulns, exploits we are looking for
+[09:35:03] <crakun> we need a wiki
+[09:35:15] <crakun> need a volunteer to help out on that
+[09:35:39] <iMast777> jbusr: http://theiphonewiki.com/wiki/OpenJailbreak
+[09:35:47] <pwned4ever> volunteer for ?
+[09:35:57] <jbusr> installing mediawiki is pretty dead simple (but need where to put it)
+[09:36:04] <crakun> any volunteers that can help, whether bugs or research or code/ let me know -> crakun@m0bdev.com
+[09:36:13] <crakun> ok
+[09:36:32] <crakun> whoops, slide 30 typo
+[09:36:44] <crakun> meeting next week, sat.
+[09:37:08] <crakun> ok now open floor, questions
+[09:37:23] <AdiSai1> Crakun can I edit httpI//theiphonewikik.com/wiki/OpenJailbrealk
+[09:37:25] <jbusr> does the new 64bit kernel has more protection then the previous 32bit one ?
+[09:37:57] <iMast777> AdiSai1: Not sure why you'd want to do that, you would have to contact SwissHttp for that.
+[09:38:20] <jbusr> how different is the new 64 bit arch then the 32 bit previous one in terms of all the tools that were used to the old instruction set ?
+[09:38:21] <iOS5user> Should i update my iPhone to 6.1.2 (i have working SHSH blobs) or stay on 5.1.1?
+[09:38:58] <crakun> on skype and irc
+[09:39:08] <crakun> use complex .mov files
+[09:39:45] <sidewinder96> will the 64-bit processor be killing some exploits?
+[09:40:21] <crakun> with quicktime, final cut pro
+[09:40:40] <iosdowngrader> @ios5user which iphone
+[09:40:47] <iOS5user> 4
+[09:41:09] <iosdowngrader> jeah you should can this
+[09:41:40] <iosdowngrader> ios 6 is better than 5 because of the featueres
+[09:41:42] <iOS5user> ok, i will probably do it later today
+[09:41:43] <iosdowngrader> but 5 is ok too
+[09:42:00] <iOS5user> i could always downgrade
+[09:42:12] <crakun> or free software
+[09:42:14] <iosdowngrader> ok than you can decide :D
+[09:42:18] <crakun> that make mov files
+[09:42:25] <iOS5user> lol
+[09:42:38] <jbusr> ffmpeg can do .mov files
+[09:43:05] <jbusr> any ideas what can be done with battery life and iOS 7 on iPhone 4S ? it's like 75% or worse then with iOS 6 when I do stuff
+[09:43:20] <argp> sidewinder96, arm64 kills some exploits as surely as opens new ones
+[09:43:50] <sidewinder96> you can use avid its a free video editing program
+[09:44:15] <sidewinder96> argp, thanks
+[09:44:38] <jbusr> the nice thing with ffmpeg is that it's open source, so you can really see how the .mov is built and try to fuzzy even more
+[09:45:41] <iOS5user> is class over? im without the powerpoint
+[09:45:44] <argp> a good approach is to have seed files (in this case mov files) from as many and diverse sources as possible
+[09:45:50] <JustVanBlooM> ok ppl .. aim out. @crakun i'll post steps to crash to your email. as requested :) gn8t
+[09:46:06] <jbusr> you can easily do a auto fuzzy with some javascirpt and html magic
+[09:46:10] <crakun> and cykey is qorking on an automated fuzzing
+[09:46:15] <crakun> as well
+[09:46:19] <argp> create them with many different generators (ffmpeg, etc), collect them online, and so on
+[09:46:28] <jbusr> i.e. keep producing MOV with FFMPEG, then host them on an HTTP server which plays a created .MOV file, and skips to the next
+[09:46:33] <jbusr> when the client crashes, it will stop doing requests
+[09:47:42] <tihmstar> i will try to create a mumble server for next week's class
+[09:47:55] <crakun> ok, I got some good questions on skype
+[09:48:08] <crakun> i will work on answering those for next week
+[09:48:18] <tihmstar> i'll maybe need someone to test it, so be sure to install mumble ;)
+[09:48:21] <pwned4ever> k nesuist your here
+[09:48:27] <pwned4ever> nexuist
+[09:48:28] <crakun> we will go deeper into .mov files. construction, etc
+[09:48:49] <pwned4ever> can you post your blog in here ? nexuist
+[09:48:55] <jbusr> crakun, any better open source recommended tools for .mov then ffmpeg ?
+[09:48:56] <compilingEntropy> this script generates files and automates the opening of them in mobilesafari. it'll play the file if it can be played and everything. https://ghostbin.com/paste/8b7n2
+[09:49:00] <crakun> class next week. Sat 6am PST

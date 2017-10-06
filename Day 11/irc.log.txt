@@ -1,0 +1,267 @@
+11:04 <crakun>let's begin
+11:04 <crakun>1st step
+11:04 <HENLEYbls>ahhh ok =D lemme get headset
+11:05 <crakun>no Skype today
+11:05 <HENLEYbls>Ahhh ok
+11:05 <crakun>just IRC
+11:05 <HENLEYbls>sweet
+11:05 <a_titkov>kk
+11:05 <saelo>fine :)
+11:05 <pr0crast1nate>no skype?! how am I gonna redeem myself and talk? not in a chipmunk voice lol
+11:05 <a_titkov>lol
+11:06 <crakun>no Skype today sorry
+11:06 <crakun>in part
+11:06 <uroboro>pr0crast1nate you'll have to wait
+11:06 <crakun>ok
+11:06 <HENLEYbls>pr0crast1nate you can talk dirty to me later
+11:06 <pr0crast1nate>haha your loss, guess it'll have to be next week xD
+11:06 <crakun>format is different today
+11:06 <crakun>Pop Quiz
+11:06 <pr0crast1nate>oh HENLEYbls I wouldn't miss that for the world
+11:06 <_3x7R00Tripper>why no skype?
+11:07 <_3x7R00Tripper>Ok. Then I don
+11:07 <pr0crast1nate>"Pop quiz Hot shot….what do you do? ..what do you do?!" what movie?
+11:07 <crakun>Iok, who's done they homework for today?
+11:07 <crakun>time to stir up the flies on the wall
+11:08 <_3x7R00Tripper>Then I don't speak today. :|
+11:08 <crakun>no one submitted homework due for today
+11:08 <HENLEYbls>I was unaware that it needed to be done ...?
+11:08 <crakun>core members were excluded from doing homework
+11:08 <compilingEntropy>crakun let's go over what the homework was, eh?
+11:09 <HENLEYbls>compilingEntropy yes please =D
+11:09 <_3x7R00Tripper>I didn't have time for 100. I wrote 5 class tests. SOrry I will start now if you will it
+11:09 <crakun>ok
+11:09 <crakun>let's go back to last weeks slide deck
+11:09 <iMegacier>Add me please, sorrry if I'm late
+11:09 <uroboro>http://www.hotwan.com/class/MHVI-Day10c.pdf
+11:09 <HENLEYbls>no skype iMegacier
+11:09 <pr0crast1nate>saelo and I have been working on our JS fuzzer, does that count as a note from the teacher? lol
+11:09 <iMegacier>Ok
+11:09 <a_titkov>we had to trigger kernel panic 100 times
+11:10 <_3x7R00Tripper>Here are many link about js and html5 fuzzing, security and more. http://3x7r00tripper.com/jsandhtml5-m0bdev.php
+11:11 <_3x7R00Tripper>You can find very much javascript fuzzier libraries in one zip file. I wrote with it too. It is very nice. http://m0bdev.3x7r00tripper.com/jsfuzzframeworks.zip
+11:11 <saelo>crakun if I understand your thoughts right than you are trying to figure out the algorithm used to calculate the kernel base offset at boot, correct?
+11:11 <crakun>http://www.hotwan.com/class/MHVI-Day10c.pdf
+11:12 <crakun>yes sae
+11:12 <HENLEYbls>i got it... Sorry, please excuse my ignorance i am new to opj
+11:12 <pr0crast1nate>yeah but saelo and I are writing one, not stealing one xD
+11:12 <crakun>an as part of teaching, I need class participation
+11:12 <crakun>if no participation, we can't continue  :/
+11:13 <crakun>no spoon feeding
+11:13 <crakun>open up slide deck from last week
+11:13 <_3x7R00Tripper>crakun What must we do
+11:13 <crakun>pelase
+11:13 <compilingEntropy>it would only take about 20-30 mins to whip up 100 crashes guys
+11:14 <crakun>core members have been very busy developing tools, website, everything
+11:14 <iMegacier>A springboard kernel panic exist on iOS 6.0
+11:14 <HENLEYbls>we need to reproduce 100 kernel panics using hotwan.com/a.mov via safari
+11:14 <iMegacier>I don't know if it works with 6.1 but it exists on iOS 6.1
+11:14 <iMegacier>*on iOS6.0
+11:14 <crakun>need class's help now
+11:15 <crakun>not for you to sit there
+11:15 <_3x7R00Tripper>Ok then I will start it now?
+11:15 <pr0crast1nate>I think there's a bit of a communication gap created by this core idea
+11:15 <HENLEYbls>pr0crast1nate  agreed
+11:15 <saelo>should use forum more I guess...
+11:15 <_3x7R00Tripper>crakun What shall I do now?
+11:16 <pr0crast1nate>yes, we def should
+11:16 <HENLEYbls>saelo pr0crast1nate lets make it our goal for this week ?
+11:16 <HENLEYbls>plus other things
+11:16 <pr0crast1nate>yes!
+11:16 <saelo>sounds good :)
+11:16 <pr0crast1nate>let's make our own core! haha jk
+11:17 <crakun>http://www.hotwan.com/class/MHVI-Day10c.pdf, slide 15
+11:17 <pr0crast1nate>but seriously let's all agree to hold each other accountable for stuff this week :D
+11:17 <_3x7R00Tripper>Ok.
+11:17 <crakun>I'm trying to reverse KASLR
+11:17 <_3x7R00Tripper>ok (shikhin__!~Shikhin@unaffiliated/shikhin)
+11:18 <crakun>I need class participation with the approach that I am developing
+11:18 <HENLEYbls>we all need to discuss more and point people in directions to keep things going
+11:18 <crakun>everyone  in class should be about to do the exercise on slide 15
+11:18 <_3x7R00Tripper>Yes
+11:19 <HENLEYbls>instead of solely working by ourselves....... apart from specific projects that needd to be completed
+11:19 <crakun>i believe everyone can do slide 15 if you have an idevice
+11:19 <compilingEntropy>HENLEYbls ask questions if you have them
+11:19 <HENLEYbls>im doing it as we speak
+11:19 <crakun>it's pretty basic
+11:19 <HENLEYbls>i have been =D
+11:19 <compilingEntropy>good
+11:19 <HENLEYbls>conradev:
+11:19 <HENLEYbls>sorry conradev ignore that
+11:20 <crakun>I am spending a good amount of time developing chapter 3 userland bug hunt
+11:21 <crakun>and in order to do that, I need class to do slide 15 from day 10
+11:21 <crakun>otherwise, m0bdev develops the jailbreak internally
+11:21 <pr0crast1nate>you mean you can do slide 15 if you have a jailbroken device lol, and it you got stuck upgrading to 7.x and have an A5 device, you're shit outta luck lol
+11:21 <HENLEYbls>I'm on it now crakun i will keep going unil i am sick =D
+11:22 <crakun>you don't need a jailbroken phone for slide 15
+11:22 <_3x7R00Tripper>crakun; Are we want developing the jailbreak code too?
+11:22 <crakun>but that's a good point, note that in your submittal for slide 15 -whether your phone is jb or not
+11:22 <_3x7R00Tripper>yes sure
+11:23 <compilingEntropy>crakun the crashes will tell us (secureboot on/off)
+11:23 <crakun>in order to develop the jb, we need to bypass KASLR, do your homework -so that we can
+11:23 <fr3b>you think we can make the ios 7 jailbreak togther and finish it on 2013??
+11:23 <crakun>hint / hint
+11:24 <snakeninny>fr3b not in this year
+11:24 <fr3b>next year
+11:24 <pr0crast1nate>it's possible, just like anything is possible lol
+11:24 <pr0crast1nate>just not probable xD
+11:24 <crakun>ok, good not compilingEntropy
+11:24 <HENLEYbls>If we all pull our wait like crakun is trying to say
+11:24 <crakun>note
+11:24 <crakun>m0bdev was born from the class
+11:25 <fr3b>you say slide you mean to little exploit
+11:25 <crakun>now to stir up the flies on the wall
+11:25 <_3x7R00Tripper>crakun Yes I know. I am not stupid.
+11:25 <_3x7R00Tripper>:)
+11:25 <crakun>what fr3b?
+11:26 <_3x7R00Tripper>ok don't write so much here. Please make your homework's I too. by :P
+11:26 <pr0crast1nate>#applespiez
+11:26 <crakun>is that a channel?
+11:26 <pr0crast1nate>no lol
+11:26 <pr0crast1nate>well, maybe I dunno
+11:26 <pr0crast1nate>I was saying it as a hashtag
+11:26 <_3x7R00Tripper>oh
+11:26 <iMegacier>Damn, I've got a kernel panic with this mov file on iOS 6.1.2. Should I send the log file?
+11:26 <crakun>yes
+11:27 <crakun>iMegacier
+11:27 <compilingEntropy>iMegacier there's a slide on how to do that
+11:27 <crakun>we need lots of different devices
+11:27 <crakun>with different firmware
+11:27 <iMegacier>iPOd 4 jailbroken
+11:27 <_3x7R00Tripper>iphone 5s iOS 7.0.2
+11:28 <saelo>ok people, here is something for you:
+11:28 <saelo>https://github.com/saelo/iCrashalyzer
+11:28 <compilingEntropy>:)
+11:28 <saelo>please use this when reporting crashes to crakun
+11:28 <pr0crast1nate>saelo to the rescue lol
+11:28 <_3x7R00Tripper>ok
+11:28 <HENLEYbls>:O saelo thats mine and yours :|
+11:28 <HENLEYbls>:P
+11:28 <saelo>makes everyones life better
+11:28 <crakun>we are reverse engineering KASLR, sort of like reversing encryption - but easier
+11:28 <saelo>also if you have multiple crashes try it with -u
+11:28 <_3x7R00Tripper>Will we work with Origami too?
+11:29 <pr0crast1nate>so are we trying to reverse KASLR just to find the offsets we need or are we trying to figure out the algorithm used to figure them out reliably?
+11:29 <crakun>these submittals will also help test a core tool, iCrashanlyzer that saelo spent time putting together
+11:29 <_3x7R00Tripper>ok
+11:29 <saelo>HENLEYbls you were a good beta tester :)
+11:29 <compilingEntropy>_3x7R00Tripper nobody knows what you're talking about
+11:30 <_3x7R00Tripper>Don't you know about Origami and jailbreakme user land?
+11:30 <crakun>as some devices are different in format for logs
+11:30 <crakun>also depending on the crash
+11:30 <saelo>_3x7R00Tripper if that's what you mean... we are not targeting pdfs (yet)
+11:30 <iMegacier>How can I enable Diagnostic and usage Data? There's no button?
+11:31 <crakun>for an ipod?
+11:31 <_3x7R00Tripper>ok
+11:31 <iMegacier>yes
+11:31 <Jackalope777>Ok for people like me who just has a PC and a iPhone 5 non jailbreak iOS 7.0.4 also I have a 3GS jail broken how can I contribute since I'm like fresh sorry to throw you guys off topic
+11:31 <iMegacier>there's just "no data"
+11:31 <compilingEntropy>iMegacier settings > general > about > diagnostics & usage > DON'T SEND
+11:31 <iMegacier>:/
+11:31 <iMegacier>I thick DON't SEND but the slide say to enable Data diagnostic
+11:32 <compilingEntropy>no
+11:32 <iMegacier>http://www.hotwan.com/class/MHVI-Day10c.pdf slide 11
+11:32 <crakun>ok, now for next week's homework….
+11:33 <_3x7R00Tripper>I research for the most information too. You will find about all on my site too. A info only (http://3x7R00Tripper.com)
+11:33 <crakun>for day 12 due before next week, I need to the class to do some info research
+11:33 <compilingEntropy>iMegacier you have to say don't send, otherwise you'll send all your crashes to apple (which is bad)
+11:33 <crakun>send links to whitepapers and presentations on exploiting safari bugs
+11:33 <iMegacier>compilingEntropy  I know :) . Then I've got no log file appearing after the kernel panic in Setting
+11:34 <crakun>jasvascript bugs, HTML5 and javascript fuzzers
+11:34 <crakun>so now, you have alot to do
+11:34 <compilingEntropy>if you say don't send, the crashes will stay on your device.
+11:34 <crakun>last weeks homework and this weeks homework
+11:34 <HENLEYbls>Yea, i'm still doing last weeks :P crakun
+11:35 <_3x7R00Tripper>It is old 3x7r00tripper.com/jsandhtml5-m0bdev.php but I will research for more and I will make a post about the sat too
+11:35 <crakun>do what you can, but you should do something and submit
+11:35 <iMegacier>I know why it's not working  I desactivated the log daemo -_-
+11:35 <HENLEYbls>so info on javascript bugs and HTML5 and javascript fuzzers for next
+11:35 <HENLEYbls>week
+11:36 <_3x7R00Tripper>ok
+11:36 <pr0crast1nate>ok, already have a ton
+11:36 <compilingEntropy>+ catch up on last week's assignment
+11:36 <_3x7R00Tripper>http://3x7r00tripper.com/jsandhtml5-m0bdev.php read this first. You find a lot of good stuff
+11:36 <pr0crast1nate>_3x7R00Tripper so do you just plan on chronicling our progress to apple on your blog?
+11:37 <crakun>your submittals motivate me, move the class forward, train you and greatly help push us to a jailbreak
+11:37 <_3x7R00Tripper>But I must delete my crash logs before I can do the homeworks
+11:37 <pr0crast1nate>you know you're gonna burn any exploit we get if you keep posting on your blog about it
+11:37 <compilingEntropy>pr0crast1nate freals
+11:38 <_3x7R00Tripper>member:pr0crast1nate I don't know what you mean. But I will do stuff now. I don't have so much time
+11:38 <HENLEYbls>_3x7R00Tripper your telling apple how were doing what were doing
+11:38 <HENLEYbls>......
+11:39 <_3x7R00Tripper>no. I am 12 . *_*
+11:39 <crakun>if you want to learn at the same time help out with a jb then do your freaking homework
+11:39 * HENLEYbls im on it
+11:39 <_3x7R00Tripper>I too
+11:39 <HENLEYbls>_3x7R00Tripper what you going on about ?
+11:39 <crakun>otherwise, will take it underground
+11:39 * pr0crast1nate will make sure HENLEYbls is on it
+11:40 <pr0crast1nate>well you already have this core group that is underground
+11:40 <iMegacier>_3x7R00Tripper  Du musst kein Jailbreak Information in dein Website  abschicken .
+11:40 <HENLEYbls>pr0crast1nate you got to be gentle tho, im only fragile
+11:40 <_3x7R00Tripper>HENLEYbls Ah ok. Sorry
+11:40 <_3x7R00Tripper>I will remove it ok?
+11:40 <uroboro>HENLEYbls which side up?
+11:40 <pr0crast1nate>_3x7R00Tripper post anything you want…AFTER we release the jailbreak ;)
+11:41 <HENLEYbls>depends how you like it uroboro
+11:41 <crakun>well, yea, lack of participation , less of visibility into the jb process
+11:41 <_3x7R00Tripper>ok sorry i didn't think about it
+11:41 <compilingEntropy>we know it wasn't intended
+11:42 <pr0crast1nate>so my question is how is the group supposed to stay motivated and learn when we aren't told the whole picture?
+11:42 <compilingEntropy>whole picture make a jailbreak
+11:42 <pr0crast1nate>I mean I totally agree with need-to-know information, it's just very unclear who gets what and why and what you can do to become core etc etc
+11:43 <compilingEntropy>participate
+11:43 <compilingEntropy>be awesome, do things that are useful
+11:43 <compilingEntropy>show interest and enthusiasm
+11:43 <compilingEntropy>we notice :)
+11:44 <pr0crast1nate>well, at the very least, I think I have provided some quality entertainment lol and THAT is important :P
+11:44 <iMegacier>Why do we need to trigger the crash 100 times?
+11:44 <snakeninny>iMegacier to get more crash logs?
+11:44 <iMegacier>snakeninny:; aren't tehy all the same?
+11:45 <pr0crast1nate>P.S. I wish there was an iOS equivalent of "adb reboot" to make it faster to get a clean state to trigger the crash
+11:45 <crakun>sorry, chatting in spanish
+11:45 <crakun>on another channel
+11:45 <compilingEntropy>pr0crast1nate entertainment is important, no doubt about that. :P as far as the 'whole picture' goes, we just have tons of stuff going on. we're hitting this thing from a lot of angles and we're going to roll with whatever's successful.
+11:46 <_3x7R00Tripper>ok
+11:46 <crakun>you can talk to me in spanish , portuguese, english and japanese
+11:46 <iMegacier>french or german?
+11:46 <XC0D3>yo spanish
+11:46 <crakun>a little french
+11:46 <XC0D3>and romanian
+11:46 <XC0D3>:D
+11:46 <saelo>wow nice
+11:46 <crakun>german is too hard :/
+11:46 <iMegacier>Impressing :D
+11:46 <iMegacier>_3x7R00Tripper is german >_<
+11:47 <compilingEntropy>no kidding
+11:47 <snakeninny>iMegacier not really, i think. but i'm not very sure
+11:47 <XC0D3>Xc0d3  Spanish and Romanian :D
+11:47 <crakun>had a grandfather that could speak 7 languages
+11:47 <XC0D3>ingles low
+11:47 <_3x7R00Tripper>yes. But I have spanish in school
+11:47 <crakun>I'm pretty sure I can code in 7 languages
+11:47 <_3x7R00Tripper>haha crakun best
+11:47 <iMegacier>ALl that with only one barin ?
+11:48 <crakun>?
+11:48 <dirkg>once you get the hang of one or two languages
+11:48 <dirkg>they rest come very easily
+11:48 <dirkg>i only really know 3-4, C, objc, asm, and C++
+11:48 <saelo>dirkg well, try haskell or prolog sometime
+11:48 <dirkg>but I can read java, C#, realbasic, and a whole mess of scripting languages
+11:49 <iMegacier>*brain
+11:49 <saelo>knowing c or python won't really help you with those
+11:49 <dirkg>saelo haskell is for neckbeard professors
+11:49 <crakun>ok, so that is class for today
+11:49 <compilingEntropy>pr0crast1nate you can always ssh and reboot
+11:49 <saelo>functional/logical programming languages can be awesome to solve some kinds of problems
+11:49 <dirkg>saelo i also know a bit of scheme
+11:49 <iMegacier>i'll send you my 100 kernel panic file
+11:49 <iMegacier>bye !
+11:49 <XC0D3>HEY CARASH FOUND ON IPHONE 5S :D
+11:49 <compilingEntropy>dirkg lol
+11:49 <pr0crast1nate>compilingEntropy I think what I meant was that only core gets to know what is "successful". I'm plenty motivated, myself. I was speaking for others that may be quieter :)
+11:49 <crakun>the students are holding up the class because they can't do a simple homework exercise
+11:50 <dirkg>compilingEntropy you laugh, but scheme is amazing for teaching language grammars
+11:51 <compilingEntropy>I was laughing at your nearded professor comment
+11:51 <dirkg>oh lol
+11:51 <crakun>please focus on day 10 homework and the homework that was specified in today's class with info research (sending me links)

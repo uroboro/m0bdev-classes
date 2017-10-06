@@ -1,0 +1,111 @@
+11:24 <crakun>http://www.hotwan.com/class/MHVI-Day10c.pdf
+11:24 <crakun>pelase download
+11:24 <crakun>ping me if you want Skype
+11:25 <i3ppwn_>obj we know it's safe
+11:27 <crakun>ok, will start adding people on Skype
+11:28 <i3ppwn_>give me credit for panic log
+11:28 <i3ppwn_>lol
+11:28 <pr0crast1nate>yayy
+11:28 <i3ppwn_>guys we should use shellcode to get asm code running
+11:29 <crakun>anybody not on skype
+11:29 <HENLEYbls>me
+11:29 <HENLEYbls>Im new lol
+11:29 <crakun>did u skype me
+11:30 <HENLEYbls>ive added you
+11:30 <i3ppwn_>also crakun what about phys_to_virt and virt_to_phys
+11:30 <HENLEYbls>assuming your crakun ...
+11:30 <AdiSai1>hello guys
+11:30 <i3ppwn_>hi
+11:31 <tihmstar>not many people on skype
+11:31 <AdiSai1>I'm not
+11:31 <tihmstar>class starting now
+11:31 * tihmstar logs now
+11:32 <tihmstar>slide 9
+11:32 <AdiSai1>where are the slides?
+11:32 <HENLEYbls>http://www.hotwan.com/class/MHVI-Day10c.pdf
+11:32 <tihmstar>we need to bypass KASLR
+11:33 <tihmstar>posixspawn was a good methon, but it's patched now
+11:33 <i3ppwn_>we can corrupt it using null ponter derferences
+11:33 <tihmstar>we might do that with kernelpanics
+11:34 <i3ppwn_>no
+11:34 <tihmstar>we have a.mov / 1.mov (same file)
+11:34 <i3ppwn_>wat ? kernelpanics has nothing to do with that
+11:34 <tihmstar>we're moving it to m0bdev
+11:34 <saelo>http://m0bdev.com/class/1.mov
+11:34 <tihmstar>you can access the file at m0bdev.com/class/q.mov
+11:34 <i3ppwn_>we can patch NX then we can us launchd
+11:35 <pr0crast1nate>tihmstar you have a lot of static with your mic btw
+11:35 <tihmstar>m0bdev.com/class/1.mov
+11:35 <tihmstar> // its muted
+11:35 <AdiSai1>crakun you here?
+11:35 <crakun>yes
+11:35 <pr0crast1nate>tihmstar I know I was just letting you know
+11:35 <tihmstar>if you connect a lot of data points you can derive an algorithm
+11:35 <tihmstar>/ thx
+11:35 <crakun>read slide deck
+11:36 <tihmstar>best way (slide 13)
+11:36 <AdiSai1>crakun Pm'ed
+11:36 <tihmstar>link state analysis analogy
+11:37 <tihmstar>so how do we translate this to kernelpanic log?
+11:39 <tihmstar>we need to start the same boot process and search for an algorithm
+11:39 <AdiSai1>crakun PM back?
+11:39 <tihmstar>if we have same device model ios and navigate directly to website
+11:39 <tihmstar>we can see if there is any consistancy in the panic logs
+11:39 <tihmstar>this is an experiment
+11:39 <tihmstar>proof of concept
+11:40 <tihmstar>this is a very simple class exercise
+11:40 <tihmstar>slide 15
+11:40 <tihmstar>^homework
+11:40 <tihmstar>please do not use the hotwan link, but this m0bdev.com/class/1.mov
+11:40 <pr0crast1nate>https://developer.apple.com/library/mac/technotes/tn2063/_index.html Understanding and debugging kernel panics
+11:41 <tihmstar>newcomers please do the homework on slide 15
+11:41 <tihmstar>isn't that hard
+11:41 <tihmstar>questions?
+11:42 <tihmstar>next week we'll be moving to Javascript
+11:42 <tihmstar>fuzzing
+11:42 <saelo>nice reference, thanks pr0crast1nate
+11:42 <tihmstar>(crak,un is adding more people)
+11:46 <tihmstar>we think we could maybe split the class
+11:46 <tihmstar>because we need multiple exploits
+11:46 <AdiSai1>ya
+11:46 <AdiSai1>I need a team to help with the GUI
+11:46 <tihmstar>but we might do a jailbreak with 1.mov
+11:46 <tihmstar>a multi stage attack with 1.mov
+11:47 <tihmstar>but that would propably take a lot of time
+11:47 <tihmstar>so we should break it up in different type of attacks
+11:47 <tihmstar>so for userland we should attack safari, JavaScript
+11:48 <iMegacier>not php?
+11:48 <crakun>please mute microphone
+11:49 <tihmstar> // can't understand, sorry someone didn't mute
+11:49 <saelo>iMegacier php? We are attacking the client, not the server
+11:50 <AdiSai1>what?
+11:50 <tihmstar>we've seen an html5 fuzzer
+11:50 <tihmstar>done by mozilla (wtf?)
+11:50 <tihmstar>newcomers, we need imformation researchers
+11:51 <tihmstar>webkit, javascript fuzzers etc
+11:51 <saelo>why not? Chromium has their own fuzzers as well
+11:51 <tihmstar>send links and doc to crakun
+11:51 <saelo>http://blog.chromium.org/2012/04/fuzzing-for-security.html
+11:51 <tihmstar>we need that for slide decks
+11:52 <tihmstar>audio on podcast.m0bdev.com
+11:52 <tihmstar>simply grab it with any podcast app
+11:53 <tihmstar>core is fucusing on kernel
+11:53 <tihmstar>community is focusing on userland
+11:53 <tihmstar>open floor
+11:53 <tihmstar>any questions?
+11:54 <isa56k>Any one tried kernel IOctl fuzzing?
+11:54 <AdiSai1>nope
+11:54 <_3x7R00Tripper>I will make a post about all what we do on my website. I will look for slides and more.
+11:54 <_3x7R00Tripper>You find all on http://3x7R00Tripper.com but the last post have slides only. http://3x7r00tripper.com/jsandhtml5-m0bdev.php
+11:54 <AdiSai1>Podcast!
+11:54 <AdiSai1>will it work on the iOS Podcasts app?
+11:54 <tihmstar>we will have an overview page with all information on m0bdevserver later
+11:54 <tihmstar>AdiSai1 yes
+11:54 <AdiSai1>How do I subscribe for it?
+11:55 <tihmstar>AdiSai1 open podcast app and navigate to the link podcast.m0bdev.com
+11:55 <AdiSai1>ok
+11:55 <AdiSai1>in safari?
+11:55 <tihmstar>oh you can do that too
+11:55 <tihmstar>just open podcast.m0bdev.com in safari, while having podcast app installed
+11:56 <AdiSai1>ok
+11:56 <AdiSai1>thanks!

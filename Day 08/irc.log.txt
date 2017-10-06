@@ -1,0 +1,169 @@
+11:13 <crakun>hopefully everybody pinged me on skype
+11:14 <crakun>10 secs more to ping me
+11:14 <AdiSai1>hi SwissHttp
+11:14 <crakun>got alot of folks
+11:14 <crakun>here
+11:14 <crakun>did u donwload slides?
+11:14 <compilingEntropy>http://www.hotwan.com/class/MHVI-Day8d_Published.pdf
+11:14 <iMegacier>http://www.hotwan.com/class/MHVI-Day8d_Published.pdf
+11:15 <tihmstar>class agenda for new people
+11:15 <tihmstar>a lot of people joining us
+11:15 <tihmstar>first step for new people: submit a bug
+11:16 <tihmstar>but we want to involve people who can't code too
+11:16 <compilingEntropy>(tihmstar is transcribing some things crakun is saying)
+11:16 <tihmstar>we need to figure out how to dump kernel etc
+11:17 <tihmstar>so you have to ask people like winocm ih8sn0w and other
+11:17 <tihmstar>but don't waste their time asking stupid questions
+11:17 <tihmstar>we decided to switch to bug 2.mov
+11:17 <tihmstar>by sulphur27
+11:17 <tihmstar>kernelpanic a lot of devices (maybe all)
+11:18 <tihmstar>somebody from class posted the file on the internet
+11:18 <tihmstar>i0nic found it and said it was a jailbreak
+11:18 <fr3b>kenel panic
+11:19 <tihmstar>i0nic took creadit for the file making people belive it'd be a jailbreak
+11:19 <tihmstar>saelo will talk to us later
+11:19 <tihmstar>you will need to download his slides later
+11:19 <saelo>I'll post link later :)
+11:20 <tihmstar>just because geohot or winocm says the nullpointer is not exploitable don't give up
+11:20 <tihmstar>still continue looking at it we could exploit it anyway
+11:20 <tihmstar>(maybe by continueing fuzzing the file)
+11:20 <tihmstar>or maybe there is more that one "magic byte" which could be exploitable
+11:21 <SwissHttp>we're on slide 2
+11:21 <tihmstar>next we will do some RE steps
+11:21 <tihmstar>crakun is working on a very big slidedeck
+11:22 <tihmstar>we develeoped tools / standard for fuzzing
+11:22 <fr3b>what is fuzzing?
+11:22 <tihmstar>we now need a process to look at bugs
+11:22 <DarkMalloc>fr3b: http://en.wikipedia.org/wiki/Fuzz_testing
+11:23 <fr3b>thanks
+11:23 <tihmstar>bugs are not limited to mov files
+11:23 <SwissHttp>now on slide 3
+11:23 <tihmstar>slide 3
+11:23 <tihmstar>thx SwissHttp
+11:23 <tihmstar>we're building a core Members team
+11:24 <SwissHttp>@tihmstar: I'll keep quiet to avoid double post here
+11:24 <tihmstar>crakun: what about me??
+11:24 <tihmstar>SwissHttp: pls post the slide number
+11:24 <SwissHttp>ok
+11:25 <tihmstar>again you don't have to code you can still help
+11:25 <tihmstar>for exaple building websites, finding information
+11:25 <tihmstar>logos etc
+11:25 <tihmstar>we want our jailbreak team to be bigger
+11:26 <fr3b>.mov files is just for testing and show to everyone the bugs we find
+11:26 <SwissHttp>slide 4
+11:26 <tihmstar>^ this is a summary
+11:26 <tihmstar>what we are looking for
+11:26 <SwissHttp>slide 6, old stuff
+11:27 <tihmstar>crakun - craken lol
+11:27 <SwissHttp>7
+11:27 <tihmstar>bug submittal process
+11:27 <tihmstar>don't give everybody your bugs
+11:28 <tihmstar>only submit them to crakun!!!!
+11:28 <tihmstar>we're getting more bugs every week
+11:29 <tihmstar>we had 1.mov file in a zip and somebody from class unzipped and put it online and now even i0nic put that on twitter
+11:29 <tihmstar>pls don't blow bugs if we don't have to!!
+11:29 <tihmstar>remember apple can patch stuff
+11:30 <tihmstar>core member group will work on a iphone 5s jb
+11:30 <tihmstar>others will work on iphone 4 jb and maybe other
+11:30 <tihmstar>we have to burn some bugs in the process but we do it selectevly
+11:31 <SwissHttp>slide 7
+11:31 <SwissHttp>slide 8, 9
+11:31 <tihmstar>^ current bug
+11:31 <SwissHttp>10,11 now, current bug
+11:32 <tihmstar>ida pro will work for us
+11:32 <tihmstar>for RE
+11:32 <tihmstar>jb iphone, ssh - grab mediaserverd and look at it with ida pro
+11:33 <SwissHttp>You can debug with HopperApp, cheap debugger.
+11:33 <SwissHttp>sorry, disassembler
+11:33 <tihmstar>dirkg got some tools for us
+11:33 <SwissHttp>slide 16 now
+11:33 <tihmstar>slides should give you some background info
+11:34 <tihmstar>about mov files
+11:34 <tihmstar>crakun read bug hunters diary and put some steps in the slides
+11:34 <tihmstar>so you have all important info
+11:34 <tihmstar>we'll also get slides from dirkg next week
+11:35 <tihmstar>since i0nic tweeted our bug, let's see if apple patches it
+11:35 <tihmstar>keep track on that
+11:35 <tihmstar>apple may patch a bug slightly, so there might still be workarounds for it
+11:36 <tihmstar>uroboro wrote a tool called hexdiff (available on repo.tihmstar.org)
+11:37 <tihmstar>now sulphur27 talking
+11:37 <tihmstar>he wrote a server to server the mov files
+11:37 <DarkMalloc>Good work tihmstar.
+11:37 <tihmstar>he fuzzes the files on the phone itself
+11:38 <tihmstar>with the mov player
+11:38 <tihmstar>sulphur27 you can put it on my repo
+11:38 <tihmstar>he was looking at the files in the atom explorer
+11:39 <tihmstar>he found the magic byte in the elementry stream description
+11:39 <tihmstar>he could find what it does exaclty
+11:39 <tihmstar>:(
+11:39 <tihmstar>maybe some size of buffer to allocate
+11:39 <uroboro>couldn't you mean?
+11:39 <tihmstar>found some nice article
+11:40 <tihmstar>https://blogs.oracle.com/ksplice/entry/much_ado_about_null_exploiting1
+11:40 <tihmstar>*he found
+11:40 <tihmstar>he'll still looking in the ffmpeg code
+11:40 <tihmstar>open floor (i wont record that :P )
+11:41 * tihmstar is lazy
+11:41 <AdiSai1>ok
+11:41 <sulphur27>tihmstar: sure i can
+11:41 <tihmstar>sulphur27 talk to you after class ;)
+11:42 <sulphur27>but it is a native app and i will need to make more "useable" so people can use it whithout cahnging source code ...
+11:43 <saelo>wget yoursef a copy of this http://saelo.net/files/attacking_iOS_kernel-1.pdf
+11:46 <crakun>if u are not on Skpe (m0bdev) let me know, ping me on Skype so I can add u
+11:46 <uroboro>I'm not
+11:47 <crakun>ping me on Skype now, so I can see u
+11:47 <crakun>I don't know your ID
+11:47 <crakun>ok
+11:48 <crakun>u should be on
+11:48 <crakun>now
+11:48 <uroboro>I am, thanks
+11:48 <crakun>we were talking about u and hexdiff, also the parser I think u mayb working on
+11:49 <uroboro>oh
+11:49 <crakun>hexdiff is mentioned in slde deck too
+11:50 <SwissHttp>slide 7 on saelo's slides now
+11:53 <SwissHttp>slide 10
+12:00 <SwissHttp>back to slide 20 of crakun's slides
+12:00 <AdiSai1>hi J_W97
+12:00 <tihmstar>^ contains important stuff
+12:00 <tihmstar>*slide 20
+12:00 <tihmstar>-_-
+12:01 <saelo>:D
+12:02 <tihmstar>we can manupulate mov files so that's our entry in kernel/userland
+12:04 <JBUni>you could always use justin.tv
+12:05 <AdiSai1>or twitch.tv
+12:05 <tihmstar>but what about the lagg?
+12:05 <AdiSai1>not much lag
+12:05 <tihmstar>i mean input lagg
+12:06 <tihmstar>like when we talk on type but look at that on twitch
+12:06 <tihmstar>i think there is a lagg
+12:08 <AdiSai1>no
+12:08 <AdiSai1>only there is some video freexing at times
+12:09 <AdiSai1>freezing
+12:11 <AdiSai1>so who want's to use twitch.tv?
+12:12 <JBUni>which directory has mediaserverd?
+12:14 <SwissHttp>now move to slides 21/22
+12:15 <SwissHttp>"have to create" is wrong, will get removed
+12:15 <snakeninny>JBUni: /usr/sbin/mediaserverd
+12:15 <JBUni>ty
+12:17 <JBUni>anyone dumped kernel cache from iphone 5?
+12:18 <JBUni>if so, how?
+12:20 <fr3b>yeh
+12:21 <tihmstar>you can jailbreak your iphone 4 by using http://tihmstar.blogspot.de/2013/10/my-jailbreaktool-for-ios-7.html
+12:21 <tihmstar>my tool
+12:22 <tihmstar>it runs on OSX and you need to have everything installed to build opensn0w
+12:22 <saelo>tihmstar any way to do this on linux?
+12:22 <saelo>just need to build the ramdisk
+12:22 <tihmstar>saelo: if you really want i can try to port it to linux
+12:23 <saelo>let's chat later, I can probably do it, thanks!
+12:23 <saelo>just need to understand how its working :p
+12:23 <tihmstar>saelo: ok skype :D
+12:23 <saelo>sure, after class?
+12:23 <tihmstar>k
+12:23 <saelo>deutsch, right?
+12:23 <tihmstar>klar
+12:23 <saelo>:)
+12:24 <tihmstar>i guessd you're german :P
+12:24 <saelo>yeah german english :/
+12:25 <tihmstar>to everyone who develops tools, pls contact me and i'll put them to my repo so we have all tools collected in one place ;)
+12:26 <SwissHttp>slide 43
+12:26 <SwissHttp>slide 59

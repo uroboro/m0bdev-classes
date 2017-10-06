@@ -1,0 +1,584 @@
+09:59 <@crakun> hi
+09:59 <uroboro> Hi
+09:59 <pr0crast1nate> herro
+09:59 <a_titkov> hey
+09:59 <+Nexuist> we r of #blast #0FF #TMINUS #1MIN
+10:00 <@crakun> bare with me
+10:00 <@crakun> for about 3 minutes
+10:04 <@crakun> uploading file
+10:04 <@crakun> ...
+10:04 <@crakun> ok
+10:06 <@crakun> http://www.hotwan.com/class/mov/sample/Day7-Corrected.zip
+10:06 <@crakun> please download that
+10:08 <a_titkov> Skype/mumble?
+10:08 <@crakun> The previous "valid/ original" .mov file from day 6 was not the right one. This is.
+10:09 <saelo> nice, thanks
+10:09 <@crakun> ping me if you want skype by reaching out to m0bdev on Skype
+10:10 <@crakun> so I know who to join
+10:10 <@crakun> let's get started on IRC
+10:10 <@crakun> today, I just want to see the progress
+10:10 <@crakun> see how far people got
+10:10 <Orel> When the 2nov class begin??
+10:11 <@crakun> yes
+10:11 <@crakun> we are beginning now
+10:11 <@crakun> please download http://www.hotwan.com/class/mov/sample/Day7-Corrected.zip
+10:12 <@crakun> any progress from anyone?
+10:12 <@crakun> none?
+10:12 <saelo> well I was going to find the bytes that cause the crash but I needed the correct original file
+10:13 <saelo> which I have now ;)
+10:13 <@crakun> ok
+10:14 <+Nexuist> not sure if this was mentioned before, but uroboro made a really awesome tool that detects differences between two files
+10:14 <Orel> Ok create me to the class please
+10:14 <Orel> Crakun?
+10:14 <x76> crakun: Sent you a contact request on Skype
+10:14 <saelo> Nexuist link?
+10:14 <+compilingEntropy> Nexuist: yeah, we should go over that in class today
+10:15 <+Nexuist> saelo: https://github.com/uroboro/Hexdiff
+10:15 <@crakun> uroboro
+10:15 <@crakun> ox
+10:15 <@crakun> ok
+10:15 <uroboro> yes
+10:15 <+compilingEntropy> saelo: it's in tihmstar's repo, http://repo.tihmstar.org
+10:15 <+Nexuist> lol
+10:16 <saelo> like hexdump -C and then diff that ?
+10:16 — tihmstar is cool :D
+10:16 <@crakun> ok
+10:16 <uroboro> saelo: but a bit more visual, more like aptdiff
+10:16 <@crakun> so today is alot less formal today
+10:16 <@crakun> RE will take some time
+10:17 <uroboro> saelo: actually, hexdump only, no -C
+10:17 <saelo> ok, well hexdump and diff and wc tell me there are about 88098 differences in the two files
+10:17 <uroboro> so there's 22267 different bytes in those movs
+10:17 <saelo> ok :)
+10:18 <saelo> my idea was to build a tool that would change half the bytes back to original, do a test run and see if it still crashed
+10:18 <saelo> yes: repeat
+10:18 <uroboro> saelo: I already made that
+10:18 <saelo> no: change bytes back and change other half of bytes and repeat
+10:18 <saelo> nice!
+10:18 <+Nexuist> so like, reverse fuzzing? :P
+10:18 <uroboro> though it needs polishing
+10:18 <saelo> Nexuist exactly
+10:19 <+compilingEntropy> uroboro: please update your control file to include usage, I have no idea how to use your tools
+10:19 <@crakun> 	 Skype doesn't seem working for me today
+10:19 <@crakun> we will skip it
+10:19 <tihmstar> I hope you guys wait with class until I get home in 40 min
+10:19 <@crakun> today
+10:19 <uroboro> tihmstar: whaaaa
+10:19 <a_titkov>  lol
+10:20 <tihmstar> Wait when does the class start today?
+10:20 <+dirkg> morning
+10:20 <uroboro> tihmstar: in -5 min
+10:20 <orel_> everyone i need help,i need a cydia can work without crash on ios 7 (my FS is mount just ineed only the working cydia)
+10:20 <+x76> once you have the crash, you can use a debugger to proceed. You may not need to find a simpler test case if you can find the vulnerable code
+10:20 <uroboro> compilingEntropy: I will, and I added a --help for hexdiff, now adding to the other one
+10:20 <@crakun> I think my box needs to be rebooted in order for Skype to work today, but I don't feel like
+10:20 <tihmstar> Wut? Why we changing time???
+10:20 <@crakun> we will just do irc today
+10:21 <saelo> tihmstar you from europe? summer/winter time?
+10:21 <saelo> time didn't change
+10:21 <tihmstar> It did!
+10:21 <a_titkov> mm nope
+10:21 <tihmstar> Og damnit!
+10:21 <tihmstar> But my time changed damn!
+10:21 <@crakun> did anyone see Stefan esser @i0n1c shows off his iPhone 5S jailbreak
+10:21 <@crakun> http://youtu.be/HL0_Wfc_iEU
+10:21 <+x76> Shush
+10:22 <saelo> crakun: yes
+10:22 <a_titkov> yeah
+10:22 <Intram0rph> has anyone heard anything about this "activatin lock" thing?
+10:22 <SwissHttp> yes
+10:22 <Intram0rph> activation lock
+10:22 <@crakun> ok, so all he showed was a panic log
+10:22 <saelo> exactly :D
+10:22 <@crakun> talked about his remote debugging
+10:22 <saelo> not sure where the jailbreak in the title comes from
+10:22 <+Nexuist> wait, that was a 5s jalbreak? O_O i need to watch it over again.
+10:22 <@crakun> with old serial cable
+10:22 <@crakun> yeah, no jb
+10:23 <+SwissHttp> the movie is 1.2GB
+10:23 <+Nexuist> oh k
+10:23 <@crakun> no serial cable for 5 nor 5s
+10:23 <@crakun> gdb no longer found in 7.x Xcode SDK
+10:23 <@crakun> making his own debugger in python
+10:24 <+dirkg> why not just use lldb
+10:24 <tihmstar> i think he'll publish
+10:24 <@crakun> I've heard that
+10:24 <@crakun> suggested
+10:25 <tihmstar> i heard many people had problems with the mov files you gave us
+10:25 <tihmstar> like the two files were different size
+10:25 <+SwissHttp> I have two contact requests in Skype: MD ! and Neoasix81. Who are they?
+10:25 <AdiSai1> hello all
+10:25 <orel_> i need the new ios 7 cydia 1.1.8+ files please?
+10:25 <tihmstar> btw, no skype today, right?
+10:25 <+SwissHttp> orel: Compile it?
+10:25 <@crakun> Skype is down for me / not working.  we will skip Skype just for today
+10:26 <AdiSai1> ok
+10:26 <tihmstar> ok
+10:26 <saelo> tihmstar yeah, the orig file was the wrong one
+10:26 <+compilingEntropy> orel_: it doesn't exist yet
+10:26 <uroboro> tihmstar: he uploaded new ones
+10:26 <+Nexuist> orel_: cydia doesn't work on iOS 7 yet
+10:26 <tihmstar> oh
+10:26 <tihmstar> same link?
+10:26 <saelo> tihmstar: http://www.hotwan.com/class/mov/sample/Day7-Corrected.zip
+10:26 <tihmstar> Nexuist: cydia works on iOS 7 lol i have it installed
+10:26 <@crakun> k
+10:26 <+Nexuist> ragemasta's?
+10:26 <@crakun> so
+10:27 <+compilingEntropy> crakun: I tested this new file, it doesn't play or crash on 6.1.3 or 7.0.3.
+10:27 <orel_> it work some developers debug cydia and create new 1.1.8+ verison of cydia can work on ios 7
+10:27 <tihmstar> Nexuist: no ichita*** i don't remember the name
+10:27 <+Nexuist> kk
+10:27 <tihmstar> Nexuist: ichitaso
+10:27 <@crakun> this past week, I've been going thru alot of the old talks and presos, to see what works and doesn't work anymore in terms of Apple's fixes
+10:28 <@crakun> Apple seems to be listening closely
+10:28 <pr0crast1nate> spooks!
+10:29 <AdiSai1> crakun: Yep
+10:29 <@crakun> I did notice that some of my approaches in the kernel have not been explored
+10:30 <tihmstar> crakun: what will we do next? continue finding the magic byte?
+10:30 <@crakun> by the public people such as evad3rs, dowd, stefan
+10:30 <@crakun> so I want to be tactful on that
+10:31 <orel_> what about the skype?
+10:31 <@crakun> has anyone found the magic byte yet?
+10:31 <tihmstar> orel_ no skype today
+10:31 <AdiSai1> nope
+10:31 <@crakun> did u do a diff on the original versus the panic?
+10:32 <tihmstar> no, i kinda didn't realy searched, because i hoped uroboro's tool (which are finally updated now), would make it really easy
+10:32 <@crakun> I guess I should say today's files?
+10:32 <saelo> yeah, its couple thousand different bytes
+10:32 <@crakun> fuk
+10:32 <saelo> diff orig.hex fuzzed.hex| wc 88098  889245 3981114
+10:32 <+compilingEntropy> crakun: it doesn't crash anything for me
+10:32 <orel_> what why??
+10:32 <orel_> why now skype??
+10:32 <tihmstar> btw, the new crash is it a consistent crash?
+10:32 <@crakun> yes
+10:33 <@crakun> no skype just for today
+10:33 <tihmstar> i'll try that later then
+10:33 <@crakun> ok
+10:33 <tihmstar> crakun: you still on travel? what about mumble?
+10:33 <@crakun> let's just do irc today
+10:33 <orel_> when the skype can be??
+10:33 <tihmstar> k but for next time
+10:34 <@crakun> next sat, we will use skype
+10:34 <saelo> and forum! :)
+10:34 <@crakun> and forum
+10:34 <@crakun> yes
+10:34 <@crakun> ok,
+10:34 <+Nexuist> we have forums now?
+10:34 <@crakun> so take a look at the files submitted today
+10:34 <AdiSai1> huh?
+10:34 <+Nexuist> ok, will do
+10:35 <@crakun> or I should say downloaded today for day 7
+10:35 <@crakun> they are the correct files
+10:35 <@crakun> we should be looking at
+10:35 <@crakun> BTW, I am really anxious to look at compilingEntropy's submission
+10:36 <+compilingEntropy> which one?
+10:36 <@crakun> but lets hammer on isa56k submittal at this point
+10:37 <@crakun> I'll synch up with u on that Entropy a little later
+10:37 <orel_> anddddd---
+10:37 <+compilingEntropy> k
+10:37 <orel_> what about the skype!!!!!!
+10:37 <a_titkov> >___<
+10:37 <+dirkg> guys, calm down
+10:37 <+compilingEntropy> orel_: cool down bro, we're not skyping today
+10:37 <+dirkg> let crakun run the class please
+10:37 <tihmstar> can't we make orel_ quiet or s.th ? -.-
+10:37 <@crakun> so, it turns out that demito is going to do his RE preso for us next week
+10:37 <a_titkov> +
+10:38 <tihmstar> RE =?
+10:38 <+dirkg> Reverse Engineering
+10:38 <tihmstar> thx
+10:38 <@crakun> yes
+10:38 <@crakun> I am putting together the latest stuff for kernel over the next 2-3 weeks
+10:39 <@crakun> should make us all current
+10:39 <orel_> the skype cell is on the next week??
+10:39 <@crakun> yes, Skype next week
+10:39 <@crakun> demito presents next week for class on RE
+10:40 <@crakun> so, I should have a thorough new slide deck in a couple of weeks that will help guide us all as a class
+10:40 <AdiSai1> IRCCloud will go down soon
+10:40 <AdiSai1> just for the heads up IRCCloud users
+10:40 <tihmstar> o.O
+10:40 <AdiSai1> crakun left
+10:41 <tihmstar> lol
+10:41 <+dirkg> sp00kz
+10:41 <tihmstar> wait what? irccloud?
+10:41 <tihmstar> i need irccloud
+10:41 <saelo> who was going to set up a mumble server?
+10:41 <tihmstar> any alternatives i can use on my server?
+10:41 <tihmstar> saleo: me
+10:41 <+compilingEntropy> tihmstar: set up a znc
+10:41 <tihmstar> but crakun didn't give me any access to any server
+10:41 <saelo> ok cool, on crakuns server?
+10:41 <AdiSai1> I use IRCClod
+10:42 <saelo> tihmstar: yeah, same here
+10:42 <AdiSai1> they tweeted that they will go down for maintaninence
+10:42 <saelo> I'm waiting for it so I can set up forum and possibly wiki
+10:42 <crakun> hello
+10:42 <@crakun> sorry
+10:42 <tihmstar> what happened?
+10:42 <@crakun> battery died
+10:42 <@crakun> ok
+10:43 <@crakun> also,
+10:43 <AdiSai1> ok
+10:43 <tihmstar> crakun: we just talked about needing acces to your server to setupt mumble, forum and wiki
+10:43 <@crakun> k
+10:43 <@crakun> yes
+10:44 <@crakun> this past week I started a new job, so I am adjusting to stuff
+10:44 <tihmstar> oh
+10:44 <pr0crast1nate> grats on the new job
+10:44 <@crakun> so now I save lives  :P
+10:45 <@crakun> thaks
+10:45 <tihmstar> lol
+10:45 <pr0crast1nate> well we really appreciate all the work you put in to the slide decks etc
+10:45 <@crakun> good point
+10:45 <@crakun> so a question I have
+10:45 <pr0crast1nate> ok yoda lol
+10:45 <@crakun> for everyone here and who follow outside of class
+10:45 <tihmstar> i thought the same lol
+10:46 <@crakun> right now, over 60 folks for m0bdev
+10:46 <tihmstar> wow
+10:46 <a_titkov> wow
+10:46 <@crakun> and that doesn't include the others
+10:47 <@crakun> so, my question is ….
+10:47 <@crakun> should I stop the class thing /slides and just treat it as a jb team where I start delegating tasks
+10:48 <pr0crast1nate> hmmmm good question
+10:48 <a_titkov> hm
+10:48 <@crakun> so we can make something faster
+10:48 <Intram0rph> crakun: depends what the goal of this really is
+10:48 <@crakun> welp, we already have achieved the goal
+10:48 <pr0crast1nate> well I know I haven't contributed, YET but I'm certainly capable of finding the necessary info without the slides
+10:49 <tihmstar> i wouldn't actually "stop" slides, because the goal was to teach everyone to make a full jailbreak, but i think you should start delegating tasks anyway
+10:49 <+compilingEntropy> I think you should delegate tasks, but I think the class/slides should continue so that we can all learn how to do more and be more helpful.
+10:49 <Intram0rph> this doesnt seem like a begginer class so i think it kinda defeats the purpose
+10:49 <a_titkov> agree w/ tihmstar
+10:49 <AdiSai1> are we in class?
+10:50 <tihmstar> yes
+10:50 <@crakun> yes, technically this is still a class
+10:50 <pr0crast1nate> who here is actually using the class in that way though? i.e. doesn't know much already
+10:50 <AdiSai1> ok
+10:50 <@crakun> we've formed a jb team
+10:50 <sulphur27> yes me too i think that slides are usefull
+10:50 <saelo> I think we can have different people contribute stuff, write tutorials or explanations, then crakun doesn't have to do it all
+10:50 <Intram0rph> same here  i agree with tihmstar eventhough i barely understand anything ive learned some things already
+10:50 <@crakun> we are looking at stuff
+10:50 <AdiSai1> crakun: Should I do the GUI?
+10:50 <@crakun> there is alot to be built
+10:50 <AdiSai1> ok
+10:51 <@crakun> forum/ wiki/ etc
+10:51 <@crakun> we don't even have a logo
+10:51 <@crakun> :_(
+10:51 <saelo> anyone wants to make a logo? :)
+10:51 <@crakun> but, slowly
+10:51 <@crakun> so, here is the thing
+10:51 <Intram0rph> but how can someone like me contribute???
+10:51 <tihmstar> i suggest to collect all tools in one place, we can use my repo, as long as (you want and) m0bdev doesn't have it's own repo
+10:51 <pr0crast1nate> I'll certainly brainstorm some logos but I'm sure I'm not the best here at graphics
+10:51 <@crakun> if I do  slide decks, that slows me down on the hands-on stuff
+10:52 <Intram0rph> no coding or hacking experience  i thought i could learn here but like i said its not a class for noobs
+10:52 <tihmstar> crakun: just tell what else needs to be done and im sure there will be lot's of volunteres to write tut's etc
+10:52 <@crakun> If I start delegating tasks, then people will miss out on things
+10:53 <saelo> Intram0rph you can start by reading one of the books suggested by crakun I guess
+10:53 <+compilingEntropy> Intram0rph: I think this class will teach you how to learn; if you're willing to learn, then you'll do fine.
+10:53 <tihmstar> crakun: no if everyone will document what he does exactly
+10:53 <saelo> I can suggest Shellcoders Handbook and Hacking the art of exploitation :)
+10:53 <@crakun> ok
+10:53 <@crakun> for example
+10:53 <Intram0rph> already reading ios hackers handbook and the arm manuals winocm suggested
+10:53 <@crakun> if I delegate
+10:54 <tihmstar> so my idea with the m0bdev blog is actually great solving this problem
+10:54 <AdiSai1> crakun: saleo: I will make the logo
+10:54 <Intram0rph> i dont understand barely anything but im reading it anyway
+10:54 <saelo> AdiSai1 cool
+10:54 <AdiSai1> ok
+10:54 <@crakun> I would have a group do isa56k mov files and have another group focus on compilingEntropy files
+10:54 <saelo> Intram0rph yeah iOS hackers is a bit advanced already
+10:54 <pr0crast1nate> if we're actually going to make something, shouldn't we kind of lock up our communication a bit?
+10:54 <@crakun> I would run usermode and kernel mode development at the same time
+10:54 <AdiSai1> saleo: I just need some time
+10:54 <tihmstar> crakun: we really need a wiki now, as we need to log who does what
+10:55 <@crakun> third, I would delegate info leak to another group
+10:55 <tihmstar> pr0crast1nate: mumble
+10:55 <saelo> tihmstar: and forum, thats even more important I think
+10:55 <+Nexuist> crakun: what if you delegated tasks and the m0bdev members ran classes/slides for you?
+10:55 <tihmstar> ^
+10:56 <+Nexuist> then you wouldn't have to waste time reiterating and the jb can get done faster too
+10:56 <+compilingEntropy> crakun: how exactly does one find a leak that discloses offsets? I have files which crash MobileSafari through memory leaks, for example, but I don't know if that's the same thing.
+10:56 <@crakun> well Nex, it's about who has time to commit
+10:56 <AdiSai1> crakun: should I make an Iphonewiki page?
+10:56 <tihmstar> i think it is important to delegate tasks, because i guess nobody here will make a jailbreak on his own in the future, as things getting more and more complicated
+10:57 <a_titkov> ^
+10:57 <tihmstar> AdiSai1: we'll have an own wiki
+10:57 <@crakun> there are primatives that you can call to leak kernel memory addresses
+10:57 <@crakun> there are plenty of ways to get kernel memory address still
+10:58 <saelo> getting quicktime addresses will be a bit tough I assume
+10:58 <+compilingEntropy> do you just get userland memory addresses based off of the kernel ones then?
+10:58 <tihmstar> i think the most important thing when starting delegating tasks is really to publicly log who does what so it doen't end up in a mess
+10:58 <AdiSai1> ok tihmstar
+10:58 <saelo> tihmstar agree
+10:58 <@crakun> so userland, kernel and info leaks to 3 different groups simultaneously???
+10:59 <saelo> userland and kernel for sure
+10:59 <@crakun> or, one step at a time?
+10:59 <+compilingEntropy> I think it's important to continue the classes regardless
+10:59 <+compilingEntropy> but delegation is a good idea.
+10:59 <@crakun> each group could present their findings / status to class format
+10:59 <saelo> btw we can also make polls in the forum :)
+10:59 <tihmstar> ^
+11:00 <AdiSai1> ya
+11:00 <tihmstar> we could have people working on untether, as we already have limera1n and an iphone 4 jb
+11:00 <@crakun> hmmm
+11:00 <saelo> yeah, unteather, userland, kernel, (sandbox), infoleaks, (code signing)
+11:00 <@crakun> ok, I will think about things and talk to folks individually about it
+11:00 <tihmstar> irccloud will go down shortly, can we pause class if some of us get's kicked out pls?
+11:00 <AdiSai1> IRCCloud is about to go
+11:01 <AdiSai1> down
+11:01 <pr0crast1nate> we can always split into more teams later but too much too fast might not be a good thing?
+11:01 <@crakun> i agree Pr0
+11:02 <AdiSai1> ya
+11:02 <@crakun> think about it
+11:02 <saelo> gtg now, hope forum will be up very soon, cu later
+11:02 <@crakun> sounds like you like the slide stuff to a degree
+11:02 <pr0crast1nate> start with a few things, make sure people can deliver etc, tweak the process, that way when we expand tasks, everything will be a well oiled machine lol
+11:02 <@crakun> ok,
+11:02 <AdiSai1> I have to go also
+11:02 <AdiSai1> bye I will work on the GUI
+11:03 <AdiSai1> Sorrty the Logo
+11:03 <@crakun> mayb 2 more weeks on isa56k's submittal, then we fork some folks over to compilingEntropy?
+11:03 <tihmstar> k
+11:03 <pr0crast1nate> kk
+11:04 <@crakun> that way, we are looking at 2 bug submittals, one I see as userland, the other as kernel
+11:04 <+Nexuist> do we have a master list of m0bdev members yet?
+11:04 <Intram0rph> @crakun: are u gonna open up the floor after class  got a off topic question dont wanna disrupt class with it now??
+11:04 <tihmstar> we can even have people not really working on jailbreak but on helping keeping up communication creating forum moderating stuff etc
+11:05 <@crakun> m0bdev is spread out thru email / twitter / IRC / Skype
+11:05 <+Nexuist> i can help with that tihmstar
+11:05 <tihmstar> great :D
+11:05 <Intram0rph> yes so can i tihmstar
+11:05 <tihmstar> Nexuist: i'll talk to you after class
+11:05 <tihmstar> Intram0rph: same ^
+11:05 <@crakun> ok
+11:05 <@crakun> so
+11:06 <+Nexuist> i was working on a PrismBot for monitoring twitter profiles for keywords that we can use to find info leaks :P
+11:06 <@crakun> continue on your homework from last week Day 6
+11:06 <@crakun> you got the correct files
+11:06 <@crakun> now
+11:06 <+Nexuist> our homework was to find the magic byte, right?
+11:07 <+compilingEntropy> about that, I can't get the file to crash anything.
+11:07 <@crakun> I am upset, no one looked into the file format of .mov files
+11:07 <tihmstar> Nexuist: yes
+11:07 <@crakun> yet
+11:07 <@crakun> yes
+11:07 <@crakun> Nex
+11:07 <+Nexuist> ok
+11:07 <+compilingEntropy> I've read like half of the 500 page spec doc :P
+11:07 <@crakun> actually, take control of PC
+11:08 <@crakun> you see, we will need to do ROP 3 times
+11:08 <@crakun> ROP in userland, ROP in kernel, ROP for untethered
+11:09 <@crakun> for the untethered piece, I would like to target conf files as a vector
+11:09 <@crakun> there is a rich history with that
+11:10 <@crakun> ok
+11:10 <tihmstar> crakun: is there a way i can boot my iphone 4 verbose without adding kernelpatches wich could let me think i found something?
+11:11 <tihmstar> crakun: i tried with opensn0w deleting all kernelpatches and setting bootflag only to -v is that correct?
+11:11 <+Nexuist> on the topic of finding the magic byte...i think some of our auto fuzzing tools could be easily modified to just change one byte a time and see if it causes a crash
+11:11 <@crakun> http://www.hotwan.com/class/MHVI-Day6h_Published.pdf   (Slides 62-64)   Continue on this
+11:11 <+Nexuist> there's a 1000 different combinations but we're bound to hit it at some point
+11:12 <tihmstar> Nexuist: i hope uroboro, already created something like that
+11:12 <@crakun> here is a possible aproach to finding the magic byte
+11:12 <+Nexuist> really?
+11:12 <+compilingEntropy> Nexuist: I'm probably going to have fuzzycactus have a mode for that using uroboro's tools
+11:12 <@crakun> what is the number again?
+11:12 <@crakun> difference between the 2?
+11:12 <uroboro> sort of. I rely on having a successful crash beforehand
+11:13 <+Nexuist> diff orig.hex fuzzed.hex| wc 88098  889245 3981114
+11:13 <tihmstar> compilingEntropy: you shouldn't really messup a lot with fuzzycacctus, simple create a new package
+11:14 <+compilingEntropy> no, it would simply take a directory as input, testing each file within it, instead of a file
+11:14 <uroboro> I thought were 22267 diffs
+11:14 <@crakun> try to make the fuzz file work without a kernel panic
+11:14 <@crakun> by playing with bits
+11:14 <+compilingEntropy> crakun: define 'work'
+11:14 <@crakun> no more kernel panic
+11:14 <@crakun> reboot
+11:15 <@crakun> look at the structure of the original mov file
+11:15 <tihmstar> crakun: should we unfuzz the fuzzed file to stop getting a panic, or fuzz the original one to get a panic?
+11:15 <@crakun> unfuzz the fuzz file
+11:15 <@crakun> so that it is no more kernel panic
+11:15 <tihmstar> ok
+11:16 <@crakun> reverse your orignal mov file to see how the file is chopped up
+11:16 <@crakun> sections / etc
+11:16 <@crakun> isolate which regions of the files are different
+11:17 <@crakun> try to replace known good sections from original into fuzz file
+11:17 <tihmstar> who should we actually unfuzz? byte 1, 1-2 , 1-3 . 1-4 and so one? (only different bytes obviously)
+11:17 <tihmstar> *how
+11:17 <humber> does it panic on ios 7 too?
+11:17 <a_titkov_> no
+11:18 <@crakun> also what device / firmware are u using to test with?
+11:18 <tihmstar> crakun: i'd like to keep testing with iPhone 4 (7.0.3)
+11:19 <a_titkov_> iPad 6.1.2
+11:19 <+compilingEntropy> I can't get that file to panic on my iPhone2,1 6.1.3 or iPhone3,3 7.0.3
+11:19 <a_titkov_> iPad 2
+11:19 <@crakun> if today's file does not kernel panic 7.0.3 of your device, can u fuzz the original to where it does create a kernel panic on your device?
+11:19 <@crakun> that was part of the homework assignment
+11:20 <@crakun> also, pleas email me your device /firmware  version so I can track what works and doesn't
+11:20 <@crakun> in terms of the fuzz file given to you
+11:21 <@crakun> if it doesn't work on 7.0.3 for iphone 4,5, 5S, then we should move on as a class
+11:21 <@crakun> those are our targets
+11:22 <@crakun> questions?
+11:22 <a_titkov_> mm i have an idea about that. ASL says  "mediaserverd[7187] <Error>: vxdDec - Frame# 217, DecodeFrame failed with error: 305" on 7.0.3 at place where iPad(6.1.2) panics. i will try to find more info about error #305
+11:22 <tihmstar> crakun: yes, and remember i still have a file (very inconsistent) which does panic on 7.0.3
+11:22 <GrygrFlzr>irccloud, I assume
+11:22 <Nexuist>welp
+11:22 <tihmstar_>irccloud is down
+11:22 <a_titkov_>lol
+11:22 <uroboro_>it was time
+11:22 <crakun>ok
+11:23 <tihmstar_>should we pause here?
+11:23 <crakun>so, I think I covered everything I wanted to.
+11:24 <tihmstar_>oh ok, when will we have the server?
+11:24 <crakun>Please email me so I can track isa56k's fuzzed file effectiveness. Is it worth pursuing is what I am driving at
+11:24 <tihmstar_>sry, i know you're busy, but it's actually quite important
+11:24 <crakun>what's up?
+11:24 <tihmstar_>the server
+11:25 <crakun>yes
+11:25 <sulphur27>i test mostly on iPhone3gs and the class file doesn't open(porpably to high quality) i have iPhone 5 jailbroken too but my girlfirne use id so i can't use it all the time
+11:25 <tihmstar_>wiki forum etc
+11:25 <tihmstar_>when will you create it?
+11:25 <crakun>ok
+11:25 <GrygrFlzr>we could setup a temporary one and migrate it later on?
+11:25 <crakun>I am working with saelo on the wiki forum
+11:25 <Nexuist>:)
+11:25 <tihmstar_>crakun: so it' up? can i setup mumble?
+11:26 <tihmstar_>crakun: and repo?
+11:26 <crakun>we will get that up and running here
+11:26 <SwissHttp>We also have theiphonewiki. No forum though.
+11:26 <crakun>saelo keeps reminding me which is good
+11:26 <sulphur27>i can work on my kernel panic(i have to send it to you i had a buysy week) i makes kernel panic everywhere...
+11:26 <crakun>you got a good one sulphur across all platforms?
+11:26 <tihmstar_>sulphur27: i can host it on my server too if it panics everything
+11:27 <crakun>ideally, what I am looking for is a .mov file that creates kernel panic across all our targeted devices
+11:27 <sulphur27>i tested it on a lot of devices andd it do panic on ios6 and 7 on  32 and 63 bit arch
+11:27 <a_titkov_>great
+11:27 <sulphur27>i will send it to you
+11:28 <crakun>ok
+11:28 <tihmstar_>sulphur27: can you send me a link so i can put it on my server where everyone can test?
+11:28 <crakun>if we don't have consistency across all platforms in day 7 submittal. we may roll with sulphur's
+11:28 <compilingEntropy>hmm, I'm concerned about apple getting ahold of these files...
+11:29 <crakun>yes Entropy
+11:29 <tihmstar_>compilingEntropy: but we need to destribute them in class otherwise we can't work with them
+11:29 <sulphur27>crakun i send you a mail
+11:29 <crakun>that is why I don't want to "release" all the submittals
+11:29 <tihmstar_>oh k then
+11:29 <sulphur27>thimstar ask crakun if we can make it public
+11:29 <crakun>5S bugs are secret
+11:30 <compilingEntropy>difficult situation
+11:30 <sulphur27>this one make panic on 5s too
+11:30 <crakun>for Core members -(non Apple Spy) people
+11:30 <GrygrFlzr>yeah, that one should probably be private
+11:30 <tihmstar_>sulphur27: don't send me then, i think crakun will make it public if he think's it needs to be done
+11:31 <uroboro_>crakun: do I consider the class is finished?
+11:31 <crakun>I have 5s kernel panics
+11:31 <sulphur27>yes
+11:31 <crakun>but, we don't need to burn stuff we don't need to burn
+11:31 <tihmstar_>exactly
+11:31 <crakun>right APPLE???
+11:32 <crakun>r u listening???
+11:32 <GrygrFlzr>appl
+11:32 <crakun>hear that flies on the wall?????
+11:32 <a_titkov_>lol
+11:32 <TimC00k>got it
+11:32 <crakun>ok
+11:32 <crakun>*heh
+11:32 <crakun>ok,
+11:32 <crakun>to close
+11:33 <crakun>work on day 7 stuff,
+11:33 <crakun>sulphur and Entropy, I will circle up with u later
+11:33 <crakun>separately
+11:33 <compilingEntropy>compilingEntropy@gmail.com
+11:33 <crakun>also, I will stand up server for forum
+11:33 <saelo><3
+11:34 <sulphur27>ok
+11:34 <crakun>research .mov file parsers
+11:34 <saelo>crakun just email or PM me when server is ready, any ETA?
+11:34 <saelo>file parsers?
+11:34 <crakun>we need to really study and become experts at mov files
+11:35 <Nexuist>tihmstar_: you want to talk about the forums now?
+11:35 <tihmstar_>Nexuist: i actually wanted to go home first, i'll contact you later ok? your always here right?
+11:36 <crakun>yea, look at day 6 for file parsers that look at .mov file
+11:36 <tihmstar_>Nexuist: maybe 20-30 min
+11:36 <crakun>tthere is a slide on that
+11:36 <Nexuist>tihmstar_: ok, that's perfect :)
+11:36 <dirkg>crakun don't know if you got my message
+11:36 <saelo>what about the forums?
+11:36 <dirkg>i am going to have a fun toy for people to play with for the beginner RE class
+11:36 <crakun>yes, saelo
+11:36 <saelo>Nexuist and tihmstar_ ?
+11:36 <crakun>I will stand that up today
+11:36 <Vaxter>if you need help for forum, wiki or setting up server, or actual server, i am here
+11:36 <saelo>great!
+11:36 <Nexuist>forums for openjailbreak saelo
+11:36 <saelo>yeah, I'm setting that up
+11:36 <crakun>ok, cool dirk
+11:36 <tihmstar_>ok guys, see you later ;)
+11:37 <Nexuist>have a safe trip home tihmstar_
+11:37 <crakun>dirk, is that next week?
+11:37 <tihmstar_>Nexuist: it's about 8 min by foot, but thx ;)
+11:37 <tihmstar_>cya
+11:37 <Nexuist>lol ok :P
+11:37 <crakun>ok, OpenFloor
+11:37 <crakun>next week, we will have skype
+11:38 <saelo>category suggestions for forum please
+11:38 <saelo>I have top level categories: general, jailbreak dev, class
+11:38 <crakun>working on a new slide deck for kernel
+11:38 <saelo>then in jailbreak dev: userland, kernel
+11:38 <saelo>maybe?
+11:38 <Nexuist>saelo: jailbreak tools
+11:38 <crakun>people, please provide saelo some guidedance
+11:39 <saelo>right, tools
+11:39 <saelo>I'll make an introduction section where people can write a few words about themselves?
+11:39 <saelo>class materials
+11:39 <saelo>tutorials
+11:39 <dirkg>saelo yes, give an introductory section so people can introduce and say what they know, link any experience or references as well
+11:40 <Intram0rph>refferences
+11:40 <saelo>well maybe its better if I just set it up the way I have it planned right now and then people can make suggestions for improvements
+11:40 <GrygrFlzr>section for site feedback, I suppose
+11:40 <Nexuist>make a suggestions subforum :P
+11:40 <dirkg>so if people want to join and help teach or assist, then when can identify and accelerate them to where they need to go
+11:40 <saelo>haha good idea :)
+11:40 <crakun>dirk, u are presenting next week right?
+11:40 <dirkg>next saturday i will be on a plane, unfortunately
+11:41 <Nexuist>i dunno if what you're using allows it, but maybe a confidential section of the forums where we can discuss exploits
+11:41 <saelo>yes, we can make kind of a quickstart sections where newcomers are linked to all the materials etc
+11:41 <crakun>was it this week?
+11:41 <Nexuist>that requires a password or account whitelist or something
+11:41 <dirkg>i will be presenting this week on thursday
+11:41 <Intram0rph>yea i was gonna ask if there are any willing to teach may be one on one in more detail
+11:41 <dirkg>yes
+11:41 <saelo>Nexuist yeah, I'll do that
+11:41 <crakun>can u present now?
+11:41 <Intram0rph>and basics
+11:41 <GrygrFlzr>saelo: And perhaps a news section for updates + homework announcements
+11:41 <saelo>registrations will need to be approved by admins, nothing visible without login
+11:42 <crakun>or should we wait 2 weeks from now?
+11:42 <saelo>GrygrFlzr good, thanks, will put that in General sections
+11:42 <dirkg>unfortuntely not :) still working on code and finishing up my talk, though if anyone has specific questions I am available all day today and tomorrow to field anything
+11:42 <Nexuist>saelo: i like that idea
+11:42 <dirkg>i can do it in 2 weeks
+11:42 <crakun>ok, cause I remember u were still yet to deliver
+11:42 <crakun>great
+11:42 <dirkg>yep
+11:42 <Nexuist>we need a place to talk in depth about what we found without exposing it to sp00ks
+11:43 <crakun>so it's offical, dirk in 2 weeks for RE
+11:43 <a_titkov_>yay
+11:43 <crakun>yes
+11:43 <Nexuist>:D thanks dirkg
+11:43 <dirkg>for a higher level RE talk, if people have specific technical questions I can answer those as well
+11:44 <saelo>I can probably prepare some presentation too if needed
+11:44 <dirkg>it will help if you are at least familiar with a programming language
+11:44 <saelo>won't be very specific to iOS though
+11:44 <dirkg>doesn't need to be a complicated one
+11:44 <crakun>ok,
+11:44 <crakun>class adjorned
+11:44 <snakeninny>dirkg: so you're ready to answer specific re questions today?
+11:45 <dirkg>snakeninny absolutely
+11:45 <crakun>next Sat, 6am PST Day 8: Jailbreak class
+11:45 <crakun>Nov9
+11:46 <crakun>thank q for the support

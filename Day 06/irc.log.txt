@@ -1,0 +1,177 @@
+10:02 <@crakun> http://www.hotwan.com/class/MHVI-Day6h_Published.pdf
+10:02 <tihmstar> compilingEntropy: when was the last time i saw you here??
+10:02 <tihmstar> compilingEntropy: need to talk to you after class
+10:02 <+compilingEntropy> hey tihmstar
+10:03 <tihmstar> compilingEntropy: also you should start using irccloud
+10:03 <+compilingEntropy> yeah, that's what they tell me
+10:03 <tihmstar> btw crakun you gave a look at irccloud? i invited you
+10:03 <+isa56k> irccloud bnc?
+10:06 <megacier> The class didn't start yet on Skype right?
+10:06 <tihmstar> not yet
+10:08 <@crakun> http://www.hotwan.com/class/mov/sample/1.zip is being uploaded
+10:08 <megacier> ok
+10:09 <@crakun> ping me if you want to join the skype
+10:09 <+isa56k> yes plz
+10:12 <j1m0nz> isa56k: Please show what you got on 7.0.2
+10:12 <+isa56k> Dude.. I ahve nothing..
+10:14 <AdiSai1> what happened?
+10:15 <@crakun> has everyone downloaded today's slide deck and zip file?
+10:15 <@crakun> everyone on skype that wants to be on skype?
+10:15 <GrygrFlzr> Should we be on both?
+10:16 <AdiSai1> yep... I'm not on skype
+10:21 <@crakun> hi
+10:22 <@crakun> we are on slide 2
+10:22 <@crakun> need to get everyone on the same page
+10:23 <@crakun> in terms of security, what is known, etc on iOS devices today
+10:23 <@crakun> from 6.x to 7.x
+10:23 <AdiSai1> ok
+10:23 <@crakun> and that will take some time
+10:31 <+isa56k> On to slide 14
+10:32 <+isa56k> Looking at kernel panic bugs
+10:32 <+isa56k> Every one has different phones so bug submissions coming in on different platforms
+10:33 <+isa56k> Onto slide 16
+10:33 <+isa56k> RE = Reverse Engineering
+10:33 <+isa56k> List of tools, not everyone has IDA pro
+10:33 <+isa56k> it;s expensive
+10:34 <+isa56k> Will need to use GDB and IDA
+10:34 <+isa56k> Hopper is an alternative for debugging / disassembler
+10:34 <tihmstar> does it need to be a special version of IDA pro??
+10:34 <+isa56k> dirkg ha pointed out a list of great resources, take a look at his site
+10:35 <+isa56k> http://samdmarshall.com/re.html
+10:35 <tihmstar> slide 17
+10:36 <+dirkg> Something of note
+10:36 <+isa56k> Book: A Bug Hunters Diary
+10:37 <+isa56k> http://www.amazon.com/Bug-Hunters-Diary-Software-Security/dp/1593273851
+10:37 <+dirkg> if people have questions about anything on there, ping me on twitter, here, email and i can try my best to answer.
+10:38 <+isa56k> mediaserverd has issues with trying to parse so many different types of files
+10:38 <+isa56k> This can generate buffer overflows that can be exploited
+10:38 <+isa56k> Need to really understand the format of a .mov file and how it works
+10:39 <+isa56k> What makes the mov file crash, where does it crash and why?
+10:39 <+isa56k> 1. Understadn quicktime format mov files.
+10:39 <+isa56k> 2. Disassemble mediaserverd in IDA pro
+10:40 <+isa56k> 3. Look at  where the inputs from media server go into the kernel
+10:42 <+isa56k> Slide 21:
+10:45 <+isa56k> Anyone found any tools for auditing mov files?
+10:46 <tihmstar> uroboro has tools to view the hexdifference of 2 files and to create "backmodifed" files, both will be available on my cydia/apt repo repo.tihmstar.org soon (i hope)
+10:46 <Nexuist_> hi guys
+10:48 <tihmstar> i will try to collect the tools developed for openjailbreak and put them on my cydia repo
+10:48 <megacier> I need the links a last time :S
+10:49 <+isa56k> https://developer.apple.com/library/mac/documentation/quicktime/QTFF/qtff.pdf
+10:49 <+isa56k> Quicktime specifications from Apple
+10:51 <tihmstar> log: we need to understand what i0nic is doing
+10:51 <+Nexuist> Hi guys
+10:51 <tihmstar> we need to be up to date with his work
+10:52 <+Nexuist> He hasn't publicized anything yet
+10:52 <tihmstar> you should have a look at i0nics presentations
+10:53 <+Nexuist> I mean, in regards to giving sploits to Apple
+10:53 <+fractalg> dont talk about what you dont know ;)
+10:53 <+compilingEntropy> tihmstar is logging the class on irc from what crakun is saying.
+10:53 <tihmstar> ^
+10:53 <+Nexuist> ah ok
+10:54 <+Nexuist> thanks tihmstar
+10:54 <+compilingEntropy> i0n1c has done a lot of good work for the community in terms of presentations
+10:54 <+compilingEntropy> crakun is saying we should capitalize on what information he's made available
+10:54 <+Nexuist> I agree
+10:56 <@crakun> <crakun>	 i need you to review all of Stefan Esser's work chronologically -VERY IMPORTANT
+10:56 <@crakun> we will need this to get the team synched up on the latest and greatest / history/ memory management, etc
+10:56 <@crakun> read slide decks and see videos on the net
+10:57 <@crakun> we really need to be synched in this
+10:57 <@crakun> 	 also mark dowd's work
+10:57 <@crakun> also charlie miller
+10:57 <@crakun> OSX Reverser
+10:58 <@crakun> and whatever eda3rs work
+10:58 <+fractalg> i have no public work in ios :X
+11:01 <+dirkg> oh fractalg did you get kext signing rights yet?
+11:02 <tihmstar> we need the kernelcache
+11:02 <tihmstar> there's propably a tool we can use for that
+11:02 <+Nexuist> xpwntool
+11:02 <tihmstar> we have to dump kernelcache on runtime from device
+11:03 <+fractalg> i didnt ask yet
+11:03 <tihmstar> there are people doing that for winocm's jailbreak
+11:03 <+fractalg> but we will need them
+11:03 <tihmstar> we should ask him for some kind of binary or script
+11:03 <+dirkg> yeah i asked and I still don't have them
+11:03 <+dirkg> don't know what is taking so long
+11:04 <+fractalg> should have no problems since it's legit software
+11:04 <+fractalg> might ask them personally what's up with that process
+11:05 <tihmstar> you should review the slidedecks for next week
+11:05 <tihmstar> review i0nic slidedecks
+11:05 <tihmstar> i0nic = Stefan Esser
+11:06 <tihmstar> also Charlie Miller
+11:08 <tihmstar> we need information leaks for the kernel
+11:08 <tihmstar> so that we can perform ROP
+11:08 <@crakun> ok
+11:09 <@crakun> my skype is crashing i thinkl
+11:09 <JuanEnrique> hey crakun
+11:10 <@crakun> ok, so info leaks is one of the things I want to see if we can get thru .mov or thru posixspawn
+11:10 <@crakun> skype is crashing on me
+11:10 <@crakun> let me resume class in 5 minutes
+11:11 <@crakun> take a 5 minute break while I reboot
+11:11 <megacier> ok
+11:11  → O0l joined  ⇐ xf8a and crakun quit  
+11:15 <O0l> What's the problem with the Skype?
+11:15 <tihmstar> crakun's skype crashed
+11:17 <+fractalg> it's the nsa :X
+11:17 <O0l> What is NSA?
+11:18 — +compilingEntropy facepalm
+11:18 <a_titkov> ...
+11:18 — +Nexuist throws out printer and jumps through window
+11:18 <tihmstar> spam mails are a real problem for NSA storage server XDDD
+11:18 <+isa56k> NS.. whoo? :D
+11:21 <tihmstar> http://imgur.com/HY0GVKh
+11:21 <tihmstar> XD
+11:21 <uroboro> Apple's letter 'a' class is NSA
+11:22 <tihmstar> [10/26/13 7:18:17 AM] crakun -: information leaks is something we want to take a look at
+11:22 <tihmstar> [10/26/13 7:18:50 AM] crakun -: there are plenty avenues still how to get this
+11:22 <tihmstar> [10/26/13 7:19:46 AM] crakun -: I don't have irc client showing up so please type what I say into there for me please
+11:22 <tihmstar> [10/26/13 7:20:08 AM] crakun -: need more examples of interpreting crash reports if you can find them
+11:22 <tihmstar> [10/26/13 7:20:28 AM] crakun -: even though we are only focused on kernel panics at this time
+11:22 <tihmstar> information leaks allow us to bypass KASLR/ASLR
+11:23 <tihmstar> it will become clearer as we develop more
+11:23 <tihmstar> slide 62
+11:23 <Intram0rph> hey guys  am i too late for class..?
+11:23 <Intram0rph> sorry.. i see
+11:24 <tihmstar> homework slide 62-64
+11:25 <crakun> ok
+11:25 <crakun> open floor
+11:25 <crakun> we do have 2 people speaking afterme
+11:25 <crakun> as well
+11:25 <crakun> but let's see if we can get your questions either on Skype or IRC
+11:25 <crakun> now
+11:26 <+dirkg> if you would like
+11:26 <+dirkg> i could write up something on reading crash reports
+11:26 <+dirkg> it would be based on stuff from landon and apple's docs on them but if you need some more stuff on them
+11:27 <JuanEnrique> crakun could you please provide me some references to learn objective c, c, and arm assembly?
+11:27 <+dirkg> JuanEnrique http://samdmarshall.com/re.html
+11:27 <+dirkg> under language resources
+11:29 <tihmstar> how can i see what type of kernelpanic i got? can i see it from the crashlog?
+11:32 <tihmstar> fuzzycactus is available at repo.tihmstar.org :D
+11:34 <crakun> now we are introducing compilingEntropy
+11:34 <crakun> for his SIGSEGV and SIGBUS having problem with commands
+11:37 <+isa56k> Entropy: What you using to create the mov files and then play with them beofre fuzzing?
+11:37 <+compilingEntropy> sony vegas pro 12
+11:37 <crakun> demito, are u here?
+11:37 <+isa56k> ok thx
+11:38 <crakun> ok, demito
+11:39 <crakun> will try perhaps next week to catch up with him
+11:39 <crakun> next week, we have a reverse engineer coming in to teach us more
+11:44 <crakun> we will go deeper next week in researching isa56k sample mov files, panic logs
+11:45 <crakun> crank up gdb, IDApro, inspect inside .mov file, we need to get ahold of kernel cache as well
+11:46 <crakun> mediaserverd is a big focus and it's hooks into the kernel
+11:47 <megacier> I'm a freaking noob and I would like to be better at programming/hacking. How should I do?
+11:47 <sulphur27> i can't get kernel panic on iPhone 3gs 6.1.2 in safari
+11:47 <megacier> neither on ipod 4
+11:48 <crakun> is that isa56k's bug?
+11:48 <sulphur27> yep
+11:48 <sulphur27> i load file via http in safari, i will try local
+11:49 <+isa56k> sulphur27: I used lighttpd abd then sbopenurl to launch the mov
+11:49 <sulphur27> ok i will try that
+11:49 <+isa56k> got to go.. back on later tonight
+11:50 <sulphur27> thanks
+11:50 <+compilingEntropy> sulphur27: add repo.tihmstar.org to cydia
+11:50 <crakun> please spread the word for class, all eyes on hotwan.com/class/mov/sample/1.zip
+11:51 <tihmstar> crakun: how can i work with that file if it's not crashing my device?
+11:51 <+compilingEntropy> fuzz the original to see if you can panic your device with that, right?
+11:52 <crakun> steps to take (slide 61 -63) on http://hotwan.com/class/MHVI-Day6h_Published.pdf
+11:54 <crakun> tihmstar, note your device / firmware -let me know via email so I can track. The use original 1.zip file and fuzz with it to see if you can make it crash on your device
+11:54 <crakun> original mov file in 1.zip

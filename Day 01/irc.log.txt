@@ -1,0 +1,179 @@
+[12:04 AM] <posixninja> x56: ok now +mz :-P
+[12:04 AM] <crakun> lots of stuFF 2 g0 thru here
+[12:05 AM] <crakun> first off,
+[12:05 AM] <Haifisch> Yo josh how bout some ops for the shark
+[12:06 AM] <x56> crakun sorry, that last line of yours was cut off :P
+[12:06 AM] <posixninja> ok
+[12:06 AM] <Haifisch> Step one: learn2solder
+[12:06 AM] <crakun> want 2 do a kickoff tonite
+[12:06 AM] <x56> everybody else: the channel is moderated while this presentation is going on
+[12:06 AM] <Haifisch> Step two: meak kernel debug cable
+[12:07 AM] <Haifisch> Step three: profit
+[12:07 AM] <Nick> pwned
+[12:07 AM] <Haifisch> That's not invalid teaching
+[12:07 AM] <crakun> ok, will assume some folks are interested
+[12:08 AM] <britta> i'm interested! waiting quietly
+[12:08 AM] <x56> crakun
+[12:08 AM] <x56> sorry, your line was cut off
+[12:08 AM] <crakun> we are going to stark off fresh with a new jb
+[12:08 AM] <Nick> I'm interested as well, but figured I'd shut the hell up
+[12:08 AM] <crakun> new exploits
+[12:09 AM] <Haifisch> Yes
+[12:09 AM] <crakun> find them / derive them and weave them together
+[12:09 AM] <Nick> hmm...now I need to decide between this or hackintoshing my laptop....
+[12:10 AM] <Haifisch> This
+[12:10 AM] <Haifisch> You can hackintosh later.
+[12:10 AM] <crakun> a couple of logistics we need to settle
+[12:10 AM] <posixninja> everyone with +HOP or +VOP, +STFU
+[12:11 AM] <posixninja> crakun is the one who's going to be teaching this class. me an the crew are here to support him. listen to what he says and you will learn a lot
+[12:11 AM] <crakun> thanks for revealing my name
+[12:12 AM] <crakun> :P
+[12:12 AM] <crakun> now spo00kz are going to b knocking on my door tonite
+[12:12 AM] <posixninja> please cracka, proceed :-P
+[12:13 AM] <crakun> we need to come up with a team name
+[12:14 AM] <posixninja> I vote Crippy-Dev Team :-P
+[12:17 AM] <posixninja> ok, but first people need to learn more about how to find vulnerabilities and how to tell if they're exploitable
+[12:18 AM] <posixninja> so step 1 is, how do we find new vulnerabilities...
+[12:19 AM] <posixninja> typically we use fuzzers to find new vulnerabilities
+[12:19 AM] <posixninja> what is a fuzzer you ask? well it's just a program that sends random data to whatever program you're trying to exploit
+[12:20 AM] <iMast777> Listening..
+[12:20 AM] <crakun> oops
+[12:20 AM] <crakun> let me backup a little
+[12:20 AM] <crakun> 	 i got a plan that takes about 10 steps
+[12:21 AM] <tylr> lol
+[12:22 AM] <crakun> ok
+[12:22 AM] <crakun> so anyways, forming a jb team
+[12:25 AM] <posixninja> ok, fussers are very simple to create, it's just feeding a program in random data to see if it crashes or not
+[12:25 AM] <posixninja> fuzzers~
+[12:25 AM] <posixninja> typically programs expect a very simple and already expected form of data, and if you change that data it can lead some weird crashes and bugs in a program
+[12:26 AM] <posixninja> by crashing a program you know that it received some kind of data that it didn't expect and did something with that data that it should not have
+[12:27 AM] <crakun> ok
+[12:27 AM] <posixninja> so vulnerabilities are just something that is told to the program to make that program do something that wasn't expected
+[12:28 AM] <|bile|la_> posixninja that command i just pasted you is shell script friendly, i use it in one at work
+[12:28 AM] <crakun> i'm going to try and get thru this as best as i can
+[12:28 AM] <posixninja> so anyone who is still following along take a shot with me :-P
+[12:28 AM] <posixninja> (if you're old enough!!)
+[12:29 AM] <posixninja> I'll give you the floor :-P
+[12:29 AM] <CydiaMan1_> me?
+[12:30 AM] <crakun> say when...
+[12:30 AM] <posixninja> lol, yea you
+[12:30 AM] <x56> CydiaMan1_ you were muted until then
+[12:30 AM] <CydiaMan1_> why?
+[12:30 AM] <posixninja> because you seem to be explaining it very well
+[12:30 AM] <CydiaMan1_> ty so much
+[12:31 AM] <crakun> ok
+[12:31 AM] <CydiaMan1_> The randomness of inputs used in fuzzing is often seen as a disadvantage,
+[12:32 AM] <posixninja> but it often leads to some of the best vulns.. after all no program can predict every possible input
+[12:32 AM] <CydiaMan1_> right
+[12:32 AM] <crakun> ok, we are going to start with a jailbrken iphone 4 with 6.1.2
+[12:32 AM] <CydiaMan1_> In computer security, a vulnerability is a weakness which allows an attacker to reduce a system's information assurance.
+[12:33 AM] <Kristina> Is that from wikipedia?
+[12:33 AM] <posixninja> yes, I assume everyone here has a jailbroken device to test on?
+[12:33 AM] <CydiaMan1_> A security risk may be classified as a vulnerability.
+[12:33 AM] <crakun> yes, have shsh blobs saved
+[12:33 AM] <posixninja> if not then GTFO
+[12:34 AM] <Nick> the fun thing about a vulnerability is it's never just local code execution. It can also be file permissions or even just something that is written on start up (see: android symlink vulns)
+[12:34 AM] <CydiaMan1_> lol
+[12:34 AM] <posixninja> yes vulns come in all shapes and sizes
+[12:34 AM] <crakun> we're going to target 7.0.1 exploit on a iphone 4
+[12:35 AM] <posixninja> you can have the fat girl vuln, or the skinny girl vuln, or the fat girl, but she has a pretty face vuln
+[12:35 AM] <CydiaMan1_> lol posixninja
+[12:35 AM] <britta> what?
+[12:35 AM] <posixninja> lol
+[12:35 AM] <x56> huh?
+[12:35 AM] <CydiaMan1_> why go there
+[12:35 AM] <Nick> fat girl with pretty face seems like conditional code execution exploits :P
+[12:36 AM] <britta> let's not do that
+[12:36 AM] <crakun> first off , we're going to look at safari -bugs and rendering
+[12:36 AM] <posixninja> ok, but there's lots of different types in different catagories
+[12:36 AM] <britta> maybe there's a better metaphor :)
+[12:36 AM] <posixninja> usually for jailbreaks, we start on 2 ends of spectrum
+[12:37 AM] <posixninja> one one end we work on the injection vector for the jailbreak. how we're going to get the exploits onto the device
+[12:37 AM] <crakun> will start next tues with some fuzzing of .mov files
+[12:38 AM] <posixninja> the other end we work on how we're going to exploit the kernel to gain full privileges to bypass all code signing requirements
+[12:38 AM] <crakun> so in the meantime, research the format of .mov files.  Create a couple
+[12:41 AM] <crakun> yes
+[12:41 AM] <crakun> ok, let me make it clear all
+[12:41 AM] <crakun> we start with a 6.1.2 jailbroken phone
+[12:42 AM] <britta> DeniedGames: we probably don't need to hear about that
+[12:42 AM] <crakun> we fuzz .mo files
+[12:42 AM] <crakun> .mov files
+[12:42 AM] <crakun> we will go over .mov files next tuesday
+[12:43 AM] <crakun> make sure you have your shsh blobs for 6.1.2
+[12:43 AM] <posixninja> in the meantime everyone look up fuzzing and how it effects security
+[12:45 AM] <crakun> ok, i know there is all sorts of conversations going on in this channel
+[12:46 AM] <crakun> any questions?
+[12:47 AM] <crakun> our goal us to crash 7.0.1
+[12:47 AM] <crakun> on iphone 4
+[12:47 AM] <crakun> from userland
+[12:47 AM] <crakun> that's the first part
+[12:48 AM] <crakun> tihmstar , what's the current firmware for iphone 4
+[12:48 AM] <crakun> ok
+[12:49 AM] <crakun> 7.0
+[12:49 AM] <crakun> then
+[12:50 AM] <crakun> alright, judging from today, looks like we will need a separate channel for this jb inititaive
+[12:51 AM] <crakun> with ipad2, you can
+[12:51 AM] <crakun> btw, i will set up a blog, dropbox
+[12:52 AM] <x56> ok folks, only the ops can see all your questions
+[12:52 AM] <x56> to most of you, it looks like not very much is being said
+[12:53 AM] <posixninja> crakun: remember most people are talking to themselves. only people with @ or + in front of their names other people can see
+[12:53 AM] <DarkMalloc> Please save your questions until later; let crakun talk.
+[12:54 AM] <|bile|la_> posixninja did u get my message or not? im trying to go to sleep ;-P
+[12:54 AM] <|bile|la_> shannon said u needed that example
+[12:54 AM] <x56> |bile|la_ got it
+[12:54 AM] <x56> thanks
+[12:54 AM] <|bile|la_> excellent :) i go sleep now then
+[12:54 AM] <x56> night
+[12:54 AM] <crakun> first step for fuzzing on jb on 6.1.2 devices.  we begin with .mov files. we go over .mov files next tues at 9pm pst
+[12:54 AM] <ShznakL> ni nite
+[12:55 AM] <crakun> reach out to me on twitter @crakun   or skype:  crakun
+[12:56 AM] <dtalley11> *people's questions
+[12:56 AM] <crakun> homework exercise between now and next tues.: create a small .mov file
+[12:58 AM] <crakun> reach out to my on skype and i will give you instructions for prepping for next tues : fuzzing .mov files
+[1:00 AM] <ShznakL> Now we will hear more about basics of vulns from x56
+[1:01 AM] <crakun> my skype is crakun
+[1:01 AM] <x56> first off, we need to look at what's required to jailbreak iOS
+[1:02 AM] <x56> jailbreaking is not simply gaining root access to a device
+[1:03 AM] <x56> there are protections in the kernel that need to be bypassed in order essentially reenable the features that are shut off by Apple
+[1:04 AM] <x56> so the exploit(s) necessary for jailbreaking have to reach from something the user has permission to access, all the way into altering kernel memory
+[1:07 AM] <x56> that is one of the main things that sets iOS exploitation apart from exploiting other platforms
+[1:07 AM] <x56> root is not enough
+[1:08 AM] <x56> so keeping that in mind, we need to focus our search for vulnerabilities in places that count
+[1:08 AM] <x56> attacking most apps themselves is out of the question
+[1:10 AM] <x56> they run as the mobile user, inside the sandbox, and therefore have limited access to the os
+[1:11 AM] <x56> so what we are looking for are things we can control, that have a significant permissions
+[1:13 AM] <x56> now, how we get control starts with vulnerabilities
+[1:14 AM] <x56> as posixninja started to cover, a vulnerability arises when a program that accepts user input of some kind fails to handle that user input correctly
+[1:15 AM] <posixninja> a good program to use is zzuf
+[1:16 AM] <posixninja> smart fuzzing is stupid
+[1:17 AM] <posixninja> what's smart is dumb fuzzing things people are too dumb to fuzz
+[1:17 AM] <posixninja> https://dl.dropboxusercontent.com/u/5309899/zzuf_0.13-1_iphoneos-arm.deb
+[1:18 AM] <posixninja> props go to comex who compiled zzuf on iOS
+[1:18 AM] <posixninja> helped him find many vulns
+[1:18 AM] <x56> so for those of you asking for a tool to use, that link to zzuf is a good start
+[1:19 AM] <x56> basically you can use zzuf to generate random input for a process
+[1:20 AM] <crakun> 	 k, I'm going to wrap for tonite
+[1:20 AM] <crakun> questions?
+[1:20 AM] <crakun> ok, chat back on next tues , 9pm pstok, chat back on next tues , 9pm pst
+[1:20 AM] <crakun> 	 we go into .mov file fuzzing for idevices
+[1:21 AM] <crakun> 9pm pst next tues
+[1:21 AM] <crakun> homework assignment: make some small .mov files
+[1:21 AM] <britta> thanks for sharing your knowledge crakun!!
+[1:21 AM] <crakun> slowly but surely
+[1:23 AM] <crakun> no, I haven't nick. but i have heard about fuzzing plist binary files
+[1:24 AM] <crakun> yes, please look at file format of .mov files over the week. we will get into that
+[1:24 AM] <crakun> will try to get a separate channel so things don't get muddled so much for next week
+[1:25 AM] <tylr> Are we all done? If so, I'll go ahead and post the log for those that wanted it.
+[1:26 AM] <crakun> no
+[1:26 AM] <x56> tylr hold off thanks
+[1:27 AM] <crakun> I will tweet homework assignment on twitter: @crakun
+[1:27 AM] <crakun> tomorrow
+[1:28 AM] <crakun> I will get this a bit more organized as we go along
+[1:28 AM] <x56> thanks to everybody who showed up, we will be covering more details next week
+[1:28 AM] <crakun> This is a 2 year journey. So buckle up
+[1:29 AM] <x56> the structure will be different next week to accommodate the turnout (for anyone that joined today, there were less than 50 people here this morning)
+[1:36 AM] <jchap808> somewhat on topic, im reading "hacking: the art of exploitation. Is this a start to learning about ios jailbreking?
+[1:37 AM] <six_forty> that book is pretty decent imo for learning exploits in general. specific applications, not so much, but i think a good place to start
+[1:37 AM] <naavinm> jchap808: it's a good book to start on exploitation. but the "iOS Hacker's Handbook" would be a start to iOS jailbreaking
+[1:38 AM] <jchap808> in replace of this book i should read "iOS Hacker's Handbook", I want to keep reading the hacking book, but the main reason was to help find vulns in ios.
+[1:39 AM] <britta> there is a list on http://theiphonewiki.com/wiki/Up_to_Speed with some more resources to learn about work people have done

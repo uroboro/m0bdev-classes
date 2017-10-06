@@ -1,0 +1,230 @@
+[8:08 AM] <crakun> ok
+[8:08 AM] <crakun> http://www.hotwan.com/class/MHVI-Day3b_Published.pdf
+[8:09 AM] <crakun> please download that
+[8:09 AM] <iFlames> sone
+[8:09 AM] <iFlames> done*
+[8:09 AM] <TheSilentMan> Same here
+[8:10 AM] <sulphur27> done
+[8:11 AM] <crakun> ok
+[8:11 AM] <crakun> so let's begi
+[8:12 AM] <TheSilentMan> – POP Quiz (your answers)
+[8:13 AM] <crakun> oh great. we will get to that
+[8:13 AM] <TheSilentMan> ha?
+[8:13 AM] <TheSilentMan> ok
+[8:13 AM] <crakun> let's move to slide 4
+[8:14 AM] <crakun> ok, got quite a few folks volunteer at different skillsets
+[8:14 AM] <crakun> still need more
+[8:14 AM] <crakun> will get more into details later in the deck
+[8:15 AM] <crakun> slide 5: i may lose a tweet or email, so remind me
+[8:15 AM] <crakun> status updates, slide 7
+[8:16 AM] <crakun> this is what is submitted / I'm going thru so far
+[8:16 AM] <ttimpe-iPhone> all working on 7.0 and 6.1.4?
+[8:16 AM] <crakun> still going thru details, but most people are submitting me bugs for iPhone5S
+[8:17 AM] <ttimpe-iPhone> ok
+[8:17 AM] <crakun> unfortunately, for right now this is what I got so far
+[8:18 AM] <crakun> people are pushing buttons and apps are crashing. Someone did submit a SEGV from a .mov file
+[8:19 AM] <crakun> Slide 8: so slowly learning from this, getting a little more organized as I go along
+[8:20 AM] <crakun> I need to understand the steps to the crash so I can reproduce it
+[8:20 AM] <crakun> so I envision a bug group to help me review the bug
+[8:21 AM] <crakun> so it goes  bug->vuln->exploitable
+[8:21 AM] <crakun> slide 9
+[8:22 AM] <crakun> so realizing the skill sets is one of my tasks with volunteers
+[8:23 AM] <crakun> I may need to speed up / slow down based on what material to cover
+[8:23 AM] <crakun> also to enable folks that want fuzz, reverse and exploit
+[8:24 AM] <crakun> advanced people, all I can say is be patient
+[8:24 AM] <DarkMalloc> +1 ^
+[8:25 AM] <crakun> correct me when I'm wrong, help out on deeper work
+[8:26 AM] <crakun> slide 10 - again, please spread the word to get interested volunteers to help
+[8:26 AM] <crakun> so the next phase, I will go into more over the next few classes
+[8:27 AM] <crakun> also , I have an industrial grade fuzzer that will get us that .Mov file we need
+[8:28 AM] <crakun> but, we do have some potential submittals that look promising
+[8:28 AM] <crakun> so we will look at submittals first
+[8:29 AM] <crakun> we will also be going into crash dumps some more
+[8:29 AM] <crakun> ok, slide 11
+[8:29 AM] <crakun> did anyone here due the pop quiz?
+[8:30 AM] <crakun> ...
+[8:30 AM] <crakun> ...
+[8:30 AM] <sulphur27> i did it in my head ;)
+[8:30 AM] <sulphur27> but i don't have all the answers
+[8:30 AM] <crakun> ok, answers anyone
+[8:30 AM] <crakun> try
+[8:30 AM] <FTO_> ugh
+[8:30 AM] <saelo> peach fuzzer :)
+[8:31 AM] <sulphur27> service : quicktime
+[8:31 AM] <sulphur27> bff
+[8:31 AM] <crakun> k
+[8:31 AM] <sulphur27> yes there was vulns the links where eaven on this channel
+[8:31 AM] <compilingEntropy> file format contains atoms which contain data, length, etc
+[8:32 AM] <sulphur27> i wrote some automatice test process by using autorefreshing webpage
+[8:32 AM] <sulphur27> with video tag. ..
+[8:32 AM] <crakun> I missed the vulns
+[8:32 AM] <sulphur27> but i don't know if it is the good aproach
+[8:32 AM] <crakun> so can u folks please keep an eye out for them
+[8:32 AM] <crakun> please put me in touch with the folks that created the crashes
+[8:33 AM] <sulphur27> for how might we test : we can do it in app or byt MobileSafari
+[8:33 AM] <saelo> documented vulnerabilities: you mean something like this: http://xforce.iss.net/xforce/xfdb/26393
+[8:33 AM] <crakun> oic
+[8:33 AM] <compilingEntropy> http://www.saintcorporation.com/cgi-bin/demo_tut.pl?tutorial_name=QuickTime_vulnerabilities.html&fact_color=&tag=
+[8:34 AM] <sulphur27> http://www.iss.net/security_center/reference/cam/5353.html
+[8:34 AM] <crakun> k
+[8:34 AM] <crakun> yes, there are those methods as well
+[8:34 AM] <crakun> auditing webkit too
+[8:34 AM] <crakun> source code
+[8:36 AM] <crakun> now, I started with fuzzing .mov files. obviously we could have started with MobileSafari
+[8:36 AM] <sulphur27> i'm opening .mov in mobilesafari
+[8:36 AM] <crakun> in fact I know of a few exploitable vulns, but alas, they are not ours to play with
+[8:36 AM] <sulphur27> via video tag
+[8:37 AM] <crakun> via video tag....
+[8:37 AM] <crakun> ?
+[8:37 AM] <sulphur27> on html page
+[8:37 AM] <sulphur27> that's why i'm not sure if it is a good aproach ...
+[8:37 AM] <sulphur27> for .mov
+[8:38 AM] <crakun> I don't follow u sulphur
+[8:38 AM] <crakun> what do you mean
+[8:38 AM] <compilingEntropy> He embedded a video in a webpage and had it autorefresh on his phone in mobilesafari. Would you suggest setting something up like this, or something else?
+[8:38 AM] <crakun> oci
+[8:38 AM] <crakun> oic
+[8:38 AM] <sulphur27> yes that's whar im doing
+[8:39 AM] <compilingEntropy> with multiple videos, obviously
+[8:39 AM] <sulphur27> yep
+[8:39 AM] <sulphur27> i use zzuf
+[8:39 AM] <sulphur27> to generate file for every request
+[8:40 AM] <sulphur27> and it is automatic
+[8:40 AM] <crakun> compilingEntropy , I 've seen that method used before with Codenomicon
+[8:41 AM] <Cykey> sulphur27: mind sharing your zzuf command?
+[8:41 AM] <sulphur27>  `zzuf -s #{s} -r #{r} cat #{input_file} > out/out_#{i}.mov`
+[8:41 AM] <sulphur27> sry this one :
+[8:41 AM] <sulphur27>     `zzuf -s #{@fuzz_file.s} -r #{@fuzz_file.r} cat #{Rails.root}/public/#{@fuzz_file.name} > #{Rails.root}/public/out/out.mov`
+[8:42 AM] <crakun> I'm wondering if we can automate it on the phone itself on a jb device
+[8:42 AM] <sulphur27> it needs to be tweked and i need to learn more about fuzzin to better understand how to choose the params etc.
+[8:42 AM] <Cykey> crakun: most likely
+[8:43 AM] <crakun> there are some sam scripts in iOS hacker's handbook to draw from
+[8:43 AM] <Cykey> https://github.com/westbaer/safari-refresh
+[8:43 AM] <Cykey> that would be useful.
+[8:43 AM] <crakun> ok
+[8:43 AM] <sulphur27> i use window.loadtion.reload()
+[8:44 AM] <crakun> that what codenomicon uses
+[8:44 AM] <compilingEntropy> I was thinking you could write a simple app that would open .mov files using quicktime, but it probably wouldn't be too difficult to set up a local webserver on the phone itself and use that autorefresh code.
+[8:46 AM] <sulphur27> i will try to do somethgin simillar in native app also
+[8:46 AM] <crakun> ok, so does the webserver work for you sulphur or not?
+[8:46 AM] <sulphur27> what do you mean ?
+[8:47 AM] <crakun> when it renders .mov file, isn't MobileSafari suspended?
+[8:48 AM] <crakun> meaning the javascript doesn't run anymore?
+[8:48 AM] <Cykey> crakun: mobilesafari can access local files with some tweaking, I'm going to set up some tool to automate it
+[8:48 AM] <sulphur27> it render it in html tag so you can see the video preview with autoload attribute in video tag
+[8:50 AM] <crakun> ok, hopefully those who will read this log later and help out. Made some info researchers can find the optimal way as well by asking others
+[8:51 AM] <crakun> I'll look into it too more
+[8:51 AM] <crakun> ok, let's move to slide 12
+[8:52 AM] <crakun> so in finding bugs, this is what microsoft states
+[8:52 AM] <crakun> consistency stuff of exploit
+[8:53 AM] <crakun> also  we want ideally SEGV
+[8:53 AM] <sulphur27> so safari is not suspended
+[8:53 AM] <sulphur27> the video is not playing thoug since you can't frce click here
+[8:53 AM] <sulphur27> but sinec i see the image of the video it means that the file is parsed
+[8:53 AM] <sulphur27> that is why i'm not 100%  sure if it is a good method
+[8:53 AM] <crakun> oic sulphur
+[8:54 AM] <crakun> mayb we should design to test on iphone instead
+[8:55 AM] <sulphur27> yes thats what i will try next
+[8:55 AM] <crakun> ok
+[8:56 AM] <crakun> ok so slide 13 is about signals if you don't no what that is
+[8:56 AM] <JckPry_> When's the class?
+[8:56 AM] <crakun> it's now
+[8:57 AM] <Cykey> seems quiet
+[8:57 AM] <JckPry_> ^
+[8:57 AM] <crakun> Mac OS X and iOS Internals: To the Apple's Core
+[8:57 AM] <crakun> is by far the most excellent book I read
+[8:58 AM] <crakun> actually gave me some ideas on how to attack from userland to kernel
+[8:58 AM] <JckPry_> crakun: You highly recommend it? I was looking at buying it.
+[8:58 AM] <crakun> yes
+[8:59 AM] <DarkMalloc> crakun: I'd agree with that.
+[8:59 AM] <DarkMalloc> Good book, guys.
+[8:59 AM] <crakun> took me forever to read, some parts like 5 times
+[8:59 AM] <DarkMalloc> Implementation of the Linux Kernel is also a good book.
+[9:00 AM] <crakun> Linux Kernel Development is good too.
+[9:00 AM] <JckPry_> Has anyone looking into how Apple load the developer tools onto the device?
+[9:00 AM] <JckPry_> Like the stuff the goes in /Developer ?
+[9:01 AM] <crakun> ok
+[9:01 AM] <argp> may i suggest the art of software security assessment (taossa)
+[9:01 AM] <argp> by far the most useful book for auditing c source code
+[9:02 AM] <argp> http://www.amazon.com/The-Software-Security-Assessment-Vulnerabilities/dp/0321444426
+[9:02 AM] <crakun> so let me roll back to slide 15
+[9:02 AM] <crakun> so I cut and pasted from other presentations and but them into slide deck
+[9:03 AM] <crakun> I just wanted to give u a brief on they types as we start to move into reading crash dumps
+[9:04 AM] <crakun> I really want to put together a detailed overview presentation on crash reports as we move into inspecting bugs
+[9:05 AM] <crakun> slide 17
+[9:05 AM] <crakun> so I hear p0d2g get's alot of submittals on SIGABRT
+[9:05 AM] <Cykey> damnit. http://d.pr/i/ukJ9
+[9:05 AM] <saelo> DarkMalloc: can you share a link to the book (Implementation of the Linux Kernel), can't seem to find it :(
+[9:07 AM] <DarkMalloc> saelo: I'm sorry, the exact title was Linux Kernel Development (bad with names, lol) - http://www.amazon.co.uk/Linux-Kernel-Development-implementation-Developers/dp/0672329468
+[9:07 AM] <crakun> yes, I love that book
+[9:08 AM] <crakun> ok
+[9:08 AM] <DarkMalloc> it's brillianr
+[9:08 AM] <saelo> DarkMalloc: ok thanks :)
+[9:08 AM] <DarkMalloc> brilliant*
+[9:09 AM] <crakun> so slides 17 -thru 20, indicate a variety of exception types
+[9:09 AM] <crakun> even that null pointer deferences can be a potential avenue for exploitation
+[9:09 AM] <crakun> but
+[9:10 AM] <argp> sorry, where's the slide deck?
+[9:10 AM] <crakun> it requires a great deal of time , effort and it maynot be fruitful
+[9:10 AM] <uencrypted> so where do I get that book ?
+[9:10 AM] <sulphur27> http://www.hotwan.com/class/MHVI-Day3b_Published.pdf
+[9:11 AM] <argp> thanks
+[9:11 AM] <x56> oh noes
+[9:12 AM] <uencrypted> suplhur27 you provided the link of this book "Linux Kernel Development: A thorough guide to the design and implementation of the Linux kernel" ??
+[9:12 AM] <crakun> crap
+[9:12 AM] <crakun> my client died again
+[9:12 AM] <crakun> please someone back up our discussion
+[9:13 AM] <iFlames> markhack
+[9:13 AM] <argp> i am
+[9:13 AM] <DarkMalloc> crakun: didn't miss anything
+[9:13 AM] <uencrypted> what is the problem with the server I can't connect to server through mirc
+[9:13 AM] <x56> always logging ;)
+[9:13 AM] <crakun> ok
+[9:13 AM] <crakun> so my point I was trying to state was
+[9:13 AM] <sulphur27> uencrypted: no it wasn't me
+[9:13 AM] <uencrypted> suplhur27 : what is this then ?
+[9:13 AM] <uencrypted> http://www.hotwan.com/class/MHVI-Day3b_Published.pdf
+[9:14 AM] <x56> uencrypted there's a class going on here
+[9:14 AM] <crakun> Certain Exception Types have a higher priority for our attention
+[9:15 AM] <crakun> The top priority are  SIGILL, SIGBUS and SIGSEGV
+[9:16 AM] <crakun> again, I want to put together a compression presentation on crash reports mayb in 2 weeks
+[9:17 AM] <crakun> so for info researchers out there, please email me links, documentation that we could use to put together that class
+[9:17 AM] <crakun> alright, slide 21
+[9:19 AM] <crakun> so where we are at, is we got some folks already fuzzing. Some folks need more info on fuzzing
+[9:19 AM] <crakun> we are working on testing on the handset for fuzzing
+[9:19 AM] <saelo> what fuzzer do you suggest? zzuf? peach?
+[9:20 AM] <crakun> one quick note, even though it mayb obvious
+[9:20 AM] <crakun> some folks test on mac and then test their bugs on the iphone
+[9:20 AM] <crakun> some people even test on simulator
+[9:21 AM] <crakun> I prefer to still to all testing on the iphone device itself
+[9:21 AM] <crakun> bugs generated on osx and simulator may not work on iphone
+[9:22 AM] <demito> What about testing qlmanage for crash with mutated movs?
+[9:23 AM] <crakun> that's one way
+[9:23 AM] <demito> Can i trust what crashwrangler says about exploitability?
+[9:24 AM] <crakun> no crashwrangler is something apple has visiiblity into right?
+[9:24 AM] <crakun> meaning they see the bugs
+[9:24 AM] <crakun> crashwrangler doesn't work for iOS
+[9:24 AM] <demito> I know
+[9:24 AM] <crakun> I want to be careful on what is given to apple
+[9:24 AM] <demito> But it does in mac os x
+[9:25 AM] <crakun> let's say we get some really juicy files
+[9:25 AM] <crakun> we don't want to burn everything
+[9:26 AM] <crakun> want to save them for future JBs
+[9:26 AM] <uencrypted> good point
+[9:26 AM] <crakun> ok, so next week. I want to go over fuzzing somewhat better than what I have
+[9:26 AM] <crakun> so far
+[9:28 AM] <Cykey> anyone familiar with this? zzuf: seed ranges are incompatible with stdin fuzzing
+[9:28 AM] <uencrypted> Ok sorry for interruption and it might be a newbie question (bcuz I'm one) :$ ... Any crash encuntered in my iDevice may be a good news for future jailbreak ?
+[9:28 AM] <uencrypted> we have to find crashes , and eexploit through them ?
+[9:29 AM] <compilingEntropy> uencrypted: http://www.hotwan.com/class/MHVI-Day3b_Published.pdf
+[9:29 AM] <compilingEntropy> read slides 12-20
+[9:29 AM] <crakun> l
+[9:29 AM] <crakun> ok
+[9:29 AM] <crakun> sorry, battery died
+[9:29 AM] <TheSilentMan> What did I miss?
+[9:30 AM] <crakun> alright
+[9:30 AM] <crakun> slide 22
+[9:30 AM] <crakun> for homework
+[9:31 AM] <crakun> come up with a list of all the remote ways how to exploit the phone
+[9:32 AM] <crakun> also, what file formats are supported for rendering  / parsing on MobileSafari
+[9:33 AM] <crakun> next week, same time

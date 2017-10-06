@@ -1,0 +1,212 @@
+11:16 <dirkg>welcome to RE 101, this will be a refresher course for some of you, others this will be a lot of new material
+11:16 <gwynne>And still others will sit back and waait for you to make a mistake.
+11:16 <dirkg>we are going to start with some of the material from a recent talk i gave
+11:16 <fr3b>ok
+11:16 <dirkg>http://samdmarshall.com/MacTech_2013_Conference.pdf we will be using about half of these slides as I worth through the methodologies and philosophy behind RE
+11:17 <dirkg>then we will move to https://developer.apple.com/library/ios/technotes/tn2239/_index.html
+11:17 <_3x7R00Tripper>http://samdmarshall.com/re.html
+11:17 <dirkg>which will explain a lot of details that you will need for reverse engineering on iOS
+11:18 <dirkg>and as _3x7R00Tripper just linked my resources page, we will end with that and let you experiment and learn on your own
+11:18 <dirkg>because RE is not something that can be taught through a lecture, once you understand the concepts you need to practice and learn through doing
+11:19 <fr3b>crakun need to share him screen
+11:19 <dirkg>if we are all ready we can start on the slides
+11:19 <tihmstar>we are ready
+11:19 <snakeninny>i'm ready
+11:19 <sulphur27>ready
+11:19 <dirkg>excellent
+11:20 <pr0crast1nate>what are wel all ready for?
+11:20 <dirkg>so "what is 'reverse engineering'?", most people consider this to be a very gray area of legality
+11:21 <_3x7R00Tripper>read
+11:21 <dirkg>truth is that it can be, but it doesn't have to be
+11:21 <_3x7R00Tripper>ready
+11:21 <dirkg>read your licenses, and do not try to sell anything you reverse engineer
+11:22 <tihmstar>is releaseing for free allowed?
+11:22 <dirkg>most user and software agreements have RE clauses that apply to trying to impersonate or replace proprietary products
+11:23 <dirkg>i'd say almost all RE is done for free and released as open source and free
+11:24 <dirkg>RE is also considered to be some magic skill that a few people possess but is totally alien to outsiders
+11:24 <dirkg>fact is, you don't have to know how systems work intimately or even know how to write code to get started and learn how to reverse engineer
+11:24 <dirkg>all of these things you will learn on the way
+11:25 <dirkg>the way I like to think of RE, it is an alternative problem solving skill
+11:26 <dirkg>as a developer, what my job entails is solving a large problem like "how do I jailbreak an iphone?" into a series of smaller problems
+11:27 <dirkg>such as "how do i create a reproducible crash?" "can i exploit the crash?" "is this universal across devices?"
+11:28 <dirkg>so in many ways, all the classes up to now have been preparing you from this skill, it is a learning process
+11:28 <dirkg>it teaches you how to solve problems, but how to interpret how they were original solved by apple, if we can understand that then we can work around their solution to get our intended goal
+11:29 <crakun>true
+11:29 <dirkg>i'm going to skip ahead a few slides to explain the approach now
+11:30 <dirkg>there are two types of RE techniques used, static analysis and dynamic/runtime analysis, but choosing which is dependent on what the target is
+11:31 <dirkg>for us, it is either going to be a library or application on the device
+11:31 <dirkg>if it is a library of framework, then we will be applying static analysis techniques to understand what the code does
+11:31 <gwynne>Worth noting that it's not always possible to do any particular kind of analysis on any particular target, even if it's a type that normally allows it.
+11:32 <dirkg>if it is an application or running process on the device then we are going to apple dynamic/runtime analysis
+11:33 <dirkg>and as gwynne points out, which these are general rules to follow, sometimes you must mix and match them to get deeper understanding of how the target works
+11:34 <dirkg>static analysis is applied to both libraries and applications, and dynamic analysis can be applied to both as well as sometimes you cannot fully understand a library's code is doing until you see it in action
+11:34 <fr3b>why the skype shuting up
+11:34 <snakeninny>fr3b: dirk doesn't have good mic
+11:34 <dirkg>when i started, i said you don't need to be a system's programmer to do this sort of work
+11:35 <dirkg>and while it is true you will have to learn some assembly, you ability to understand assembly doesn't dictate your skill at RE
+11:35 <gwynne>(Though it does help!)
+11:36 <dirkg>there are two types of understanding involved in RE
+11:36 <dirkg>a low level code analysis and a higher level code analysis
+11:37 <dirkg>to be perfectly honest, anyone can learn all there is to know about assembly and be able to read it perfectly
+11:37 <gwynne>And still not have a clue what's going on
+11:37 <dirkg>but that doesn't mean they can gain a higher level understanding of what the code does
+11:38 <dirkg>the goal in RE isn't to reproduce the exact same lines of code, it is to reproduce the understanding of what code is doing
+11:38 <_3x7R00Tripper>About what we talk today exactly?
+11:38 <snakeninny>_3x7R00Tripper: reverse engineering
+11:39 <dirkg>knowing programming languages and system ABIs help, but they don't give use the creative problem solving needed to understand what code is doing
+11:39 <_3x7R00Tripper>ok
+11:40 <dirkg>static analysis is the basically going to be looking at a application or library binary file and reading the code logic in it
+11:40 <dirkg>for this I recommend tools like Hopper and IDA
+11:40 <_3x7R00Tripper>we have a certain task now?
+11:40 <x56>listen
+11:40 <x56>(read)
+11:41 <_3x7R00Tripper>ok. I read it again.
+11:41 <tihmstar>dirkg: what about ODA is it usefull?
+11:41 <dirkg>dynamic analysis is using a debugger to step through code, set breakpoints, analyze what is going on
+11:42 <dirkg>tihmstar ah yes, i haven't used it personally, so i don't know about how good it is in comparison
+11:42 <dirkg>but that is another option
+11:42 <posixninja>dirkg: on the m0bdev openjaibreak project I added an extra folder into the repo for sample practice files. so if you want to upload like a small easy binary for people to reverse and learn hands-on, I think it would help a lot more
+11:43 <dirkg>posixninja excellent
+11:43 <dirkg>there are two tutorials i would like people to walk through
+11:43 <dirkg>https://developer.apple.com/library/ios/technotes/tn2239/_index.html
+11:43 <dirkg>http://abad1dea.tumblr.com/post/23487860422/analyzing-binaries-with-hoppers-decompiler
+11:43 <dirkg>this second one is labeled as for hopper, but you can use any disassembler with it
+11:43 <dirkg>the principle of use is exactly the same
+11:44 <gwynne>(Oh sure, Melissa's site is fine, but not Sam's :P)
+11:44 <dirkg>that apple technical note is very important to read completely
+11:44 <dirkg>it explains calling conventions, and a lot of details that will be core to all future work
+11:45 <dirkg>and for further reading, http://samdmarshall.com/re.html pick something and start learning
+11:46 <tihmstar>saelo: can you put all links in the forum pls?
+11:46 <dirkg>if you are a programmer or have some experience working with code, then I would go in the order of whatever languages you know and then move to the others
+11:46 <dirkg>the relevant languages to this work on iOS are C, C++, Objective-C, and ARM assembly
+11:47 <dirkg>for those of you that aren't familiar with programming, then check out one of the C tutorials i have linked there and start learning the basics
+11:47 <a_titkov>yay,i know all of these langs
+11:47 <uroboro>for me, any of those but not asm
+11:48 <posixninja>https://openjailbreak.org/projects/m0bdev/documents
+11:48 <imnothehuman>+ python
+11:48 <posixninja>and https://openjailbreak.org/projects/m0bdev/repository
+11:49 <x56>(don't forget about https://openjailbreak.org/projects/m0bdev/files for direct uploads)
+11:49 <_3x7R00Tripper>@posixninja: I saw it today. :P
+11:50 <crakun>please let dirkg have the floor
+11:50 <dirkg>sec, i am actually getting a really good resource for people to practice with
+11:50 <posixninja>yea, I don't think there's anything in the file part yet, I just put them in the document section so I could group and slides/logs/links into separate days
+11:50 <dirkg>i will open the floor to questions while I try to locate this link i thought i had saved
+11:50 <crakun>yes, please continue
+11:51 <fr3b>why you not speaking on he skype class
+11:51 <pr0crast1nate>while there's a pause, GREAT info so far!  loving it; thank you
+11:51 <crakun>yes, i love smart people
+11:51 <_3x7R00Tripper>fr3b: His micro is very bad
+11:53 <fr3b>and....... (slipstream!~blaziken@zelkovaltd.pndsl.co.uk)
+11:53 <dirkg>http://www.crackmes.de is one, and I am looking for the other
+11:53 <fr3b>we need a back up for the next time
+11:54 <snakeninny>seems crackmes.de doesn't have an iOS category
+11:55 <dirkg>no, you can do mac or windows to get the hang of understanding how to read assembly
+11:58 <dirkg>questions?
+11:58 <posixninja>suggestion, don't start with x86 :-P
+11:58 <dirkg>ha
+11:59 <posixninja>ARM is much simpler
+11:59 <crakun>yea
+11:59 <posixninja>(and more relevant :-P)
+11:59 <snakeninny>oh, an off-topic question: when i was trying to fuzz, i put a .mov file under /var/www/, but still couldn't see anything in safari under http://127.0.0.1. any idea?
+11:59 <posixninja>x86_64 still gives me a headache when I read it
+12:00 <pr0crast1nate>oh man I get that same headache when I use Windows! lol
+12:00 <_3x7R00Tripper>snakeninny: Other thema now. But add me and I can help you ;) skype: louiskremer (3x7R00Tripper)
+12:02 <snakeninny>this may be useful to rookies: i started from windows, finished lena151's ollydbg tutorial and TiGa's IDA tutorial, then cracked some easy crackmes from crackmes.de, to get the very basic knowledge and skills of reverse engineering
+12:03 <dirkg>found it!
+12:03 <dirkg>http://smashthestack.org
+12:03 <dirkg>is also a great resource for learning binary analysis
+12:04 <pr0crast1nate>(also hackthissite.org and notpr0n are good problem solving sites)
+12:04 <_3x7R00Tripper>Thanks. Do you know good book about arm assembler
+12:04 <dirkg>_3x7R00Tripper there is an ARMv7 guide on my resources page
+12:05 <dirkg>i think that will be most relevant to most of our work, I will locate one on arm64
+12:05 <_3x7R00Tripper>yes sorry. confused. I do it also. :) I mean books about ARMv7
+12:05 <tihmstar>will we continue with skype now?
+12:05 <dirkg>most of what you need to learn isn't anything more than basic assembly
+12:05 <_3x7R00Tripper>tihmstar: no
+12:05 <snakeninny>then i went through peter's gdb tutorial and "Ios Applications Reverse Engineering" tutorial from securitytube. after that i got my hands dirty on some App Store applications. once you're able to read assembly, you're into the field, and the rest is more practices, more time
+12:05 <_3x7R00Tripper>later
+12:06 <dirkg>snakeninny indeed
+12:06 <_3x7R00Tripper>Yes
+12:06 <gwynne>dirkg: Chapter 3 has sone arm64 material, you can rip from that.
+12:06 <dirkg>ok i will do that
+12:06 <crakun>great stuff
+12:07 <fr3b>you want 6.1.3 unthether?
+12:07 <dirkg>i will have some basic binaries uploaded at some point later today
+12:07 <tihmstar>fr3b: nah, tethered is fine
+12:07 <dirkg>but main thing to focus on for homework
+12:07 <fr3b>no realy ho want it????
+12:07 <dirkg>would be to read the technical note i linked, and then start looking at arm assembly in a tool
+12:08 <pr0crast1nate>well I know what I'm doing all weekend xD
+12:08 <dirkg>be it ODA, IDA or hopper
+12:08 <crakun>awesome
+12:08 <posixninja>https://openjailbreak.org/issues/27 ;)
+12:08 <tihmstar>dirkg: do you have some binary and some homerok with it, like mod binary xy to get xy ?
+12:08 <fr3b>6.1.3 unthether want or not???
+12:09 <dirkg>tihmstar i am going to let crakun take over that dictation, i have been absent a week so I don't know what he wants everyone to target
+12:09 <crakun>ok
+12:09 <dirkg>but some exploration in the media framework and parts of safari plugin loading would be relevant
+12:10 <_3x7R00Tripper>Buy Hoppe? I use the demo for a long time
+12:10 <tihmstar>dirkg: i thought of some easy exercises to practise RE in general
+12:10 <crakun>yes dirkg, we will be moving as a class into safari and javascript in a few weeks
+12:10 <dirkg>tihmstar, please by all means share
+12:11 <_3x7R00Tripper>@crakun: Yesssss. Javascript and safari :D :D :D
+12:11 <crakun>just checking in
+12:11 <tihmstar>dirkg: are you finished with your presentation?
+12:11 <dirkg>_3x7R00Tripper use the demo of hopper, if you are going to buy one i might say hopper because it is actually affordable :P
+12:12 <dirkg>tihmstar i am opening the floor to crakun and anyone else that as information to contribute
+12:12 <_3x7R00Tripper>ok
+12:12 <crakun>ok
+12:12 <dirkg>i am fairly good at this, but not an authority, always open to feedback
+12:12 <crakun>let's give that a few minutes, then we hop back on sykpe
+12:12 <_3x7R00Tripper>When is coming more on the wiki?
+12:12 <_3x7R00Tripper>yes
+12:12 <posixninja>was analyzing the crash reports ever covered?
+12:13 <crakun>we are getting to that
+12:13 <dirkg>if not I can do that now if there aren't plans
+12:13 <dirkg>ah ok
+12:13 <crakun>it's all in the roapmap to elysium
+12:13 <posixninja>oh ok, I just figured that would come before reversing :-P
+12:13 <crakun>ok, let's jump to skype
+12:14 <tihmstar>elysium lol
+12:14 <dirkg>I will be here all week, if you feel like you hit a wall please feel free to ping me and ask
+12:14 <posixninja>did you discuss all the registers and their roles?
+12:14 <dirkg>posixninja those are all detailed in the tech note i am having people read
+12:15 <dirkg>it is probably the most useful tech note from apple i have ever seen
+12:15 <dirkg>https://developer.apple.com/library/ios/technotes/tn2239/_index.html
+12:15 <snakeninny>and this is useful https://developer.apple.com/library/ios/documentation/Xcode/Conceptual/iPhoneOSABIReference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009020-SW1
+12:15 <dirkg>yes
+12:17 <dirkg>i'll just repost this tutorial as well, http://abad1dea.tumblr.com/post/23487860422/analyzing-binaries-with-hoppers-decompiler
+12:17 <dirkg>because those are three things that are paramount to read and understand
+12:19 <posixninja>https://developer.apple.com/library/mac/technotes/tn2004/tn2123.html#//apple_ref/doc/uid/DTS10003386
+12:19 <fr3b>i have ipad 3 on 6.1.3 you think i need to wait to 6.1.3 jailbreak or update and thats it???
+12:19 <posixninja>that's nice
+12:19 <dirkg>yep
+12:19 <dirkg>many of apple's tech docs are amazingly good
+12:20 <dirkg>they just don't update them regularly
+12:20 <dirkg>there is also https://developer.apple.com/library/ios/technotes/tn2151/_index.html
+12:20 <x56>crakun how do I join the skype conversation? I've sent a couple contact requests to no avail
+12:20 <fr3b> i have ipad 3 on 6.1.3 you think i need to wait to 6.1.3 jailbreak or update and thats it???
+12:21 <iH8sn0w>hi guys im new how to use
+12:21 <x56>fr3b no idea
+12:21 <x56>iH8sn0w answer please, don't troll
+12:21 <crakun>ok,
+12:21 * iH8sn0w goes back in the corner :~(
+12:21 <crakun>just finished Skype
+12:22 <posixninja>hmmmm… it doesn't really explain what to look for in a possibly vulnerable crashreport though
+12:23 <x56>fr3b this isn't the place for questions like that. There isn't a 6.1.3 untethered jailbreak yet. #jailbreakqa is the better place to hang out for questions/news on jailbreak tools
+12:23 <dirkg>no, you would need to pair that with the CrashReporter doc and maybe crashwrangler
+12:24 <fr3b>sorry
+12:24 <x56>iH8sn0w time out :P
+12:24 <iH8sn0w>nou
+12:26 <posixninja>hmmm…. let me find a good crashreport real quick and I get give a quick explanation
+12:26 <crakun>ok, class is over
+12:26 <crakun>for today
+12:27 <crakun>pelase study dirkg's stuff
+12:27 <posixninja>blah, you suck :-P
+12:27 <dirkg>heh
+12:27 <dirkg>posixninja that is a 5 minute lecture is it not
+12:27 <posixninja>yea pretty much
+12:27 <dirkg>i think i have done it once or twice in here
+12:28 <posixninja>look at a few registers, see if there's any corruptions in the stack traces
+12:28 <crakun>we will go over a POC of bypassing KASLR on 64-bit architectures next week
+12:28 <crakun>using the 1.mov

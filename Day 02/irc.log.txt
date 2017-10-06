@@ -1,0 +1,267 @@
+[11:14 PM] <x56> ok guys
+[11:14 PM] <x56> we're going to get started, thanks for being patient :)
+[11:15 PM] <x56> So here's the format for tonight. We're going to break up the session into roughly two parts. We'll talk for a while about the team and the mission, then have a break for questions. We'll go back to talking at that point, then do an open discussion after. While we're talking the room will be under reduced moderation. So ops can hear you, but you won't be able to talk to each other, and we'll queue your questions for discussion at each break.
+[11:16 PM] <x56> here's a summary from last week: http://www.reddit.com/r/jailbreak/comments/1n0nea/openjailbreak_class_1_2324_sep_2013/
+[11:17 PM] <x56> and the slides from this week, and updates once class is over will be at: http://www.reddit.com/r/jailbreak/comments/1nk9e8/openjailbreak_class_2_12_oct_2013/
+[11:17 PM] <x56> please follow that second link and open up the PDF to follow along for tonight
+[11:17 PM] <crakun> i guess voice won't b recorded
+[11:18 PM] <x56> So, that's the format
+[11:18 PM] <x56> crakun will get us started with the first part of our discussion for this evening
+[11:18 PM] <tylr> Quick question before starting, are you going to want everyone's questions to show up in the log?
+[11:20 PM] <crakun> just a moment
+[11:22 PM] <crakun> hi
+[11:22 PM] <crakun> ok, no voice
+[11:22 PM] <winocm> good night for real now
+[11:22 PM] <crakun> alright, here we go
+[11:22 PM] <winocm> o, one thing to note, when you're in the kernel, be very careful of what you do when you control pc
+[11:23 PM] <winocm> and don't disable interrupts for very long, you will get an IPI timeout and the device will panic
+[11:23 PM] <winocm> now sleep
+[11:23 PM] <crakun> so first off I'm honored to do this under p0sixninja irc
+[11:23 PM] <crakun> he has been a great mentor as well as several other jailbreakers from evad3rs
+[11:24 PM] <crakun> but now it's time to step up to the challenge to take the next steps
+[11:24 PM] <crakun> create a new generation of jailbreakers as well as meet new friends that share the same common goal
+[11:25 PM] <crakun> i figured I could have done it by myself but it would take me a long time
+[11:25 PM] <crakun> it's quicker and faster and u learn more if you work in a team
+[11:26 PM] <crakun> let's jump to slide deck
+[11:26 PM] <crakun> ok, surprise this is MHVI
+[11:26 PM] <crakun> it's one of the series
+[11:26 PM] <britta> what does MHVI stand for?
+[11:27 PM] <crakun> agenda - 2 things the most important things to walk away with tonite
+[11:27 PM] <crakun> MHVI is Mobile Hacking II
+[11:27 PM] <crakun> oops, I mean Mobile Hacking II
+[11:28 PM] <crakun> i mean VI
+[11:28 PM] <crakun> ok, if you look at hitb.org , pod2g help teach
+[11:28 PM] <crakun> for MHII
+[11:29 PM] <crakun> if you look at Blackhat 2013 in Vegas, p0sixninja, planetbeing and pimskeks helped teach
+[11:29 PM] <crakun> thru this irc class, that knowledge of ios will be passed to you
+[11:29 PM] <crakun> as well
+[11:30 PM] <crakun> ok, so to things tonight   - building a team. and looking for a remote exploit
+[11:30 PM] <crakun> we'll skip About me slide
+[11:32 PM] <crakun> contact info: please reach out to me via email, twitter, and skype to talk intially about bugs, vulns, exploits
+[11:32 PM] <crakun> the goal slide
+[11:32 PM] <crakun> I think that is a goal that alot of has.
+[11:33 PM] <crakun> I see alot of discussions surrounding bugs
+[11:34 PM] <crakun> I think we pull our efforts together with applicable bugs developed in to exploits, everyone maximizes the learning and gets to see the entire process unfold
+[11:35 PM] <crakun> i hate having to wait and rely on others. hoping / wishing and waiting
+[11:35 PM] <crakun> and never getting the full picture
+[11:35 PM] <posixninja> we try, but it's hard to understand unless you actually get your hands dirty with this stuff
+[11:36 PM] <crakun> My case I bring before you worldwide, is to bring empowerment to us all
+[11:36 PM] <crakun> yes, definitely
+[11:36 PM] <crakun> it will be painful and take lots of time
+[11:36 PM] <crakun> ok, class schudule...
+[11:37 PM] <crakun> people said 9pm PST is not the best time
+[11:37 PM] <crakun> I'm proposing 6am PST on Saturdays
+[11:38 PM] <crakun> as things get busy, I might add another day in the week as we fork up work and multitask
+[11:38 PM] <posixninja> how about 3pm EST? :-P
+[11:38 PM] <crakun> say for example,  userland one day,   kernel the next
+[11:38 PM] <posixninja> I'm usually away before then
+[11:38 PM] <posixninja> 6pm PST
+[11:39 PM] <crakun> ok, I think we should have people let us know what works
+[11:39 PM] <crakun> remember I have a part time job.
+[11:39 PM] <posixninja> x56: did you ever finish that !vote feature? :-P
+[11:39 PM] <crakun> let me know during question time
+[11:39 PM] <crakun> class topics slide
+[11:40 PM] <x56> not yet, we can set something up on doodle.com to take a poll
+[11:40 PM] <crakun> better idea x56
+[11:40 PM] <x56> (britta's idea ;) )
+[11:41 PM] <crakun> If I were doing this all by myself from scratch with no help while you all look and laugh at me struggle for 2-3 years
+[11:41 PM] <crakun> I would do it in a series of steps
+[11:42 PM] <crakun> as I sort of carry you along the way, there would be topics i would need to cover to catch u up to speed
+[11:44 PM] <crakun> even as a team, we will have challenges and subjects we are not sharp on. Hence, info researchers could help us, by collecting info
+[11:45 PM] <crakun> Touching on Focal Points Discussions help the group and each individual to help everyone grow
+[11:46 PM] <crakun> oh, forgot. Saurik help teach in MHII in vegas as well
+[11:46 PM] <crakun> so I'm hoping some elites or special subject matter experts may step up and b an honor guest and present on a topic
+[11:47 PM] <crakun> to help the team I'm trying to form
+[11:47 PM] <crakun> Expectations and Assumptions slide
+[11:47 PM] <crakun> some one suggested I do you tube videos
+[11:48 PM] <crakun> that eats into my dev time
+[11:48 PM] <crakun> there are some good videos out there already. working with tools, fuzzing etc.
+[11:49 PM] <crakun> perhaps volunteers and info researchers can help track that down as we build our knowledge base and toolsets
+[11:49 PM] <crakun> I also have this idea of developing the code based tools as opensource
+[11:49 PM] <crakun> so future jailbreakers can see
+[11:50 PM] <crakun> and use
+[11:50 PM] <crakun> ok - building a jailbreak team
+[11:50 PM] <crakun> m0bdev
+[11:50 PM] <crakun> 2 rings of contributers
+[11:51 PM] <crakun> it really depends on you as an individual, how much drive , skill, desire where you want to be
+[11:51 PM] <crakun> open community (inspired by openjailbreak) is open to all
+[11:52 PM] <crakun> for that iphone4 and 5 will have jailbreaks available . and you can see "full disclosure" as we step thru finding our way to freedom
+[11:53 PM] <crakun> for 5S,  hmmm
+[11:53 PM] <crakun> mayb not everything will be shared.
+[11:53 PM] <crakun> the jailbreak yes
+[11:53 PM] <crakun> the knowhow, hmmmm
+[11:54 PM] <crakun> that mayb lies in terms of how much dedicated people from Core want to give away all the secrets
+[11:54 PM] <crakun> to APPLE
+[11:56 PM] <crakun> Core group are folks that really drive the exploit dev process. Deep dive in. Full commitment
+[11:56 PM] <crakun> Also, Apple employees and contracters need to b screened out from that group
+[11:56 PM] <crakun> we know they are out there
+[12:01 AM] <crakun> VERY IMPORTANT---if someone thinks they have an exploit they should contact you directly before discussing it in the open channel.
+[12:01 AM] <crakun> email and skype
+[12:01 AM] <britta> (contact crakun directly)
+[12:02 AM] <posixninja> #FUK #THA #NSA =P
+[12:02 AM] <crakun> yes, contact me directly
+[12:03 AM] <crakun> yea, though sp00ks are into everything nowadays, I feel they are less likely inclined to share bugs with Apple that we reveal in our jailbreak
+[12:04 AM] <crakun> also contractors you want to stand up on a soap box to better there name up on stage
+[12:04 AM] <crakun> those folks need to be screened from the Core group
+[12:05 AM] <crakun> they could reveal compromising expertise we developed for the better of the community for the sole sake of their name up on stage
+[12:05 AM] <crakun> ROLES
+[12:06 AM] <crakun> ok, this is very important
+[12:06 AM] <crakun> think about how you want to contribure
+[12:06 AM] <crakun> there are a few more roles I have envisioned than there on this slide, but I think you get the point
+[12:08 AM] <crakun> not everybody wants to be a power ranger
+[12:08 AM] <crakun> :P
+[12:08 AM] <crakun> some key roles to think about now is architectual design and finding our first remote bug
+[12:09 AM] <crakun> if you submit a bug / vuln/ exploit. depending on it, we may go that direction versus another. It's what is given us versus what we find
+[12:10 AM] <crakun> personally, I think countries from all around the world should give us bugs
+[12:10 AM] <crakun> think of those poor third world countries who are getting hammered because they don't have enough talent to make a jailbreak
+[12:11 AM] <crakun> ok, think about your role if any
+[12:11 AM] <crakun> next slide
+[12:11 AM] <crakun> Jailbreak Expectation / Assumptions
+[12:12 AM] <crakun> I know that it is a fact that APPLE has intel folks of their own with their ear to the ground
+[12:13 AM] <crakun> whether it be dressed up in a clown custom hiding in a storm drain, perhaps your best friend,
+[12:14 AM] <crakun> we must be vigilaint
+[12:14 AM] <crakun> as we strive for freedom
+[12:14 AM] <crakun> ok
+[12:15 AM] <crakun> people / countries / whoever sends bugs, vulns, exploits to me should realize that if we use it in our jailbreak. Everyone will know about the bug
+[12:16 AM] <crakun> again, someone may try to take your credit. But that's ok
+[12:16 AM] <crakun> you are part of a bigger / better team
+[12:16 AM] <crakun> again, last point on this slide - it will take time
+[12:18 AM] <crakun> and the jailbreak course may change directions simply because a super golden bug that makes life so simple that we don't need a whole bunch of exploits to chain together
+[12:18 AM] <crakun> what are we looking for? types
+[12:18 AM] <crakun> slide
+[12:18 AM] <crakun> here are some
+[12:19 AM] <crakun> we will get into it later, but there are certain class of coding bugs that lead to certain types of exploits
+[12:19 AM] <crakun> classes of coding bugs
+[12:19 AM] <crakun> next slide
+[12:20 AM] <crakun> 1st Steps
+[12:20 AM] <crakun> we need volunteers
+[12:20 AM] <crakun> if you want to see me struggle byself and laugh. it will be even more painful for me
+[12:20 AM] <crakun> but I'll do it
+[12:21 AM] <crakun> but think about volunteering. repay your hacking skills you learned off the back of other's sweat
+[12:22 AM] <crakun> for architectual ideas of building our jailbreak, let's step back and look at history of JBs
+[12:23 AM] <crakun> we are looking for people to fill those roles in the previous slides. testing, researching, development
+[12:23 AM] <crakun> I kicked the football last week with getting us started fresh with finding bugs in .mov files
+[12:24 AM] <crakun> last point on this slide, still setting things up
+[12:24 AM] <crakun> jailbreak development targets
+[12:24 AM] <crakun> slide
+[12:25 AM] <crakun> be sure to backup your SHSH blobs for the iPHone4 so you can downgrade / upgrade / restore
+[12:25 AM] <crakun> for testing
+[12:26 AM] <crakun> you can also use other idevices to test, but I don't want to get caught up in all the devices at the moment
+[12:26 AM] <crakun> one step at a time
+[12:27 AM] <crakun> questions slide
+[12:27 AM] <crakun> this is where I pause and listen to you
+[12:27 AM] <crakun> I may not be able to answer everything, but that's ok, there's always offline and next class as follow-ups
+[12:28 AM] <britta> "you can backup blobs even if apple isnt signing them?" you can 'dump' blobs for the currently-installed ios version on an iphone 4 or earlier device
+[12:28 AM] <crakun> no
+[12:29 AM] <crakun> don't think so. Once they stop signing, and u didn't get the blobs, I thinnk u are screwed
+[12:29 AM] <crakun> read up on SHSH Blogs / tinyumbrella
+[12:29 AM] <x56> or you can fetch them with iFaith crakun
+[12:29 AM] <x56> for 6.x
+[12:30 AM] <Haifisch> Yes ^
+[12:30 AM] <crakun> hmm
+[12:30 AM] <crakun> ok
+[12:30 AM] <x56> ok: we're going to handle some questions now
+[12:30 AM] <crakun> ok
+[12:30 AM] <x56> first a few that were asked during the talk
+[12:30 AM] <x56> :
+[12:31 AM] <posixninja> we're also working on a similar tool for openjailbreak if anyone wants to help
+[12:31 AM] <x56> [00:18:21] <SleeZy6>	 We need an iPhone 4 on iOS 6.1.2 or...what?
+[12:31 AM] <x56> [00:25:52] <XDS2010>	 crakun:  you mentioned soldering in the last class. could you touch on that a little ?
+[12:31 AM] <x56> [01:11:49] <cver3>	 i cant get none of those links in the slides to work for some reason i tried clicking them and copuying and pasting. no lick
+[12:31 AM] <britta> here's some explanation of 'dumping' blobs: http://www.jailbreakqa.com/faq#45545 (note that ifaith and redsn0w don't support ios 7 yet, thanks compilingEntropy for mentioning that)
+[12:31 AM] <ShznakL> Q : Will we be working on a tethered or untethered JB?
+[12:31 AM] <crakun> soldering - is that the serial cable you are talking about?
+[12:32 AM] <x56> SleeZy6 an A4 device running 6.1.2 is preferred, but any version of 6.x should do
+[12:33 AM] <x56> cver3 appears to have left, but is anyone else having problems with the links in the slides?
+[12:33 AM] <crakun> For SHSH Blobs, Once you upgrade, you can't go back install to firmware where you didn't get your SHSH blobs to begin with
+[12:33 AM] <x56> SleeZy6 3GS should also work
+[12:33 AM] <crakun> does iFaith have a work around?
+[12:34 AM] <britta> crakun: ifaith grabs partial shsh blobs from the device even if apple is no longer signing that ios version, yes. A4 and earlier only
+[12:35 AM] <crakun> ok, thank you I stand corrected
+[12:35 AM] <x56> "Is podbreakout required?" it's the easiest way to put together a serial cable, which is required for kernel debugging when we get to that point
+[12:36 AM] <x56> "would you recommend using hopper instead of ida pro if i cant afford it?" Hopper is a good product, but lacks some of the capabilities that help with digging into the kernel/iBoot
+[12:36 AM] <crakun> ok, geting lost in questions. what's the next one?
+[12:37 AM] <crakun> ok, x56 is helping answer questions
+[12:37 AM] <crakun> thank you
+[12:37 AM] <x56> "what can people with no coding experience contribute ?" documentation, graphic design, anything you come up with that you can convince us is relevant to the project ;)
+[12:37 AM] <x56> "could an iPod Touch 4g be used to aid in exploits (its the only device i have with 6.1.2 blobs)" yes, definitely
+[12:37 AM] <crakun> info researchers
+[12:37 AM] <britta> "Why iFaith support A4 and don't work with A5 ?" A4 devices have a bootrom exploit available (limera1n)
+[12:37 AM] <crakun> are people who can't code
+[12:38 AM] <x56> "will you explain the steps for soldering and what's needed in later classes" yes, that's something we can cover before we delve into that topic
+[12:38 AM] <crakun> getting the word out to the blogs, to folks that do have the expertise and may have an interest or pitch us a bug to play with
+[12:38 AM] <x56> "<_TwilightSparkle>	 That trailofbits.com link, when you click it, leads to trailolits.com" ok, thank you
+[12:39 AM] <ShznakL> Be sure to e-mail your ideas for which roles you can play to crakun directly
+[12:39 AM] <britta> "how possible is it for someone with no coding or vulnerability research epxereince to learn to develop jailbreaks?" everybody starts with no knowledge :)
+[12:39 AM] <crakun> yes, please email me with ideas
+[12:39 AM] <crakun> you have
+[12:39 AM] <x56> "will there be lessons on zzuf today ? how to use to fuzz .mov" part 2 ;)
+[12:39 AM] <crakun> zzuf as a fuzzer
+[12:40 AM] <ReanimationXP> (crakun@m0bdev.com)
+[12:40 AM] <crakun> I realized that this would be a long meeting
+[12:40 AM] <britta> "will this class ultimately teach someone like that?" it could help you figure out what to learn, but it takes years of learning and experience to develop exploits, so it would be just a start
+[12:40 AM] <ShznakL> It's more of a community project than only a class. Everyone working together to help eachother learn.
+[12:40 AM] <x56> "will this class ultimately teach someone [with no experience]?" this will give you many things to learn from, there are also several resources recommended in the slides
+[12:40 AM] <crakun> so I had to break fuzzing down over several lessons and points to go to. we will continue with fuzzing beyond today
+[12:41 AM] <crakun> I've been in it for 4 years
+[12:41 AM] <x56> are there any other questions about what we covered so far? If not we'll move on to part 2
+[12:42 AM] <crakun> but I've been spreading my time in Android and Software Defined Radio too
+[12:42 AM] <crakun> it can go quicker. you will learn so much from each other than I could ever teach u alone
+[12:43 AM] <crakun> is that all the questions?
+[12:43 AM] <crakun> ok
+[12:44 AM] <crakun> let's move on
+[12:44 AM] <ReanimationXP> for those asking about getting started, here is an interview with pod2g where he mentioned some source materials he recommends:
+[12:44 AM] <ReanimationXP> http://www.idownloadblog.com/2012/12/20/pod2g-interview/
+[12:44 AM] <x56> we'll cover any other questions at the next open discussion
+[12:44 AM] <crakun> ok, let's role
+[12:44 AM] <crakun> roll
+[12:44 AM] <crakun> part II
+[12:45 AM] <crakun> to be honest, I really don't know all the skill sets out there / what levels each one of u have
+[12:45 AM] <crakun> so I have to do some baselining
+[12:46 AM] <crakun> so here is a starting point
+[12:47 AM] <crakun> history of our fore fathers
+[12:47 AM] <crakun> review, yawn, or ponder
+[12:47 AM] <crakun> part of your HW is reading thru these links
+[12:48 AM] <crakun> POP QUIZ
+[12:48 AM] <crakun> are u prepared?
+[12:48 AM] <crakun> have you been fuzzing?
+[12:48 AM] <crakun> how are you fuzzing?
+[12:48 AM] <crakun> let me know
+[12:48 AM] <crakun> answer the questions for HW
+[12:48 AM] <crakun> next slide
+[12:49 AM] <crakun> any crashes?
+[12:49 AM] <crakun> surely you are not sending them to APPLE, right?
+[12:50 AM] <crakun> I believe that p0sixninja told me that sometimes the iphone reenables crash reporting behind your back. So keep checking the setting in your phone
+[12:50 AM] <crakun> here are some links for you to read as HW
+[12:51 AM] <crakun> I really like Exploit_or Exception
+[12:51 AM] <crakun> as part of HW and any today, let me know how you have done so far
+[12:51 AM] <crakun> what tools / scripts u use
+[12:52 AM] <x56> (http://shakacon.org/2009/talks/Exploit_or_Exception__DeMott.pdf)
+[12:52 AM] <crakun> I am got a card up my sleeve for this one. But I want to see how well u do
+[12:52 AM] <crakun> to more people playing with this, the more potential for discovery
+[12:53 AM] <crakun> imagine if quicktime was just as vulnerable as flash, adobe, or java
+[12:54 AM] <crakun> it has lots of bells and whistles to poke and play with
+[12:54 AM] <x56> "<ep0k>	 good zzuf tutorial  http://caca.zoy.org/wiki/zzuf/tutorial1"
+[12:54 AM] <crakun> read thru all this fuzz stuff and history stuff so we are on the same page
+[12:55 AM] <x56> if you click the links in the presentation, they aren't working. If you type that URL in the browser, you'll get to the right place
+[12:55 AM] <crakun> next class and in between classes will go thru more
+[12:56 AM] <crakun> for info researchers, please collect hordes of file fuzzing info
+[12:56 AM] <crakun> we are building a repository for jailbreakers to draw on
+[12:57 AM] <crakun> if you are having problems with the links
+[12:58 AM] <crakun> just go to google and time some of the words of the URL, no need to type the whole thing, then press the Search button
+[12:58 AM] <crakun> ok, HW assignment
+[12:59 AM] <crakun> slide
+[12:59 AM] <crakun> lots of stuff I said already
+[12:59 AM] <crakun> we will go deeper into file fuzzing and a quick refresh on jb history
+[1:00 AM] <crakun> think which role(s) you can help out on
+[1:00 AM] <crakun> talk to me out of band
+[1:00 AM] <crakun> about ideas
+[1:00 AM] <crakun> for the team, for the jb, stlye / approach
+[1:00 AM] <crakun> and that's it
+[1:01 AM] <crakun> Open Floor. Time for me to shut up and hear the chatter
+[1:01 AM] <crakun> thank you for your time
+[1:01 AM] <Ne0Z> thanks  crakun
+[1:02 AM] <XDS2010> is there a tool available that can keep an eye on the crash daemons to keep them neutered ?
+[1:02 AM] <crakun> fake DNS will stop it in it's tracks
+[1:05 AM] <ep0k> Not all crashes are interesting : aborts, timeouts or out of memory kind of crashes are useless. Verify the crash dump in Settings / General / About /Diagnostics & Usage / Diagnostic & Usage Data that the crash report you created is of Exception Type SIGILL, SIGBUS or SIGSEGV.
+[1:07 AM] <ep0k> The crash should be repeatable, which means you should know what exact steps produced it and how to produce it on another device.
